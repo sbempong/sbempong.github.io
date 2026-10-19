@@ -50,3 +50,12 @@ footer{font-size:.8rem;padding:16px;border-top-color:transparent}
 footer p{margin:0}
 footer a{color:var(--ink-2);text-decoration-color:var(--rule)}
 footer a:hover{color:var(--accent)}
+/* Vertical placement: the same top offset on every tab, tuned so Home sits a little above centre on laptops. */
+.avatar{margin-bottom:24px}
+h1{margin-bottom:8px}
+.tag{margin-bottom:32px}
+main{padding-top:32px}
+@media(min-width:700px) and (min-height:600px){
+ .top{padding-top:clamp(48px,calc(46vh - 213px),360px);padding-top:clamp(48px,calc(46dvh - 213px),360px)}
+}
+@media(max-width:699px){.top{padding-top:64px}}
