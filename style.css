@@ -17,7 +17,7 @@ h1{font:600 2rem/1.15 var(--serif);margin:0 0 8px;letter-spacing:-.01em}
 main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
 .panel{padding:0 0 32px}
 .panel:focus{outline:none}
-.panel:focus-visible{outline:2px dashed var(--rule);outline-offset:8px}
+.panel:focus-visible{outline:none}
 h2{font:600 1.35rem/1.25 var(--serif);margin:0 0 16px}
 .js h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .lead{font:1.2rem/1.55 var(--serif);margin:0 0 16px}
@@ -31,7 +31,7 @@ h2{font:600 1.35rem/1.25 var(--serif);margin:0 0 16px}
 .contact{list-style:none;margin:0;padding:0}
 .contact li{display:grid;grid-template-columns:7.5rem 1fr;gap:8px;padding:10px 0;border-top:1px solid var(--rule)}
 .contact span{color:var(--ink-2);font-size:.9rem}
-.contact a{overflow-wrap:anywhere}
+.contact a{overflow-wrap:break-word}
 footer{text-align:center;color:var(--ink-2);font-size:.85rem;border-top:1px solid var(--rule);max-width:720px;margin:0 auto;padding:16px}
 @media(max-width:400px){.tabs a{padding:0 10px;font-size:.9rem}}
 @media(min-width:900px){.top{padding-top:72px}h1{font-size:2.4rem}}
