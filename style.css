@@ -35,3 +35,7 @@ h2{font:600 1.35rem/1.25 var(--serif);margin:0 0 16px}
 footer{text-align:center;color:var(--ink-2);font-size:.85rem;border-top:1px solid var(--rule);max-width:720px;margin:0 auto;padding:16px}
 @media(max-width:400px){.tabs a{padding:0 10px;font-size:.9rem}}
 @media(min-width:900px){.top{padding-top:72px}h1{font-size:2.4rem}}
+.tag .tg{display:block;white-space:nowrap}
+.tag .sep{color:var(--rule);color:#a89a86}
+.tag .sep-mid{display:none}
+@media(min-width:640px){.tag .tg{display:inline}.tag .sep-mid{display:inline;white-space:pre}}
