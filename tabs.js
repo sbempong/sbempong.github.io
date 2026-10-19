@@ -1,6 +1,7 @@
 (function(){'use strict';
 var C=window.SITE_CONFIG||{},gh='https://github.com/'+C.githubUser;
 document.querySelectorAll('[data-gh]').forEach(function(a){a.href=gh;a.textContent='github.com/'+C.githubUser});
+document.querySelectorAll('[data-ghlink]').forEach(function(a){a.href=gh});
 document.querySelectorAll('[data-repo]').forEach(function(a){a.href=gh+'/'+a.getAttribute('data-repo')});
 /* Upgrade the anchor nav into an ARIA tablist. Without JavaScript the links simply jump to each section. */
 var list=document.getElementById('tabs'),tabs=[].slice.call(list.querySelectorAll('a')),panels=tabs.map(function(t){return document.getElementById(t.hash.slice(1))});
