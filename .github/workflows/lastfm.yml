@@ -55,15 +55,18 @@ jobs:
             echo "Last.fm returned an error: $(jq -r '.message // "unknown"' /tmp/raw.json)"
             exit 0
           fi
-          # Art: the 'large' image, else 'medium'. Empty urls and the default star
-          # placeholder (hash 2a96cbd8b46e442fc41c2b86b821562f) count as missing -> null.
+          # Art: 'extralarge' (300 px), else 'large' (174 px), else 'medium'; artSmall is the 174 px
+          # version for srcset. Empty urls and the default star placeholder
+          # (hash 2a96cbd8b46e442fc41c2b86b821562f) count as missing -> null.
           jq '
             def good: (. // "") as $u | if ($u == "" or ($u | contains("2a96cbd8b46e442fc41c2b86b821562f"))) then null else $u end;
             def pick($s): ([.image[]? | select(.size == $s) | .["#text"] | good] | map(select(. != null)) | .[0]);
             { tracks: [ (.recenttracks.track // []) | (if type == "array" then .[] else . end) | {
                 title: .name,
                 artist: (.artist["#text"] // .artist.name // ""),
-                art: (pick("large") // pick("medium")),
+                album: ((.album["#text"] // "") | if . == "" then null else . end),
+                art: (pick("extralarge") // pick("large") // pick("medium")),
+                artSmall: (pick("large") // pick("medium")),
                 url: .url,
                 nowPlaying: ((.["@attr"].nowplaying // "") == "true"),
                 playedAt: (if .date.uts then (.date.uts | tonumber | todate) else null end)
@@ -97,7 +100,7 @@ jobs:
           ANILIST_USER: geekslyy
         run: |
           set -euo pipefail
-          q='query($u:String,$t:MediaType){MediaListCollection(userName:$u,type:$t,status:CURRENT){lists{entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large} format countryOfOrigin}}}}}'
+          q='query($u:String,$t:MediaType){MediaListCollection(userName:$u,type:$t,status:CURRENT){lists{entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} format countryOfOrigin episodes chapters description(asHtml:false)}}}}}'
           for t in ANIME MANGA; do
             body=$(jq -cn --arg q "$q" --arg u "$ANILIST_USER" --arg t "$t" '{query:$q,variables:{u:$u,t:$t}}')
             if ! curl -fsS --retry 2 https://graphql.anilist.co -H 'Content-Type: application/json' -H 'Accept: application/json' -d "$body" -o "/tmp/$t.json"; then
@@ -110,6 +113,11 @@ jobs:
           # Compact, key-stable output so an unchanged list never produces a formatting-only commit.
           jq -c -n --slurpfile a /tmp/ANIME.json --slurpfile m /tmp/MANGA.json '
             def good: (. // "") as $u | if ($u | test("^https://")) then $u else null end;
+            # Plain text: drop tags, decode common entities, drop "(Source: ...)" notes, collapse spaces, cap at 600 characters.
+            def desc($d): ($d // "") | gsub("<br\\s*/?>"; " ") | gsub("<[^>]*>"; "")
+              | gsub("&quot;"; "\"") | gsub("&#0?39;|&apos;|&rsquo;"; "\u0027") | gsub("&mdash;|&ndash;"; "-") | gsub("&nbsp;"; " ") | gsub("&amp;"; "&") | gsub("&lt;"; "<") | gsub("&gt;"; ">")
+              | gsub("\\(Source:[^)]*\\)"; "") | gsub("\\s+"; " ") | ltrimstr(" ") | rtrimstr(" ")
+              | if . == "" then null elif length > 600 then .[:600] | sub(" [^ ]*$"; "") + "..." else . end;
             def items($d; $unit): [ $d[0].data.MediaListCollection.lists[]?.entries[]? ]
               | sort_by(-.updatedAt) | .[:4] | map({
                   id: .media.id,
@@ -117,7 +125,11 @@ jobs:
                   progress: (.progress // 0),
                   unit: $unit,
                   url: .media.siteUrl,
+                  total: (if $unit == "Ep" then .media.episodes else .media.chapters end),
+                  description: (desc(.media.description)),
                   cover: ((.media.coverImage.large | good) // (.media.coverImage.medium | good)),
+                  coverXL: (.media.coverImage.extraLarge | good),
+                  coverSmall: (.media.coverImage.medium | good),
                   format: .media.format,
                   country: .media.countryOfOrigin,
                   updatedAt: .updatedAt });

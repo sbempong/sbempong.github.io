@@ -9,9 +9,9 @@
 <link rel="icon" href="avatar.png">
 <meta name="color-scheme" content="light dark">
 <script>/* Apply a saved theme before first paint (no flash). */try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="stylesheet" href="style.css?v=20261020g">
-<script>/* Start the Recently played and AniList fetches early and hold first paint briefly (max 600 ms) so the layout is settled before anything is shown. */
-(function(d){try{if(!window.fetch)return;d.classList.add('rp-wait');var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json');setTimeout(function(){d.classList.remove('rp-wait')},600)}catch(e){d.classList.remove('rp-wait')}})(document.documentElement);</script>
+<link rel="stylesheet" href="style.css?v=20261021a">
+<script>/* Start the Last.fm and AniList fetches early (used by now.js). */
+(function(){try{if(!window.fetch)return;var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json')}catch(e){}})();</script>
 </head>
 <body>
 <button type="button" class="theme-toggle" id="theme-toggle" style="position:absolute;top:10px;right:10px;width:40px;height:40px;padding:0;border:0" aria-label="Dark theme" aria-pressed="false" title="Toggle dark theme"><svg class="sun" width="18" height="18" style="width:18px;height:18px;display:block" focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><svg class="moon" width="18" height="18" style="width:18px;height:18px;display:none" hidden focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></button>
@@ -23,6 +23,7 @@
     <li><a href="#home" id="t-home">Home</a></li>
     <li><a href="#projects" id="t-projects">Projects</a></li>
     <li><a href="#photography" id="t-photography">Photography</a></li>
+    <li><a href="#now" id="t-now">Now</a></li>
   </ul></nav>
 </header>
 <main>
@@ -49,20 +50,7 @@
       <li><a href="https://www.liverpoolfc.com/" target="_blank" rel="noopener" aria-label="Liverpool FC (opens official site)" title="Liverpool FC"><img src="teams/liverpool.webp" width="94" height="128" alt=""></a></li>
       <li><a href="https://www.nba.com/celtics/" target="_blank" rel="noopener" aria-label="Boston Celtics (opens official site)" title="Boston Celtics"><img src="teams/celtics.webp" width="115" height="128" alt=""></a></li>
     </ul>
-    <div class="now" id="now" hidden>
-      <div class="recent" id="recent" hidden>
-        <p class="recent-label" id="recent-label">Recently played</p>
-        <ul class="recent-list" aria-labelledby="recent-label"></ul>
-      </div>
-      <div class="recent" id="watching" hidden>
-        <p class="recent-label" id="watching-label">Currently watching</p>
-        <ul class="recent-list" aria-labelledby="watching-label"></ul>
-      </div>
-      <div class="recent" id="reading" hidden>
-        <p class="recent-label" id="reading-label">Currently reading</p>
-        <ul class="recent-list" aria-labelledby="reading-label"></ul>
-      </div>
-    </div>
+    <p class="np-line" id="np-line"><a href="#now"><span class="np-k">Last played</span>: <span class="np-v"></span></a></p>
   </section>
   <section id="projects" class="panel" aria-labelledby="h-projects">
     <h2 id="h-projects">Projects</h2>
@@ -97,11 +85,28 @@
       <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close photo viewer">&times;</button>
     </dialog>
   </section>
+  <section id="now" class="panel" aria-labelledby="h-now">
+    <h2 id="h-now">Now</h2>
+    <div class="nw" id="recent" hidden>
+      <h3 class="nw-h" id="recent-h">Recently played</h3>
+      <ul class="cards songs" aria-labelledby="recent-h"></ul>
+    </div>
+    <div class="nw" id="watching" hidden>
+      <h3 class="nw-h" id="watching-h">Currently watching</h3>
+      <ul class="cards shows" aria-labelledby="watching-h"></ul>
+    </div>
+    <div class="nw" id="reading" hidden>
+      <h3 class="nw-h" id="reading-h">Currently reading</h3>
+      <ul class="cards shows" aria-labelledby="reading-h"></ul>
+    </div>
+    <p class="nw-empty" id="nw-empty" hidden>Nothing to show right now.</p>
+    <p class="nw-src">Music from <a href="https://www.last.fm/user/geekslyy" rel="noopener" target="_blank">Last.fm</a>; shows and reading from <a href="https://anilist.co/user/geekslyy/" rel="noopener" target="_blank">AniList</a>. Updated about every 30 minutes.</p>
+  </section>
 </main>
-<script src="config.js?v=20261020g"></script>
-<script src="tabs.js?v=20261020g"></script>
-<script src="photos.js?v=20261020g"></script>
-<script src="now.js?v=20261020g"></script>
-<script src="theme.js?v=20261020g"></script>
+<script src="config.js?v=20261021a"></script>
+<script src="tabs.js?v=20261021a"></script>
+<script src="photos.js?v=20261021a"></script>
+<script src="now.js?v=20261021a"></script>
+<script src="theme.js?v=20261021a"></script>
 </body>
 </html>
