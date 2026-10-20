@@ -82,4 +82,59 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/recent.json
           git commit -m "Update recently played"
-          git push
+          for i in 1 2 3; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 5; done
+          exit 1
+
+  anilist:
+    # Independent of the Last.fm job: no secret needed, and a failure here never touches data/recent.json.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Fetch AniList lists
+        env:
+          ANILIST_USER: geekslyy
+        run: |
+          set -euo pipefail
+          q='query($u:String,$t:MediaType){MediaListCollection(userName:$u,type:$t,status:CURRENT){lists{entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large} format countryOfOrigin}}}}}'
+          for t in ANIME MANGA; do
+            body=$(jq -cn --arg q "$q" --arg u "$ANILIST_USER" --arg t "$t" '{query:$q,variables:{u:$u,t:$t}}')
+            if ! curl -fsS --retry 2 https://graphql.anilist.co -H 'Content-Type: application/json' -H 'Accept: application/json' -d "$body" -o "/tmp/$t.json"; then
+              echo "AniList request for $t failed; leaving data/anilist.json unchanged."; exit 0
+            fi
+            if ! jq -e '.data.MediaListCollection' "/tmp/$t.json" >/dev/null || jq -e '.errors' "/tmp/$t.json" >/dev/null; then
+              echo "AniList returned an error for $t: $(jq -c '.errors // "no data"' "/tmp/$t.json")"; exit 0
+            fi
+          done
+          # Compact, key-stable output so an unchanged list never produces a formatting-only commit.
+          jq -c -n --slurpfile a /tmp/ANIME.json --slurpfile m /tmp/MANGA.json '
+            def good: (. // "") as $u | if ($u | test("^https://")) then $u else null end;
+            def items($d; $unit): [ $d[0].data.MediaListCollection.lists[]?.entries[]? ]
+              | sort_by(-.updatedAt) | .[:4] | map({
+                  id: .media.id,
+                  title: (.media.title.english // .media.title.romaji // ""),
+                  progress: (.progress // 0),
+                  unit: $unit,
+                  url: .media.siteUrl,
+                  cover: ((.media.coverImage.large | good) // (.media.coverImage.medium | good)),
+                  format: .media.format,
+                  country: .media.countryOfOrigin,
+                  updatedAt: .updatedAt });
+            { watching: items($a; "Ep"), reading: items($m; "Ch") }' > /tmp/anilist.json
+          mkdir -p data && cp /tmp/anilist.json data/anilist.json
+          cat data/anilist.json
+
+      - name: Commit if changed
+        run: |
+          git add -N data/anilist.json 2>/dev/null || true
+          if git diff --quiet -- data/anilist.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/anilist.json
+          git commit -m "Update AniList lists"
+          for i in 1 2 3; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 5; done
+          exit 1

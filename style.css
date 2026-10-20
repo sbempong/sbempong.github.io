@@ -50,8 +50,9 @@ h1{margin-bottom:8px}
 main{padding-top:32px}
 @media(min-width:700px) and (min-height:600px){
  .top{padding-top:clamp(48px,calc(46vh - 287px),360px);padding-top:clamp(48px,calc(46dvh - 287px),360px)}
- html.has-recent main{padding-bottom:16px}
- html.has-recent .top{padding-top:clamp(48px,calc(46vh - 287px - var(--rp-shift)),360px);padding-top:clamp(48px,calc(46dvh - 287px - var(--rp-shift)),360px)}
+ html.has-recent main{padding-bottom:0}
+ html.has-recent #home{padding-bottom:0}
+ html.has-recent .top{padding-top:clamp(16px,calc(46vh - 287px - var(--rp-shift)),360px);padding-top:clamp(16px,calc(46dvh - 287px - var(--rp-shift)),360px)}
 }
 @media(max-width:699px){.top{padding-top:64px}}
 .social{list-style:none;margin:24px auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px;max-width:268px}
@@ -94,13 +95,16 @@ main{padding-top:32px}
 .lb-btn:focus-visible{outline:3px solid #e0b26a;outline-offset:2px}
 .lb-prev{left:12px;top:50%;margin-top:-24px}.lb-next{right:12px;top:50%;margin-top:-24px}.lb-close{right:12px;top:12px}
 @media(prefers-reduced-motion:reduce){.ph img{transition:none}}
-:root{--rp-shift:29px}
+:root{--rp-shift:0px}
 html.rp-wait body{visibility:hidden;animation:rp-show 0s 1s forwards}
 @keyframes rp-show{to{visibility:visible}}
-.recent{margin:10px auto 0;max-width:600px}
+.now{margin:10px auto 0;max-width:640px}
+.recent{margin:0 auto;max-width:640px}
+.recent+.recent{margin-top:8px}
+@media(min-width:700px){.recent:not([hidden]){display:grid;grid-template-columns:8.5rem minmax(0,1fr);align-items:center;column-gap:12px}.recent .recent-label{margin:0!important;text-align:right;white-space:nowrap}.recent+.recent{margin-top:4px}.now{margin-top:8px}}
 .recent-label{margin:0 auto 4px!important;line-height:1.2;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);opacity:.75}
 .recent-list{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;max-width:340px}
-@media(min-width:700px){.recent-list{grid-template-columns:repeat(4,minmax(0,1fr));max-width:600px}}
+@media(min-width:700px){.recent-list{grid-template-columns:repeat(4,minmax(0,1fr));max-width:none;margin:0}}
 .recent li{min-width:0}
 .recent .rt{display:flex;align-items:center;gap:8px;min-width:0;text-decoration:none;color:var(--ink-2);border-radius:4px;text-align:left;opacity:.85}
 @media(hover:hover){.recent .rt:hover{opacity:1}}

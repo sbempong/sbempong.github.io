@@ -8,8 +8,8 @@
 <meta name="theme-color" content="#f4efe6">
 <link rel="icon" href="avatar.png">
 <link rel="stylesheet" href="style.css">
-<script>/* Start the Recently played fetch early and hold first paint briefly (max 600 ms) so the layout is settled before anything is shown. */
-(function(d){try{if(!window.fetch)return;d.classList.add('rp-wait');window.__rp=fetch('data/recent.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()});setTimeout(function(){d.classList.remove('rp-wait')},600)}catch(e){d.classList.remove('rp-wait')}})(document.documentElement);</script>
+<script>/* Start the Recently played and AniList fetches early and hold first paint briefly (max 600 ms) so the layout is settled before anything is shown. */
+(function(d){try{if(!window.fetch)return;d.classList.add('rp-wait');var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json');setTimeout(function(){d.classList.remove('rp-wait')},600)}catch(e){d.classList.remove('rp-wait')}})(document.documentElement);</script>
 </head>
 <body>
 <header class="top">
@@ -46,9 +46,19 @@
       <li><a href="https://www.liverpoolfc.com/" target="_blank" rel="noopener" aria-label="Liverpool FC (opens official site)" title="Liverpool FC"><img src="teams/liverpool.webp" width="94" height="128" alt=""></a></li>
       <li><a href="https://www.nba.com/celtics/" target="_blank" rel="noopener" aria-label="Boston Celtics (opens official site)" title="Boston Celtics"><img src="teams/celtics.webp" width="115" height="128" alt=""></a></li>
     </ul>
-    <div class="recent" id="recent" hidden>
-      <p class="recent-label" id="recent-label">Recently played</p>
-      <ul class="recent-list" aria-labelledby="recent-label"></ul>
+    <div class="now" id="now" hidden>
+      <div class="recent" id="recent" hidden>
+        <p class="recent-label" id="recent-label">Recently played</p>
+        <ul class="recent-list" aria-labelledby="recent-label"></ul>
+      </div>
+      <div class="recent" id="watching" hidden>
+        <p class="recent-label" id="watching-label">Currently watching</p>
+        <ul class="recent-list" aria-labelledby="watching-label"></ul>
+      </div>
+      <div class="recent" id="reading" hidden>
+        <p class="recent-label" id="reading-label">Currently reading</p>
+        <ul class="recent-list" aria-labelledby="reading-label"></ul>
+      </div>
     </div>
   </section>
   <section id="projects" class="panel" aria-labelledby="h-projects">
@@ -88,6 +98,6 @@
 <script src="config.js"></script>
 <script src="tabs.js"></script>
 <script src="photos.js"></script>
-<script src="recent.js"></script>
+<script src="now.js"></script>
 </body>
 </html>
