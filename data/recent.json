@@ -1,9 +1,21 @@
 {
   "tracks": [
     {
+      "title": "1995",
+      "artist": "Freddie Gibbs & The Alchemist",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/1995",
+      "nowPlaying": false,
+      "playedAt": "2026-10-20T23:25:06Z"
+    },
+    {
       "title": "Good Morning",
       "artist": "Kanye West",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "album": "Graduation",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
       "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning",
       "nowPlaying": false,
       "playedAt": "2026-10-20T21:43:25Z"
@@ -11,7 +23,9 @@
     {
       "title": "Champagne Wishes",
       "artist": "Statik Selektah, Ab-Soul, Raekwon & Freddie Gibbs",
+      "album": "Champagne Wishes - Single",
       "art": null,
+      "artSmall": null,
       "url": "https://www.last.fm/music/Statik+Selektah,+Ab-Soul,+Raekwon+&+Freddie+Gibbs/_/Champagne+Wishes",
       "nowPlaying": false,
       "playedAt": "2026-10-20T21:31:59Z"
@@ -19,18 +33,12 @@
     {
       "title": "1995",
       "artist": "Freddie Gibbs & The Alchemist",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
       "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/1995",
       "nowPlaying": false,
       "playedAt": "2026-10-20T20:13:12Z"
-    },
-    {
-      "title": "Hoodrat",
-      "artist": "¥$, Kanye West & Ty Dolla $ign",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/112a1a275a048cce3cfdad09d501d2a0.jpg",
-      "url": "https://www.last.fm/music/%C2%A5$,+Kanye+West+&+Ty+Dolla+$ign/_/Hoodrat",
-      "nowPlaying": false,
-      "playedAt": "2026-10-20T13:24:23Z"
     }
   ]
 }
