@@ -8,6 +8,8 @@
 <meta name="theme-color" content="#f4efe6">
 <link rel="icon" href="avatar.png">
 <link rel="stylesheet" href="style.css">
+<script>/* Start the Recently played fetch early and hold first paint briefly (max 600 ms) so the layout is settled before anything is shown. */
+(function(d){try{if(!window.fetch)return;d.classList.add('rp-wait');window.__rp=fetch('data/recent.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()});setTimeout(function(){d.classList.remove('rp-wait')},600)}catch(e){d.classList.remove('rp-wait')}})(document.documentElement);</script>
 </head>
 <body>
 <header class="top">
@@ -44,6 +46,10 @@
       <li><a href="https://www.liverpoolfc.com/" target="_blank" rel="noopener" aria-label="Liverpool FC (opens official site)" title="Liverpool FC"><img src="teams/liverpool.webp" width="94" height="128" alt=""></a></li>
       <li><a href="https://www.nba.com/celtics/" target="_blank" rel="noopener" aria-label="Boston Celtics (opens official site)" title="Boston Celtics"><img src="teams/celtics.webp" width="115" height="128" alt=""></a></li>
     </ul>
+    <div class="recent" id="recent" hidden>
+      <p class="recent-label" id="recent-label">Recently played</p>
+      <ul class="recent-list" aria-labelledby="recent-label"></ul>
+    </div>
   </section>
   <section id="projects" class="panel" aria-labelledby="h-projects">
     <h2 id="h-projects">Projects</h2>
@@ -59,10 +65,7 @@
         <li><h3>gse-stock-prediction</h3><p>Ghana Stock Exchange (GSE) Stock Price Prediction Model.</p><p class="links"><a data-repo="gse-stock-prediction" href="https://github.com/sbempong/gse-stock-prediction">Source code</a></p></li>
         <li><h3>Land-Viability-Checker</h3><p>Obese Land Viability Checker is a Python tool that analyzes soil data and images using machine learning to assess land fertility and suitability for farming in Ghana.</p><p class="links"><a data-repo="Land-Viability-Checker" href="https://github.com/sbempong/Land-Viability-Checker">Source code</a></p></li>
     </ul>
-    <div class="recent" id="recent" hidden>
-      <p class="teams-label" id="recent-label">Recently played</p>
-      <ul class="recent-list" aria-labelledby="recent-label"></ul>
-    </div>
+
   </section>
   <section id="photography" class="panel" aria-labelledby="h-photography">
     <h2 id="h-photography">Photography</h2>
