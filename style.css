@@ -158,11 +158,12 @@ html[data-theme=dark]{color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b
 .teams img{background:var(--crest-bg);border-radius:5px;box-shadow:0 0 0 3px var(--crest-bg)}
 /* theme toggle: out of the layout flow, top-right corner */
 body{position:relative}
-.theme-toggle{position:absolute;top:10px;right:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:transparent;color:var(--ink-2);cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.theme-toggle{position:absolute;top:10px;right:10px;width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:transparent;color:var(--ink-2);cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 @media(hover:hover){.theme-toggle:hover{background:var(--hover)}}
 .theme-toggle:focus{outline:none}
 .theme-toggle:focus-visible{outline:3px solid var(--accent-2);outline-offset:1px}
-.theme-toggle svg{width:20px;height:20px;display:block}
+.theme-toggle svg{width:18px;height:18px;flex:none}
+.theme-toggle::after{content:"";position:absolute;inset:-2px}
 .theme-toggle .moon{display:none}
 html[data-theme=dark] .theme-toggle .sun{display:none}
 html[data-theme=dark] .theme-toggle .moon{display:block}

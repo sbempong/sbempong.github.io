@@ -9,12 +9,12 @@
 <link rel="icon" href="avatar.png">
 <meta name="color-scheme" content="light dark">
 <script>/* Apply a saved theme before first paint (no flash). */try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261020">
 <script>/* Start the Recently played and AniList fetches early and hold first paint briefly (max 600 ms) so the layout is settled before anything is shown. */
 (function(d){try{if(!window.fetch)return;d.classList.add('rp-wait');var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json');setTimeout(function(){d.classList.remove('rp-wait')},600)}catch(e){d.classList.remove('rp-wait')}})(document.documentElement);</script>
 </head>
 <body>
-<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark theme" aria-pressed="false" title="Toggle dark theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></button>
+<button type="button" class="theme-toggle" id="theme-toggle" style="position:absolute;top:10px;right:10px;width:40px;height:40px;padding:0;border:0" aria-label="Dark theme" aria-pressed="false" title="Toggle dark theme"><svg class="sun" width="18" height="18" style="width:18px;height:18px;display:block" focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><svg class="moon" width="18" height="18" style="width:18px;height:18px;display:none" hidden focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></button>
 <header class="top">
   <img class="avatar" src="avatar.png" width="140" height="140" alt="Profile photo of Sylvester Bempong">
   <h1>Sylvester Bempong</h1>
@@ -98,10 +98,10 @@
     </dialog>
   </section>
 </main>
-<script src="config.js"></script>
-<script src="tabs.js"></script>
-<script src="photos.js"></script>
-<script src="now.js"></script>
-<script src="theme.js"></script>
+<script src="config.js?v=20261020"></script>
+<script src="tabs.js?v=20261020"></script>
+<script src="photos.js?v=20261020"></script>
+<script src="now.js?v=20261020"></script>
+<script src="theme.js?v=20261020"></script>
 </body>
 </html>
