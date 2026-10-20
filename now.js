@@ -30,14 +30,23 @@ function block(id,items){var box=document.getElementById(id);if(!box)return 0;va
  items.forEach(function(li){ul.appendChild(li)});ul.dataset.n=items.length;box.hidden=!items.length;return items.length}
 function empty(){var any=['recent','watching','reading'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
 
-function song(t){var li=el('li'),a=el('a','card sc');var href=okUrl(t.url);if(href){a.href=href;a.target='_blank';a.rel='noopener'}else a=el('div','card sc');
- a.appendChild(cover([[t.artSmall,174],[t.art,300]],'(max-width:699px) calc(50vw - 30px), 150px',300,300,'note'));
- var m=el('span','meta');if(t.nowPlaying){var b=el('span','badge','Now playing');m.appendChild(b)}
- m.appendChild(el('span','ti',t.title));m.appendChild(el('span','ar',t.artist));if(t.album)m.appendChild(el('span','al',t.album));
- if(!t.nowPlaying&&t.playedAt){var tm=el('time','when',ago(t.playedAt));tm.dateTime=t.playedAt;m.appendChild(tm)}
+/* album card: cover, album, artist, "N songs", last played (or a Now playing badge with the track) */
+function plural(n,w){return n+' '+w+(n===1?'':'s')}
+function album(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc'):el('div','card sc');if(href){a.href=href;a.target='_blank';a.rel='noopener'}
+ a.appendChild(cover([[x.artSmall,174],[x.art,300]],'(max-width:699px) calc(50vw - 30px), (min-width:700px) 200px',300,300,'note'));
+ var m=el('span','meta');if(x.nowPlaying){m.appendChild(el('span','badge','Now playing'));if(x.nowTrack)m.appendChild(el('span','nt',x.nowTrack))}
+ m.appendChild(el('span','ti',x.album));m.appendChild(el('span','ar',x.artist));
+ var n=Math.max(1,parseInt(x.songs,10)||1);m.appendChild(el('span','al',x.isTrack?'Single track':plural(n,'song')));
+ if(!x.nowPlaying&&x.lastPlayedAt){var tm=el('time','when',ago(x.lastPlayedAt));tm.dateTime=x.lastPlayedAt;m.appendChild(tm)}
  if(href)m.appendChild(sr(' (opens Last.fm in a new tab)'));a.appendChild(m);li.appendChild(a);return li}
-function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist}).slice(0,4);
- block('recent',even(tr).map(song));line(tr[0]);return tr.length}
+/* older data files only have tracks: group them here the same way the workflow does */
+function group(tr){var out=[],by={};tr.forEach(function(t){var k=t.artist.toLowerCase()+'|'+(t.album?'a:'+t.album.toLowerCase():'t:'+t.title.toLowerCase()),g=by[k];
+ if(!g){g=by[k]={album:t.album||t.title,artist:t.artist,isTrack:!t.album,art:t.art,artSmall:t.artSmall,url:t.album?'https://www.last.fm/music/'+encodeURIComponent(t.artist).replace(/%20/g,'+')+'/'+encodeURIComponent(t.album).replace(/%20/g,'+'):t.url,titles:{},lastPlayedAt:t.playedAt,nowPlaying:!!t.nowPlaying,nowTrack:t.nowPlaying?t.title:null};out.push(g)}
+ g.titles[t.title.toLowerCase()]=1;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art});
+ return out.map(function(g){g.songs=Object.keys(g.titles).length;return g})}
+function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist});
+ var al=(d&&Array.isArray(d.albums)?d.albums:group(tr)).filter(function(x){return x&&x.album&&x.artist}).slice(0,6);
+ block('recent',even(al).map(album));line(tr[0]);return al.length}
 
 var uid=0;
 function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Math.max(0,parseInt(m.progress,10)||0),tot=parseInt(m.total,10)||0;
