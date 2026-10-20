@@ -57,7 +57,19 @@ main{padding-top:32px}
 @media(max-width:699px){.top{padding-top:64px}}
 .social{list-style:none;margin:24px auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px;max-width:268px}
 .social a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;color:var(--ink-2)}
-@media(hover:hover){.social a:hover{color:var(--accent);background:rgba(61,90,58,.08)}}
+/* Brand colours (Simple Icons hex) at all times; darkened only where a colour falls below 3:1 on --paper. */
+.social a[data-brand=github],.social a[data-brand=x]{color:var(--ink)}
+.social a[data-brand=email]{color:#EA4335}
+.social a[data-brand=linkedin]{color:#0A66C2}
+.social a[data-brand=huggingface]{color:#B07A00} /* #FFD21E is 1.3:1 on the page background */
+.social a[data-brand=bluesky]{color:#0285FF}
+.social a[data-brand=instagram]{color:#E4405F} /* solid: the gradient's yellow and orange stops fall below 3:1 */
+.social a[data-brand=discord]{color:#5865F2}
+.social a[data-brand=reddit]{color:#E03D00} /* #FF4500 is exactly 3.0:1 here; nudged for margin */
+.social svg{transition:transform .15s ease-out}
+@media(hover:hover){.social a:hover{background:rgba(35,29,23,.06)}.social a:hover svg{transform:translateY(-1px) scale(1.06)}}
+.social a:focus-visible svg{transform:translateY(-1px) scale(1.06)}
+@media(prefers-reduced-motion:reduce){.social svg{transition:none}.social a:hover svg,.social a:focus-visible svg{transform:none}}
 .social a:focus-visible{outline:3px solid var(--accent-2);outline-offset:1px;border-radius:50%}
 .social svg{width:24px;height:24px;display:block}
 #home p{text-align:center;max-width:36rem;margin-left:auto;margin-right:auto}
@@ -67,14 +79,14 @@ main{padding-top:32px}
 @media(max-width:699px){.top{padding-top:48px}main{padding-bottom:24px}.panel{padding-bottom:24px}}
 @media(max-width:699px){.top{padding-top:40px}}
 @media(max-width:699px){.top{padding-top:48px}}
-.teams-label{margin:16px auto 0!important;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);opacity:.75}
+.teams-label{margin:16px auto 0!important;font-size:.75rem;line-height:1.2;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
 .teams{list-style:none;margin:4px auto 0;padding:0;display:flex;justify-content:center;gap:8px}
 .teams a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px}
-.teams img{height:20px;width:auto;filter:grayscale(1);opacity:.55;transition:filter .2s,opacity .2s}
-@media(hover:hover){.teams a:hover img{filter:none;opacity:1}}
-.teams a:focus-visible img{filter:none;opacity:1}
+.teams img{height:20px;width:auto;transition:transform .15s ease-out}
+@media(hover:hover){.teams a:hover img{transform:translateY(-1px) scale(1.08)}}
+.teams a:focus-visible img{transform:translateY(-1px) scale(1.08)}
 .teams a:focus-visible{outline:3px solid var(--accent-2);outline-offset:1px}
-@media(prefers-reduced-motion:reduce){.teams img{transition:none}}
+@media(prefers-reduced-motion:reduce){.teams img{transition:none}.teams a:hover img,.teams a:focus-visible img{transform:none}}
 @media(max-width:699px){.top{padding-top:40px}main{padding-bottom:16px}.panel{padding-bottom:0}}
 .gallery{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 @media(min-width:700px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
@@ -98,25 +110,36 @@ main{padding-top:32px}
 :root{--rp-shift:0px}
 html.rp-wait body{visibility:hidden;animation:rp-show 0s 1s forwards}
 @keyframes rp-show{to{visibility:visible}}
-.now{margin:10px auto 0;max-width:640px}
-.recent{margin:0 auto;max-width:640px}
-.recent+.recent{margin-top:8px}
-@media(min-width:700px){.recent:not([hidden]){display:grid;grid-template-columns:8.5rem minmax(0,1fr);align-items:center;column-gap:12px}.recent .recent-label{margin:0!important;text-align:right;white-space:nowrap}.recent+.recent{margin-top:4px}.now{margin-top:8px}}
-.recent-label{margin:0 auto 4px!important;line-height:1.2;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);opacity:.75}
-.recent-list{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;max-width:340px}
-@media(min-width:700px){.recent-list{grid-template-columns:repeat(4,minmax(0,1fr));max-width:none;margin:0}}
+/* "Now" sections: Recently played, Currently watching, Currently reading.
+   Small label above each section; titles wrap (up to 3 lines) instead of being cut off. */
+.now{margin:12px auto 0;max-width:640px}
+.recent{margin:0 auto;min-width:0}
+.recent+.recent{margin-top:12px}
+.recent-label{margin:0 0 6px!important;font-size:.75rem;line-height:1.2;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:center}
+.recent-list{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;max-width:358px}
 .recent li{min-width:0}
-.recent .rt{display:flex;align-items:center;gap:8px;min-width:0;text-decoration:none;color:var(--ink-2);border-radius:4px;text-align:left;opacity:.85}
-@media(hover:hover){.recent .rt:hover{opacity:1}}
-.recent .rt:focus-visible{opacity:1}
+.recent .rt{display:flex;align-items:flex-start;gap:8px;min-width:0;text-decoration:none;color:var(--ink);border-radius:4px;text-align:left}
 .recent .rt:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
 .recent .art{flex:0 0 34px;display:block;width:34px;height:34px;border-radius:3px;object-fit:cover;background:var(--rule)}
-.recent .art-ph{display:flex;align-items:center;justify-content:center;color:var(--ink-2);opacity:.65}
+.recent .art-ph{display:flex;align-items:center;justify-content:center;color:var(--ink-2)}
 .recent .meta{display:flex;flex-direction:column;min-width:0;line-height:1.25}
-.recent .t,.recent .a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.recent .t{font-size:.74rem;color:var(--ink)}
-.recent .a{font-size:.68rem}
-.recent .np{color:var(--accent);font-size:.6rem;letter-spacing:.04em;text-transform:uppercase}
+.recent .t{font-size:.8125rem;line-height:1.3;padding-bottom:1px;color:var(--ink);overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.recent .a{font-size:.75rem;line-height:1.3;padding-bottom:1px;color:var(--ink-2);overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.recent .np{color:var(--accent);font-size:.75rem}
+@media(hover:hover){.recent .rt:hover .t{text-decoration:underline;text-underline-offset:2px}}
+@media(min-width:700px){
+ /* one line of items on laptop: sections side by side; 1 section shows 4, 2 show 2 each, 3 show the latest of each */
+ .now:not([hidden]){display:flex;justify-content:center;align-items:flex-start;gap:28px}
+ .recent+.recent{margin-top:0}
+ .recent:not([hidden]){flex:0 0 auto}
+ .recent-label{text-align:left}
+ .recent-list{max-width:none;margin:0;display:flex;justify-content:flex-start;gap:8px 16px}
+ .recent li{flex:0 0 var(--iw,146px)}
+ .now[data-n="2"]{--iw:142px}
+ .now[data-n="2"] .recent li:nth-child(n+3){display:none}
+ .now[data-n="3"]{--iw:190px}
+ .now[data-n="3"] .recent li:nth-child(n+2){display:none}
+}
 html{-webkit-tap-highlight-color:transparent}
 .ph,.lb-btn{touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
 #lightbox{touch-action:pan-y}

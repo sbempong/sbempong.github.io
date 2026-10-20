@@ -24,7 +24,7 @@ function tile(o){var li=document.createElement('li'),a=document.createElement(ok
  var t=document.createElement('span');t.className='t';t.textContent=o.line1;var b=document.createElement('span');b.className='a';b.textContent=o.line2;
  if(o.extra){var n=document.createElement('span');n.className='np';n.textContent=o.extra;b.appendChild(n)}
  m.appendChild(t);m.appendChild(b);a.appendChild(m);li.appendChild(a);return li}
-function sync(){document.getElementById('now').hidden=['recent','watching','reading'].every(function(id){return document.getElementById(id).hidden})}
+function sync(){var n=['recent','watching','reading'].filter(function(id){return !document.getElementById(id).hidden}).length,el=document.getElementById('now');el.hidden=!n;el.dataset.n=n}
 function fill(id,items){var box=document.getElementById(id);if(!box)return false;var ul=box.querySelector('ul');ul.textContent='';
  if(!items.length){box.hidden=true;sync();return false}items.forEach(function(o){ul.appendChild(tile(o))});box.hidden=false;sync();return true}
 function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist}).slice(0,4);
