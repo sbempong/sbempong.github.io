@@ -69,3 +69,4 @@ main{padding-top:32px}
 @media(min-width:700px){.social{max-width:none}}
 #home p{text-wrap:balance}
 @media(max-width:699px){.top{padding-top:48px}main{padding-bottom:24px}.panel{padding-bottom:24px}}
+@media(max-width:699px){.top{padding-top:40px}}
