@@ -43,10 +43,31 @@ function recentre(){/* layout is still invisible here: compute the shift from th
  root.classList.add('has-recent');root.style.setProperty('--rp-shift','0px');
  var top=document.querySelector('.avatar').getBoundingClientRect().top+scrollY,bot=document.getElementById('now').getBoundingClientRect().bottom+scrollY,below=innerHeight-bot,r=0.86;
  var d=Math.round((top-r*below)/(1+r));root.style.setProperty('--rp-shift',Math.max(0,d)+'px')}
+
+/* Laptop: with more than one section, show one at a time behind a small centred switcher so the
+   whole Home stack still fits and stays centred; the block keeps the height of its tallest section,
+   so switching never moves anything. Phone shows every section stacked. */
+var IDS=['recent','watching','reading'],NAMES={recent:'Recently played',watching:'Currently watching',reading:'Currently reading'},sw=null,active=null;
+function visible(){return IDS.filter(function(id){return !document.getElementById(id).hidden})}
+function select(id,focus){active=id;IDS.forEach(function(x){var s=document.getElementById(x);s.classList.toggle('off',x!==id)});
+ if(sw)[].forEach.call(sw.querySelectorAll('button'),function(b){var on=b.dataset.for===id;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on&&focus)b.focus()})}
+function layout(){var now=document.getElementById('now'),v=visible();if(sw){sw.remove();sw=null}now.classList.remove('switch');now.style.minHeight='';
+ IDS.forEach(function(x){var s=document.getElementById(x);s.classList.remove('off');s.removeAttribute('role');s.removeAttribute('aria-labelledby')});
+ if(!desk.matches||v.length<2)return;
+ sw=document.createElement('div');sw.className='now-switch';sw.setAttribute('role','tablist');sw.setAttribute('aria-label','Now');
+ v.forEach(function(id){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.id='sw-'+id;b.dataset.for=id;b.textContent=NAMES[id];b.setAttribute('aria-controls',id);
+  b.addEventListener('click',function(){select(id)});sw.appendChild(b);var s=document.getElementById(id);s.setAttribute('role','tabpanel');s.setAttribute('aria-labelledby','sw-'+id)});
+ sw.addEventListener('keydown',function(e){var i=v.indexOf(active),n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:e.key==='Home'?0:e.key==='End'?v.length-1:null;if(n===null)return;e.preventDefault();select(v[(n+v.length)%v.length],true)});
+ now.insertBefore(sw,now.firstChild);now.classList.add('switch');
+ var h=0;v.forEach(function(id){select(id);h=Math.max(h,now.getBoundingClientRect().height)});now.style.minHeight=h+'px';
+ select(v.indexOf(active)>=0?active:v[0])}
+desk.addEventListener&&desk.addEventListener('change',layout);
 var early=true;
 var pm=get('__rp','data/recent.json').then(music).catch(function(){document.getElementById('recent').hidden=true;sync()});
 var pa=get('__al','data/anilist.json').then(anilist).catch(hideAL);
 /* both settled: if still before first paint, centre once and reveal */
-Promise.all([pm,pa]).then(function(){if(early&&root.classList.contains('rp-wait'))recentre();root.classList.remove('rp-wait')});
+Promise.all([pm,pa]).then(function(){layout();if(early&&root.classList.contains('rp-wait'))recentre();root.classList.remove('rp-wait')});
+/* a result that lands after first paint only re-lays the block (it extends downward) */
+pm.then(function(){if(!root.classList.contains('rp-wait'))layout()});pa.then(function(){if(!root.classList.contains('rp-wait'))layout()});
 setTimeout(function(){early=false},600);
 })();
