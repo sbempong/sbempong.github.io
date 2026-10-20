@@ -50,7 +50,7 @@ h1{margin-bottom:8px}
 .tag{margin-bottom:32px}
 main{padding-top:32px}
 @media(min-width:700px) and (min-height:600px){
- .top{padding-top:clamp(48px,calc(46vh - 250px),360px);padding-top:clamp(48px,calc(46dvh - 250px),360px)}
+ .top{padding-top:clamp(48px,calc(46vh - 287px),360px);padding-top:clamp(48px,calc(46dvh - 287px),360px)}
 }
 @media(max-width:699px){.top{padding-top:64px}}
 .social{list-style:none;margin:24px auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px;max-width:268px}
@@ -65,3 +65,11 @@ main{padding-top:32px}
 @media(max-width:699px){.top{padding-top:48px}main{padding-bottom:24px}.panel{padding-bottom:24px}}
 @media(max-width:699px){.top{padding-top:40px}}
 @media(max-width:699px){.top{padding-top:48px}}
+.teams-label{margin:16px auto 0!important;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);opacity:.75}
+.teams{list-style:none;margin:4px auto 0;padding:0;display:flex;justify-content:center;gap:8px}
+.teams a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px}
+.teams img{height:20px;width:auto;filter:grayscale(1);opacity:.55;transition:filter .2s,opacity .2s}
+.teams a:hover img,.teams a:focus-visible img{filter:none;opacity:1}
+.teams a:focus-visible{outline:3px solid var(--accent-2);outline-offset:1px}
+@media(prefers-reduced-motion:reduce){.teams img{transition:none}}
+@media(max-width:699px){.top{padding-top:40px}main{padding-bottom:16px}.panel{padding-bottom:0}}
