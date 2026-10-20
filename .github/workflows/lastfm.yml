@@ -1,0 +1,85 @@
+name: Last.fm recently played
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lastfm-recent
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check configuration
+        id: cfg
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_USER: ${{ vars.LASTFM_USER }}
+        run: |
+          if [ -z "$LASTFM_API_KEY" ] || [ -z "$LASTFM_USER" ]; then
+            echo "LASTFM_API_KEY secret or LASTFM_USER variable is not set; skipping."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out
+        if: steps.cfg.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+
+      - name: Fetch recent tracks
+        if: steps.cfg.outputs.enabled == 'true'
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_USER: ${{ vars.LASTFM_USER }}
+        run: |
+          set -euo pipefail
+          # The key is passed only through curl's --data-urlencode and is never printed.
+          if ! curl -fsS --get "https://ws.audioscrobbler.com/2.0/" \
+              --data-urlencode "method=user.getRecentTracks" \
+              --data-urlencode "user=${LASTFM_USER}" \
+              --data-urlencode "api_key=${LASTFM_API_KEY}" \
+              --data-urlencode "limit=4" \
+              --data-urlencode "format=json" \
+              -o /tmp/raw.json 2>/dev/null; then
+            echo "Last.fm request failed; leaving data/recent.json unchanged."
+            exit 0
+          fi
+          if jq -e '.error' /tmp/raw.json >/dev/null; then
+            echo "Last.fm returned an error: $(jq -r '.message // "unknown"' /tmp/raw.json)"
+            exit 0
+          fi
+          # Art: the 'large' image, else 'medium'. Empty urls and the default star
+          # placeholder (hash 2a96cbd8b46e442fc41c2b86b821562f) count as missing -> null.
+          jq '
+            def good: (. // "") as $u | if ($u == "" or ($u | contains("2a96cbd8b46e442fc41c2b86b821562f"))) then null else $u end;
+            def pick($s): ([.image[]? | select(.size == $s) | .["#text"] | good] | map(select(. != null)) | .[0]);
+            { tracks: [ (.recenttracks.track // []) | (if type == "array" then .[] else . end) | {
+                title: .name,
+                artist: (.artist["#text"] // .artist.name // ""),
+                art: (pick("large") // pick("medium")),
+                url: .url,
+                nowPlaying: ((.["@attr"].nowplaying // "") == "true"),
+                playedAt: (if .date.uts then (.date.uts | tonumber | todate) else null end)
+              } ] | .[:4] }' /tmp/raw.json > /tmp/recent.json
+          mkdir -p data
+          cp /tmp/recent.json data/recent.json
+
+      - name: Commit if changed
+        if: steps.cfg.outputs.enabled == 'true'
+        run: |
+          if git diff --quiet -- data/recent.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recent.json
+          git commit -m "Update recently played"
+          git push
