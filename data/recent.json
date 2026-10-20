@@ -1,36 +1,36 @@
 {
   "tracks": [
     {
-      "title": "c l o s e",
-      "artist": "J. Cole",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/_/c+l+o+s+e",
+      "title": "Good Morning",
+      "artist": "Kanye West",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T01:07:36Z"
+      "playedAt": "2026-10-20T21:43:25Z"
     },
     {
-      "title": "t h e . c l i m b . b a c k",
-      "artist": "J. Cole",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/_/t+h+e+.+c+l+i+m+b+.+b+a+c+k",
+      "title": "Champagne Wishes",
+      "artist": "Statik Selektah, Ab-Soul, Raekwon & Freddie Gibbs",
+      "art": null,
+      "url": "https://www.last.fm/music/Statik+Selektah,+Ab-Soul,+Raekwon+&+Freddie+Gibbs/_/Champagne+Wishes",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T01:04:48Z"
+      "playedAt": "2026-10-20T21:31:59Z"
     },
     {
-      "title": "i n t e r l u d e",
-      "artist": "J. Cole",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/_/i+n+t+e+r+l+u+d+e",
+      "title": "1995",
+      "artist": "Freddie Gibbs & The Alchemist",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/1995",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T00:59:41Z"
+      "playedAt": "2026-10-20T20:13:12Z"
     },
     {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
+      "title": "Hoodrat",
+      "artist": "¥$, Kanye West & Ty Dolla $ign",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/174s/112a1a275a048cce3cfdad09d501d2a0.jpg",
+      "url": "https://www.last.fm/music/%C2%A5$,+Kanye+West+&+Ty+Dolla+$ign/_/Hoodrat",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T00:57:28Z"
+      "playedAt": "2026-10-20T13:24:23Z"
     }
   ]
 }
