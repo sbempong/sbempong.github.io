@@ -151,5 +151,21 @@ html{-webkit-tap-highlight-color:transparent}
 #lightbox .lb-img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;opacity:0;transition:opacity .15s ease-out}
 #lightbox .lb-img.on{opacity:1}
 @media(prefers-reduced-motion:reduce){.lb-stage,#lightbox .lb-img{transition:none}}
+/* Dark theme: follows the system unless a choice is saved (data-theme set by the inline head script). */
+html[data-theme=dark]{color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500}
+@media(prefers-color-scheme:dark){html:not([data-theme=light]){color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500}}
+/* crests: a small light backdrop keeps the dark Vikings and Celtics marks legible in dark mode */
+.teams img{background:var(--crest-bg);border-radius:5px;box-shadow:0 0 0 3px var(--crest-bg)}
+/* theme toggle: out of the layout flow, top-right corner */
+body{position:relative}
+.theme-toggle{position:absolute;top:10px;right:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:transparent;color:var(--ink-2);cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+@media(hover:hover){.theme-toggle:hover{background:var(--hover)}}
+.theme-toggle:focus{outline:none}
+.theme-toggle:focus-visible{outline:3px solid var(--accent-2);outline-offset:1px}
+.theme-toggle svg{width:20px;height:20px;display:block}
+.theme-toggle .moon{display:none}
+html[data-theme=dark] .theme-toggle .sun{display:none}
+html[data-theme=dark] .theme-toggle .moon{display:block}
+@media(prefers-color-scheme:dark){html:not([data-theme]) .theme-toggle .sun{display:none}html:not([data-theme]) .theme-toggle .moon{display:block}}
 /* Item cap per row: 2 on every viewport. Change n+3 to n+5 for 4. */
 .recent li:nth-child(n+3){display:none}
