@@ -59,8 +59,8 @@ function layout(){var now=document.getElementById('now'),v=visible();if(sw){sw.r
   b.addEventListener('click',function(){select(id)});sw.appendChild(b);var s=document.getElementById(id);s.setAttribute('role','tabpanel');s.setAttribute('aria-labelledby','sw-'+id)});
  sw.addEventListener('keydown',function(e){var i=v.indexOf(active),n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:e.key==='Home'?0:e.key==='End'?v.length-1:null;if(n===null)return;e.preventDefault();select(v[(n+v.length)%v.length],true)});
  now.insertBefore(sw,now.firstChild);now.classList.add('switch');
- var h=0;v.forEach(function(id){select(id);h=Math.max(h,now.getBoundingClientRect().height)});now.style.minHeight=h+'px';
- select(v.indexOf(active)>=0?active:v[0])}
+ var keep=active,h=0;v.forEach(function(id){select(id);h=Math.max(h,now.getBoundingClientRect().height)});now.style.minHeight=h+'px';
+ select(v.indexOf(keep)>=0?keep:v[0])}
 var rz;addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(layout,150)});
 var early=true;
 var pm=get('__rp','data/recent.json').then(music).catch(function(){document.getElementById('recent').hidden=true;sync()});
