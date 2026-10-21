@@ -1,7 +1,7 @@
 # Credits
 
 ## Icons
-- Brand icons (GitHub, LinkedIn, X, Hugging Face, Bluesky, Instagram, Discord, Reddit): Simple Icons, https://simpleicons.org, CC0 1.0. Brand names and marks remain trademarks of their owners.
+- Brand icons (GitHub, LinkedIn, X, Hugging Face, Bluesky, Instagram, Discord, Reddit, Substack): Simple Icons, https://simpleicons.org, CC0 1.0. Brand names and marks remain trademarks of their owners.
 - Email icon: Lucide, https://lucide.dev, ISC licence.
 
 ## Team crests ("Teams I follow")

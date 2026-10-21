@@ -1,5 +1,5 @@
 :root{--paper:#f4efe6;--ink:#231d17;--ink-2:#5b5046;--rule:#d9cfbf;--accent:#3d5a3a;--accent-2:#8a5a2b;--sep:#a89a86;--hover:rgba(35,29,23,.06);--crest-bg:transparent;
- --brand-hf:#B07A00;--brand-reddit:#E03D00;
+ --brand-hf:#B07A00;--brand-reddit:#E03D00;--brand-substack:#D9530B;
  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;color-scheme:light;background:var(--paper)}
@@ -63,7 +63,8 @@ main{padding-top:32px}
 .social a[data-brand=bluesky]{color:#0285FF}
 .social a[data-brand=instagram]{color:#E4405F} /* solid: the gradient's yellow and orange stops fall below 3:1 */
 .social a[data-brand=discord]{color:#5865F2}
-.social a[data-brand=reddit]{color:var(--brand-reddit)} /* #FF4500 is exactly 3.0:1 here; nudged for margin */
+.social a[data-brand=reddit]{color:var(--brand-reddit)}
+.social a[data-brand=substack]{color:var(--brand-substack)} /* #FF6719 is 2.5:1 on the light background; darkened in light mode only */ /* #FF4500 is exactly 3.0:1 here; nudged for margin */
 .social svg{transition:transform .15s ease-out}
 @media(hover:hover){.social a:hover{background:var(--hover)}.social a:hover svg{transform:translateY(-1px) scale(1.06)}}
 .social a:focus-visible svg{transform:translateY(-1px) scale(1.06)}
@@ -116,8 +117,8 @@ html{-webkit-tap-highlight-color:transparent}
 #lightbox .lb-img.on{opacity:1}
 @media(prefers-reduced-motion:reduce){.lb-stage,#lightbox .lb-img{transition:none}}
 /* Dark theme: follows the system unless a choice is saved (data-theme set by the inline head script). */
-html[data-theme=dark]{color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500}
-@media(prefers-color-scheme:dark){html:not([data-theme=light]){color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500}}
+html[data-theme=dark]{color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500;--brand-substack:#FF6719}
+@media(prefers-color-scheme:dark){html:not([data-theme=light]){color-scheme:dark;--paper:#171310;--ink:#ece4d8;--ink-2:#b9ad9e;--rule:#3a322a;--accent:#9cc596;--accent-2:#e0b26a;--sep:#6f6355;--hover:rgba(255,255,255,.07);--crest-bg:#efe8dc;--brand-hf:#FFD21E;--brand-reddit:#FF4500;--brand-substack:#FF6719}}
 /* crests: a small light backdrop keeps the dark Vikings and Celtics marks legible in dark mode */
 .teams img{background:var(--crest-bg);border-radius:5px;box-shadow:0 0 0 3px var(--crest-bg)}
 /* theme toggle: out of the layout flow, top-right corner */
