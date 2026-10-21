@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "Shangri La",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Shangri+La",
+      "title": "In The Night (feat. Jorja Smith & Amaarae)",
+      "artist": "Childish Gambino",
+      "album": "Bando Stone and The New World",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/In+The+Night+(feat.+Jorja+Smith+&+Amaarae)",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T23:57:15Z"
+      "playedAt": "2026-10-21T11:17:42Z"
     },
     {
-      "title": "I Still Love H.E.R.",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/I+Still+Love+H.E.R.",
+      "title": "Yoshinoya",
+      "artist": "Childish Gambino",
+      "album": "Bando Stone and The New World",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/Yoshinoya",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T23:54:13Z"
+      "playedAt": "2026-10-21T11:17:42Z"
     },
     {
-      "title": "Feeling",
-      "artist": "Freddie Gibbs, The Alchemist & Larry June",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs,+The+Alchemist+&+Larry+June/_/Feeling",
+      "title": "Real Love",
+      "artist": "Childish Gambino",
+      "album": "Bando Stone and The New World",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/Real+Love",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T23:51:21Z"
+      "playedAt": "2026-10-21T11:13:52Z"
     },
     {
-      "title": "Skinny Suge II",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Skinny+Suge+II",
+      "title": "Got To Be",
+      "artist": "Childish Gambino",
+      "album": "Bando Stone and The New World",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/Got+To+Be",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T23:47:25Z"
+      "playedAt": "2026-10-21T11:11:34Z"
     }
   ],
   "albums": [
+    {
+      "album": "Bando Stone and The New World",
+      "artist": "Childish Gambino",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
+      "url": "https://www.last.fm/music/Childish+Gambino/Bando+Stone+and+The+New+World",
+      "plays": 9,
+      "lastPlayedAt": "2026-10-21T11:17:42Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 9
+    },
+    {
+      "album": "The College Dropout",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
+      "plays": 3,
+      "lastPlayedAt": "2026-10-21T10:47:34Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
     {
       "album": "Alfredo 2",
       "artist": "Freddie Gibbs & The Alchemist",
@@ -49,8 +75,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
       "url": "https://www.last.fm/music/Freddie+Gibbs+%26+The+Alchemist/Alfredo+2",
-      "plays": 10,
-      "lastPlayedAt": "2026-10-20T23:57:15Z",
+      "plays": 19,
+      "lastPlayedAt": "2026-10-21T01:34:32Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 9
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 4
-    },
-    {
-      "album": "The Off-Season",
-      "artist": "J. Cole",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/The+Off-Season",
-      "plays": 4,
-      "lastPlayedAt": "2026-10-20T01:07:36Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
-    },
-    {
-      "album": "HEELS HAVE EYES 2",
-      "artist": "Westside Gunn",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 12,
-      "lastPlayedAt": "2026-10-19T15:20:10Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 12
     }
   ]
 }
