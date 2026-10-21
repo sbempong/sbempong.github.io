@@ -136,7 +136,9 @@ html[data-theme=dark] .theme-toggle .moon{display:block}
 @media(max-width:699px){.top{padding-top:24px}}
 
 /* Home: one reserved line linking to the Now tab (2 lines of space, so loading never shifts anything) */
-.np-line{margin:16px auto 0!important;max-width:30rem;height:2.9em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;font-size:.875rem;line-height:1.45;text-align:center;visibility:hidden}
+/* Home line: wraps in full (no clipping); space for 2 lines is reserved (3 on phones) so late data does not move anything */
+.np-line{margin:16px auto 0!important;max-width:30rem;min-height:2.9em;font-size:.875rem;line-height:1.45;text-align:center;visibility:hidden;overflow-wrap:anywhere;text-wrap:balance}
+@media(max-width:480px){.np-line{min-height:4.35em;margin-top:6px!important}}
 .np-line.on{visibility:visible}
 .np-line a{color:var(--ink-2);text-decoration:none}
 .np-line .np-k{font-weight:600;color:var(--accent)}
@@ -255,14 +257,23 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 .rs-embed object{height:min(1060px,calc(100vh - 140px));min-height:600px}
 .rs-frame img{height:auto}
 .rs-preview{max-width:520px}
-.rs-preview:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px}
+
 .rs-open{display:none}
 @media(max-width:720px){.rs-embed{display:none}.rs-open{display:inline-flex}}
 @media(min-width:721px){.rs-preview{display:none}}
-@media(max-width:400px){.tabs a{padding:0 8px;font-size:.88rem}}
+@media(max-width:440px){.tabs a{padding:0 8px;font-size:.88rem}}
 @media(max-width:350px){.tabs a{padding:0 6px;font-size:.82rem}}
 .rs-btn{position:relative}
 .rs-dl{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--accent);font-weight:600;text-decoration:underline;position:relative}
 .rs-embed .rs-dl{display:flex;justify-content:center;margin:8px auto 0;width:max-content}
 .rs-dl:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px;border-radius:4px}
 @media(min-width:721px){.rs-dl-phone{display:none}.rs-actions{display:none}}
+/* Resume preview (phones, and the fallback when the PDF cannot be embedded): the image opens the PDF; a download icon sits in the top-right corner */
+.rs-frame.rs-preview,.rs-frame.rs-fb{position:relative}
+.rs-fb{border:0;padding:0;max-width:none;background:none}
+.rs-pv-open{display:block;border-radius:4px}
+.rs-pv-open:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px}
+.rs-dlicon{position:absolute;top:14px;right:14px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(32,33,36,.72);color:#fff;-webkit-tap-highlight-color:transparent}
+.rs-fb .rs-dlicon{top:6px;right:6px}
+@media(hover:hover){.rs-dlicon:hover{background:rgba(32,33,36,.88);color:#fff}}
+.rs-dlicon:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px;box-shadow:0 0 0 2px #fff;border-radius:50%}
