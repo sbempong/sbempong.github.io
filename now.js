@@ -124,7 +124,8 @@ function liveAnilist(){if(!LV.anilistUser)return Promise.reject(0);
     total:unit==='Ep'?m.episodes:m.chapters,description:plain(m.description),cover:okUrl(ci.large)||okUrl(ci.medium),coverXL:okUrl(ci.extraLarge),coverSmall:okUrl(ci.medium),updatedAt:x.updatedAt}})}
   return {watching:items(j.data.a,'Ep'),reading:items(j.data.m,'Ch')}})})}
 function liveTrakt(){if(!LV.traktClientId)return Promise.reject(0);var H={headers:{'Content-Type':'application/json','trakt-api-version':'2','trakt-api-key':LV.traktClientId}},U='https://api.trakt.tv/users/'+encodeURIComponent(LV.traktUser)+'/';
- return cached('trakt',function(){return Promise.all([fetchJ(U+'watching?extended=images',H).catch(function(){return null}),fetchJ(U+'history?limit=100&extended=images',H)]).then(function(r){
+ return cached('trakt',function(){var cb='&cb='+Math.floor(Date.now()/TTL);/* Trakt's CDN caches for up to an hour: a per-minute value keeps it fresh */
+  return Promise.all([fetchJ(U+'watching?extended=images'+cb,H).catch(function(){return null}),fetchJ(U+'history?limit=100&extended=images'+cb,H)]).then(function(r){
   function img(m){var i=m&&m.images||{},u=(i.poster||[])[0]||(i.thumb||[])[0];return u?(/^https?:\/\//.test(u)?u.replace(/^http:/,'https:'):'https://'+u):null}
   function card(e,now){var sl=function(o){return (o.ids&&(o.ids.slug||o.ids.trakt))||''};
    if(e.type==='episode'&&e.show)return {key:'show:'+sl(e.show),type:'show',title:e.show.title,year:e.show.year,url:'https://trakt.tv/shows/'+sl(e.show),poster:img(e.show),episode:{season:e.episode.season,number:e.episode.number,title:e.episode.title},watchedAt:now?null:e.watched_at,nowWatching:now};

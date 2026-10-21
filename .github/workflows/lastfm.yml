@@ -192,9 +192,11 @@ jobs:
         run: |
           set -euo pipefail
           t() { curl -fsS --retry 2 -H "Content-Type: application/json" -H "trakt-api-version: 2" -H "trakt-api-key: ${TRAKT_CLIENT_ID}" "https://api.trakt.tv/users/${TRAKT_USER}/$1" 2>/dev/null; }
-          if ! t "history?limit=100&extended=images" > /tmp/history.json; then echo "Trakt history request failed; leaving data/trakt.json unchanged."; exit 0; fi
+          # Trakt sits behind a shared CDN cache (s-maxage 3600); a per-run query value gets fresh data.
+          cb=$(date +%s)
+          if ! t "history?limit=100&extended=images&cb=${cb}" > /tmp/history.json; then echo "Trakt history request failed; leaving data/trakt.json unchanged."; exit 0; fi
           # /watching answers 204 (empty body) when nothing is playing.
-          t "watching?extended=images" > /tmp/watching.json || echo "" > /tmp/watching.json
+          t "watching?extended=images&cb=${cb}" > /tmp/watching.json || echo "" > /tmp/watching.json
           [ -s /tmp/watching.json ] || echo 'null' > /tmp/watching.json
           jq -c -n --slurpfile h /tmp/history.json --slurpfile w /tmp/watching.json '
             def img($m): ([($m.images.poster // [])[0], ($m.images.thumb // [])[0]] | map(select(. != null and . != "")) | .[0]) as $u
