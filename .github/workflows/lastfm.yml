@@ -73,9 +73,10 @@ jobs:
                 nowPlaying: ((.["@attr"].nowplaying // "") == "true"),
                 playedAt: (if .date.uts then (.date.uts | tonumber | todate) else null end)
               } | select(.title != null and .title != "") ] as $t
-            # Albums: group by artist + album (tracks with no album group by title), newest play first.
+            # Albums: group by main artist (before any ", ", " & " or "feat") + album, so featured-artist
+            # variants merge; tracks with no album group by title; newest play first; shortest artist credit shown.
             | ($t | reduce .[] as $x ([];
-                ((($x.artist | ascii_downcase) + "|" + (if $x.album then "a:" + ($x.album | ascii_downcase) else "t:" + ($x.title | ascii_downcase) end))) as $k
+                (((($x.artist | ascii_downcase) | split(", ")[0] | split(" & ")[0] | split(" feat")[0] | split(" ft.")[0]) + "|" + (if $x.album then "a:" + ($x.album | ascii_downcase) else "t:" + ($x.title | ascii_downcase) end))) as $k
                 | (map(.key) | index($k)) as $i
                 | if $i == null then . + [{key: $k, album: ($x.album // $x.title), artist: $x.artist, isTrack: ($x.album == null),
                       art: $x.art, artSmall: $x.artSmall,
@@ -83,6 +84,7 @@ jobs:
                       titles: [$x.title | ascii_downcase], plays: 1, lastPlayedAt: $x.playedAt,
                       nowPlaying: $x.nowPlaying, nowTrack: (if $x.nowPlaying then $x.title else null end)}]
                   else .[$i] |= (.plays += 1 | .titles = ((.titles + [$x.title | ascii_downcase]) | unique)
+                      | .artist = (if ($x.artist | length) < (.artist | length) then $x.artist else .artist end)
                       | .art = (.art // $x.art) | .artSmall = (.artSmall // $x.artSmall) | .lastPlayedAt = (.lastPlayedAt // $x.playedAt)) end)
               | map(.songs = (.titles | length) | del(.key, .titles)) | .[:6]) as $albums
             | { tracks: $t[:4], albums: $albums }' /tmp/raw.json > /tmp/recent.json

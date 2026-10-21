@@ -40,9 +40,9 @@ function album(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc'):el(
  if(!x.nowPlaying&&x.lastPlayedAt){var tm=el('time','when',ago(x.lastPlayedAt));tm.dateTime=x.lastPlayedAt;m.appendChild(tm)}
  if(href)m.appendChild(sr(' (opens Last.fm in a new tab)'));a.appendChild(m);li.appendChild(a);return li}
 /* older data files only have tracks: group them here the same way the workflow does */
-function group(tr){var out=[],by={};tr.forEach(function(t){var k=t.artist.toLowerCase()+'|'+(t.album?'a:'+t.album.toLowerCase():'t:'+t.title.toLowerCase()),g=by[k];
+function group(tr){var out=[],by={};tr.forEach(function(t){var k=t.artist.toLowerCase().split(', ')[0].split(' & ')[0].split(' feat')[0].split(' ft.')[0]+'|'+(t.album?'a:'+t.album.toLowerCase():'t:'+t.title.toLowerCase()),g=by[k];
  if(!g){g=by[k]={album:t.album||t.title,artist:t.artist,isTrack:!t.album,art:t.art,artSmall:t.artSmall,url:t.album?'https://www.last.fm/music/'+encodeURIComponent(t.artist).replace(/%20/g,'+')+'/'+encodeURIComponent(t.album).replace(/%20/g,'+'):t.url,titles:{},lastPlayedAt:t.playedAt,nowPlaying:!!t.nowPlaying,nowTrack:t.nowPlaying?t.title:null};out.push(g)}
- g.titles[t.title.toLowerCase()]=1;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art});
+ g.titles[t.title.toLowerCase()]=1;if(t.artist.length<g.artist.length)g.artist=t.artist;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art});
  return out.map(function(g){g.songs=Object.keys(g.titles).length;return g})}
 function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist});
  var al=(d&&Array.isArray(d.albums)?d.albums:group(tr)).filter(function(x){return x&&x.album&&x.artist}).slice(0,6);
