@@ -1,44 +1,44 @@
 {
   "tracks": [
     {
-      "title": "1995",
+      "title": "Gas Station Sushi",
       "artist": "Freddie Gibbs & The Alchemist",
       "album": "Alfredo 2",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/1995",
-      "nowPlaying": false,
-      "playedAt": "2026-10-20T23:25:06Z"
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Gas+Station+Sushi",
+      "nowPlaying": true,
+      "playedAt": null
     },
     {
-      "title": "Good Morning",
-      "artist": "Kanye West",
-      "album": "Graduation",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning",
-      "nowPlaying": false,
-      "playedAt": "2026-10-20T21:43:25Z"
-    },
-    {
-      "title": "Champagne Wishes",
-      "artist": "Statik Selektah, Ab-Soul, Raekwon & Freddie Gibbs",
-      "album": "Champagne Wishes - Single",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Statik+Selektah,+Ab-Soul,+Raekwon+&+Freddie+Gibbs/_/Champagne+Wishes",
-      "nowPlaying": false,
-      "playedAt": "2026-10-20T21:31:59Z"
-    },
-    {
-      "title": "1995",
+      "title": "Shangri La",
       "artist": "Freddie Gibbs & The Alchemist",
       "album": "Alfredo 2",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/1995",
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Shangri+La",
       "nowPlaying": false,
-      "playedAt": "2026-10-20T20:13:12Z"
+      "playedAt": "2026-10-20T23:57:15Z"
+    },
+    {
+      "title": "I Still Love H.E.R.",
+      "artist": "Freddie Gibbs & The Alchemist",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/I+Still+Love+H.E.R.",
+      "nowPlaying": false,
+      "playedAt": "2026-10-20T23:54:13Z"
+    },
+    {
+      "title": "Feeling",
+      "artist": "Freddie Gibbs, The Alchemist & Larry June",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs,+The+Alchemist+&+Larry+June/_/Feeling",
+      "nowPlaying": false,
+      "playedAt": "2026-10-20T23:51:21Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
       "url": "https://www.last.fm/music/Freddie+Gibbs+%26+The+Alchemist/Alfredo+2",
-      "plays": 2,
-      "lastPlayedAt": "2026-10-20T23:25:06Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
+      "plays": 11,
+      "lastPlayedAt": "2026-10-20T23:57:15Z",
+      "nowPlaying": true,
+      "nowTrack": "Gas Station Sushi",
+      "songs": 10
     },
     {
       "album": "Graduation",
@@ -101,24 +101,24 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
       "url": "https://www.last.fm/music/J.+Cole/The+Off-Season",
-      "plays": 3,
+      "plays": 4,
       "lastPlayedAt": "2026-10-20T01:07:36Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 3
+      "songs": 4
     },
     {
-      "album": "The Off-Season",
-      "artist": "J. Cole, Bas & 6LACK",
+      "album": "HEELS HAVE EYES 2",
+      "artist": "Westside Gunn",
       "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-20T00:57:28Z",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
+      "plays": 12,
+      "lastPlayedAt": "2026-10-19T15:20:10Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 12
     }
   ]
 }
