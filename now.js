@@ -29,7 +29,7 @@ function ago(iso){var t=Date.parse(iso);if(!t)return '';var s=Math.round((t-Date
 function even(a){return a.length>1&&a.length%2?a.slice(0,-1):a}
 function block(id,items){var box=document.getElementById(id);if(!box)return 0;var ul=box.querySelector('ul');ul.textContent='';
  items.forEach(function(li){ul.appendChild(li)});ul.dataset.n=items.length;box.hidden=!items.length;return items.length}
-function empty(){var any=['recent','tv','watching','reading','books'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
+function empty(){var any=['recent','tv','anilist','books'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
 
 /* album card: cover, album, artist, "N songs", last played (or a Now playing badge with the track) */
 function plural(n,w){return n+' '+w+(n===1?'':'s')}
@@ -65,8 +65,9 @@ function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Ma
   if(m.description.length>110){var b=el('button','more','Read more');b.type='button';b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls',p.id);
    b.addEventListener('click',function(){var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Read more'});body.appendChild(b)}}
  c.appendChild(body);li.appendChild(c);return li}
-function media(list,ep){return even((Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,4)).map(function(m){return show(m,ep)})}
-function anilist(d){if(!d||typeof d!=='object')throw 0;block('watching',media(d.watching,true));block('reading',media(d.reading,false))}
+function media(list,ep){return ((Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,4)).map(function(m){return show(m,ep)})}
+/* one section: anime first, then manga and manhwa (newest first within each); even total so no card sits alone */
+function anilist(d){if(!d||typeof d!=='object')throw 0;block('anilist',even(media(d.watching,true).concat(media(d.reading,false))))}
 
 /* Home line: "Now playing: X by Y" or "Last played: X by Y"; the space is reserved in CSS */
 function line(t){var p=document.getElementById('np-line');if(!p||!t)return;var a=p.querySelector('a');
@@ -149,7 +150,7 @@ function feed(name,url,render,live,hide){var shown=null,liveIn=false;
  var pl=live().then(function(d){liveIn=true;var j=JSON.stringify(d);if(j!==shown){render(d);shown=j}document.documentElement.dataset['live'+name.replace(/\W/g,'')]='1'}).catch(function(){});
  return Promise.all([pj,pl])}
 var pm=feed('__rp','data/recent.json',music,liveLastfm,function(){document.getElementById('recent').hidden=true});
-var pa=feed('__al','data/anilist.json',anilist,liveAnilist,function(){['watching','reading'].forEach(function(id){document.getElementById(id).hidden=true})});
+var pa=feed('__al','data/anilist.json',anilist,liveAnilist,function(){document.getElementById('anilist').hidden=true});
 var pt=feed('__tk','data/trakt.json',trakt,liveTrakt,function(){document.getElementById('tv').hidden=true});
 var pb=get('__bk','data/books.json').then(books).catch(function(){document.getElementById('books').hidden=true});
 pm.then(empty);pa.then(empty);pt.then(empty);Promise.all([pm,pa,pt,pb]).then(empty);
