@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "In The Night (feat. Jorja Smith & Amaarae)",
+      "title": "Have Some Love",
       "artist": "Childish Gambino",
-      "album": "Bando Stone and The New World",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/In+The+Night+(feat.+Jorja+Smith+&+Amaarae)",
+      "album": "\"Awaken, My Love!\"",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/Have+Some+Love",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T11:17:42Z"
+      "playedAt": "2026-10-21T17:13:47Z"
     },
     {
-      "title": "Yoshinoya",
+      "title": "Me and Your Mama",
       "artist": "Childish Gambino",
-      "album": "Bando Stone and The New World",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/Yoshinoya",
+      "album": "\"Awaken, My Love!\"",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/Me+and+Your+Mama",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T11:17:42Z"
+      "playedAt": "2026-10-21T17:03:43Z"
     },
     {
-      "title": "Real Love",
+      "title": "No Excuses (feat. Ludwig Göransson & Kamasi Washington)",
       "artist": "Childish Gambino",
       "album": "Bando Stone and The New World",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/Real+Love",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/No+Excuses+(feat.+Ludwig+G%C3%B6ransson+&+Kamasi+Washington)",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T11:13:52Z"
+      "playedAt": "2026-10-21T13:35:36Z"
     },
     {
-      "title": "Got To Be",
+      "title": "No Excuses (feat. Ludwig Göransson & Kamasi Washington)",
       "artist": "Childish Gambino",
       "album": "Bando Stone and The New World",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/Got+To+Be",
+      "url": "https://www.last.fm/music/Childish+Gambino/_/No+Excuses+(feat.+Ludwig+G%C3%B6ransson+&+Kamasi+Washington)",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T11:11:34Z"
+      "playedAt": "2026-10-21T12:53:04Z"
     }
   ],
   "albums": [
+    {
+      "album": "\"Awaken, My Love!\"",
+      "artist": "Childish Gambino",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
+      "url": "https://www.last.fm/music/Childish+Gambino/%22Awaken%2C+My+Love%21%22",
+      "plays": 2,
+      "lastPlayedAt": "2026-10-21T17:13:47Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
     {
       "album": "Bando Stone and The New World",
       "artist": "Childish Gambino",
@@ -49,11 +62,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
       "url": "https://www.last.fm/music/Childish+Gambino/Bando+Stone+and+The+New+World",
-      "plays": 9,
-      "lastPlayedAt": "2026-10-21T11:17:42Z",
+      "plays": 15,
+      "lastPlayedAt": "2026-10-21T13:35:36Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 9
+      "songs": 11
     },
     {
       "album": "The College Dropout",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "VULTURES 1",
-      "artist": "¥$, Kanye West & Ty Dolla $ign",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/112a1a275a048cce3cfdad09d501d2a0.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/112a1a275a048cce3cfdad09d501d2a0.jpg",
-      "url": "https://www.last.fm/music/%C2%A5%24%2C+Kanye+West+%26+Ty+Dolla+%24ign/VULTURES+1",
-      "plays": 4,
-      "lastPlayedAt": "2026-10-20T13:24:23Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
     }
   ]
 }
