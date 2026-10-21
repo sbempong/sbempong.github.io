@@ -1,16 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Gas Station Sushi",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Gas+Station+Sushi",
-      "nowPlaying": true,
-      "playedAt": null
-    },
-    {
       "title": "Shangri La",
       "artist": "Freddie Gibbs & The Alchemist",
       "album": "Alfredo 2",
@@ -39,6 +29,16 @@
       "url": "https://www.last.fm/music/Freddie+Gibbs,+The+Alchemist+&+Larry+June/_/Feeling",
       "nowPlaying": false,
       "playedAt": "2026-10-20T23:51:21Z"
+    },
+    {
+      "title": "Skinny Suge II",
+      "artist": "Freddie Gibbs & The Alchemist",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs+&+The+Alchemist/_/Skinny+Suge+II",
+      "nowPlaying": false,
+      "playedAt": "2026-10-20T23:47:25Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
       "url": "https://www.last.fm/music/Freddie+Gibbs+%26+The+Alchemist/Alfredo+2",
-      "plays": 11,
+      "plays": 10,
       "lastPlayedAt": "2026-10-20T23:57:15Z",
-      "nowPlaying": true,
-      "nowTrack": "Gas Station Sushi",
-      "songs": 10
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 9
     },
     {
       "album": "Graduation",
