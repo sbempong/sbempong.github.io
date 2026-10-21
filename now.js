@@ -1,5 +1,6 @@
 /* "Now" tab: Recently played (data/recent.json, Last.fm) and Currently watching / reading
-   (data/anilist.json, AniList), plus the one-line "Now playing" / "Last played" link on Home.
+   (data/anilist.json, AniList), Movies and TV (data/trakt.json, Trakt), Books (data/books.json,
+   Hardcover), plus the one-line "Now playing" / "Last played" link on Home.
    Each block hides when empty; a missing or broken file hides only its own blocks. The Home line
    keeps a fixed reserved height, so nothing moves when the data lands. No audio. */
 (function(){'use strict';
@@ -28,7 +29,7 @@ function ago(iso){var t=Date.parse(iso);if(!t)return '';var s=Math.round((t-Date
 function even(a){return a.length>1&&a.length%2?a.slice(0,-1):a}
 function block(id,items){var box=document.getElementById(id);if(!box)return 0;var ul=box.querySelector('ul');ul.textContent='';
  items.forEach(function(li){ul.appendChild(li)});ul.dataset.n=items.length;box.hidden=!items.length;return items.length}
-function empty(){var any=['recent','watching','reading'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
+function empty(){var any=['recent','tv','watching','reading','books'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
 
 /* album card: cover, album, artist, "N songs", last played (or a Now playing badge with the track) */
 function plural(n,w){return n+' '+w+(n===1?'':'s')}
@@ -67,7 +68,39 @@ function line(t){var p=document.getElementById('np-line');if(!p||!t)return;var a
  p.querySelector('.np-k').textContent=t.nowPlaying?'Now playing':'Last played';p.querySelector('.np-v').textContent=t.title+' by '+t.artist;a.title=p.textContent;p.classList.add('on')}
 var go=document.querySelector('#np-line a');if(go)go.addEventListener('click',function(e){var tab=document.getElementById('t-now');if(!tab)return;e.preventDefault();tab.click();scrollTo(0,0);document.getElementById('now').focus({preventScroll:true})});
 
+/* Movies and TV (data/trakt.json): one card per show (latest episode) or movie; posters from Trakt */
+function tv(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc tc'):el('div','card sc tc');if(href){a.href=href;a.target='_blank';a.rel='noopener'}
+ a.appendChild(cover([[x.poster,300]],'',300,450,'screen'));var m=el('span','meta');if(x.nowWatching)m.appendChild(el('span','badge','Watching now'));
+ m.appendChild(el('span','ti',x.title+(x.year?' ('+x.year+')':'')));
+ var e=x.episode;m.appendChild(el('span','al',x.type==='movie'?'Movie':e?'Season '+e.season+', episode '+e.number+(e.title?': '+e.title:''):'TV show'));
+ if(!x.nowWatching&&x.watchedAt){var tm=el('time','when',ago(x.watchedAt));tm.dateTime=x.watchedAt;m.appendChild(tm)}
+ if(href)m.appendChild(sr(' (opens Trakt in a new tab)'));a.appendChild(m);li.appendChild(a);return li}
+function trakt(d){if(!d||typeof d!=='object')throw 0;block('tv',even((Array.isArray(d.items)?d.items:[]).filter(function(x){return x&&x.title}).slice(0,6)).map(tv))}
+
+/* Books (data/books.json, Hardcover): reading now as cards, read books grouped by year */
+var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function day(s){var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s||'');return m?(+m[3])+' '+MON[+m[2]-1]+' '+m[1]:''}
+function stars(r){var n=parseFloat(r);if(!(n>0))return null;var s=el('span','rate','\u2605 '+n.toFixed(n%1?1:0));s.setAttribute('aria-label','Rated '+n+' out of 5');s.setAttribute('role','img');return s}
+function bookCard(b){var li=el('li'),c=el('div','card mc'),href=okUrl(b.url);var cv=cover([[b.cover,300]],'',230,345,'book');
+ if(href){var ca=el('a','cvl');ca.href=href;ca.target='_blank';ca.rel='noopener';ca.tabIndex=-1;ca.setAttribute('aria-hidden','true');ca.appendChild(cv);c.appendChild(ca)}else c.appendChild(cv);
+ var body=el('div','meta'),h=el('h5','ti');if(href){var ta=el('a');ta.href=href;ta.target='_blank';ta.rel='noopener';ta.textContent=b.title;ta.appendChild(sr(' (opens Hardcover in a new tab)'));h.appendChild(ta)}else h.textContent=b.title;body.appendChild(h);
+ if(b.author)body.appendChild(el('p','prog',b.author));if(b.startedAt)body.appendChild(el('p','prog','Started '+day(b.startedAt)));var st=stars(b.rating);if(st)body.appendChild(st);
+ c.appendChild(body);li.appendChild(c);return li}
+function bookRow(b){var li=el('li','bk'),href=okUrl(b.url),cv=cover([[b.cover,300]],'',44,66,'book');li.appendChild(cv);var m=el('div','meta');
+ var t=el('span','ti');if(href){var a=el('a');a.href=href;a.target='_blank';a.rel='noopener';a.textContent=b.title;a.appendChild(sr(' (opens Hardcover in a new tab)'));t.appendChild(a)}else t.textContent=b.title;m.appendChild(t);
+ if(b.author)m.appendChild(el('span','ar',b.author));var line=el('span','al');var st=stars(b.rating);if(st)line.appendChild(st);if(b.finishedAt){if(st)line.appendChild(document.createTextNode(' \u00b7 '));line.appendChild(document.createTextNode('Finished '+day(b.finishedAt)))}
+ if(line.childNodes.length)m.appendChild(line);li.appendChild(m);return li}
+function books(d){if(!d||typeof d!=='object')throw 0;var box=document.getElementById('books');
+ var rd=(Array.isArray(d.reading)?d.reading:[]).filter(function(b){return b&&b.title}),yrs=(Array.isArray(d.read)?d.read:[]).filter(function(y){return y&&Array.isArray(y.books)&&y.books.length});
+ var r=document.getElementById('books-reading'),ul=r.querySelector('ul');ul.textContent='';even(rd.slice(0,4)).forEach(function(b){ul.appendChild(bookCard(b))});ul.dataset.n=ul.children.length;r.hidden=!rd.length;
+ var w=document.getElementById('books-read'),ys=w.querySelector('.years');ys.textContent='';
+ yrs.forEach(function(y,i){var dt=el('details','yr');if(i===0)dt.open=true;var su=el('summary');su.appendChild(el('span','y',y.year?String(y.year):'No finish date'));su.appendChild(el('span','n',' '+plural(y.books.length,'book')));dt.appendChild(su);
+  var l=el('ul','bks');y.books.forEach(function(b){if(b&&b.title)l.appendChild(bookRow(b))});dt.appendChild(l);ys.appendChild(dt)});
+ w.hidden=!yrs.length;document.getElementById('books-empty').hidden=!!(rd.length||yrs.length);box.hidden=false}
+
 var pm=get('__rp','data/recent.json').then(music).catch(function(){document.getElementById('recent').hidden=true});
 var pa=get('__al','data/anilist.json').then(anilist).catch(function(){['watching','reading'].forEach(function(id){document.getElementById(id).hidden=true})});
-Promise.all([pm,pa]).then(empty);
+var pt=get('__tk','data/trakt.json').then(trakt).catch(function(){document.getElementById('tv').hidden=true});
+var pb=get('__bk','data/books.json').then(books).catch(function(){document.getElementById('books').hidden=true});
+Promise.all([pm,pa,pt,pb]).then(empty);
 })();

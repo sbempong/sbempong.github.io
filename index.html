@@ -9,7 +9,7 @@
 <link rel="icon" href="avatar.png">
 <meta name="color-scheme" content="light dark">
 <script>/* Apply a saved theme before first paint (no flash). */try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="stylesheet" href="style.css?v=20261021c">
+<link rel="stylesheet" href="style.css?v=20261021d">
 <script>/* Start the Last.fm and AniList fetches early (used by now.js). */
 (function(){try{if(!window.fetch)return;var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json')}catch(e){}})();</script>
 </head>
@@ -91,22 +91,38 @@
       <h3 class="nw-h" id="recent-h">Recently played albums</h3>
       <ul class="cards songs" aria-labelledby="recent-h"></ul>
     </div>
+    <div class="nw" id="tv" hidden>
+      <h3 class="nw-h" id="tv-h">Movies and TV</h3>
+      <ul class="cards songs posters" aria-labelledby="tv-h"></ul>
+    </div>
     <div class="nw" id="watching" hidden>
-      <h3 class="nw-h" id="watching-h">Currently watching</h3>
+      <h3 class="nw-h" id="watching-h">Watching anime</h3>
       <ul class="cards shows" aria-labelledby="watching-h"></ul>
     </div>
     <div class="nw" id="reading" hidden>
-      <h3 class="nw-h" id="reading-h">Currently reading</h3>
+      <h3 class="nw-h" id="reading-h">Reading manga and manhwa</h3>
       <ul class="cards shows" aria-labelledby="reading-h"></ul>
     </div>
+    <div class="nw" id="books" hidden>
+      <h3 class="nw-h" id="books-h">Books</h3>
+      <div id="books-reading" hidden>
+        <h4 class="nw-sub" id="books-reading-h">Reading now</h4>
+        <ul class="cards shows" aria-labelledby="books-reading-h"></ul>
+      </div>
+      <div id="books-read" hidden>
+        <h4 class="nw-sub">Books read, by year</h4>
+        <div class="years"></div>
+      </div>
+      <p class="nw-note" id="books-empty" hidden>No books logged yet. They will show up here as I add them on Hardcover.</p>
+    </div>
     <p class="nw-empty" id="nw-empty" hidden>Nothing to show right now.</p>
-    <p class="nw-src">Music from <a href="https://www.last.fm/user/geekslyy" rel="noopener" target="_blank">Last.fm</a>; shows and reading from <a href="https://anilist.co/user/geekslyy/" rel="noopener" target="_blank">AniList</a>. Updated about every 30 minutes.</p>
+    <p class="nw-src">Music from <a href="https://www.last.fm/user/geekslyy" rel="noopener" target="_blank">Last.fm</a>, movies and TV from <a href="https://trakt.tv/users/geekslyy" rel="noopener" target="_blank">Trakt</a>, anime, manga and manhwa from <a href="https://anilist.co/user/geekslyy/" rel="noopener" target="_blank">AniList</a>, and books from <a href="https://hardcover.app/@geekslyy" rel="noopener" target="_blank">Hardcover</a>. Updated about every 30 minutes.</p>
   </section>
 </main>
-<script src="config.js?v=20261021c"></script>
-<script src="tabs.js?v=20261021c"></script>
-<script src="photos.js?v=20261021c"></script>
-<script src="now.js?v=20261021c"></script>
-<script src="theme.js?v=20261021c"></script>
+<script src="config.js?v=20261021d"></script>
+<script src="tabs.js?v=20261021d"></script>
+<script src="photos.js?v=20261021d"></script>
+<script src="now.js?v=20261021d"></script>
+<script src="theme.js?v=20261021d"></script>
 </body>
 </html>

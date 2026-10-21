@@ -1,4 +1,4 @@
-name: Last.fm recently played
+name: Now feeds (Last.fm, AniList, Trakt, Hardcover)
 
 on:
   schedule:
@@ -166,4 +166,122 @@ jobs:
           git add data/anilist.json
           git commit -m "Update AniList lists"
           for i in 1 2 3; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep 5; done
+          exit 1
+
+  trakt:
+    # Independent: movies and TV from Trakt (Apple TV via Omniphile). Posters come from Trakt's own
+    # extended=images field (media.trakt.tv), so no TMDB key is needed. The client id is never printed.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check configuration
+        id: cfg
+        env:
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+        run: |
+          if [ -z "$TRAKT_CLIENT_ID" ]; then echo "TRAKT_CLIENT_ID secret is not set; skipping."; echo "enabled=false" >> "$GITHUB_OUTPUT"; else echo "enabled=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Check out
+        if: steps.cfg.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+
+      - name: Fetch Trakt watching and history
+        if: steps.cfg.outputs.enabled == 'true'
+        env:
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+          TRAKT_USER: geekslyy
+        run: |
+          set -euo pipefail
+          t() { curl -fsS --retry 2 -H "Content-Type: application/json" -H "trakt-api-version: 2" -H "trakt-api-key: ${TRAKT_CLIENT_ID}" "https://api.trakt.tv/users/${TRAKT_USER}/$1" 2>/dev/null; }
+          if ! t "history?limit=100&extended=images" > /tmp/history.json; then echo "Trakt history request failed; leaving data/trakt.json unchanged."; exit 0; fi
+          # /watching answers 204 (empty body) when nothing is playing.
+          t "watching?extended=images" > /tmp/watching.json || echo "" > /tmp/watching.json
+          [ -s /tmp/watching.json ] || echo 'null' > /tmp/watching.json
+          jq -c -n --slurpfile h /tmp/history.json --slurpfile w /tmp/watching.json '
+            def img($m): ([($m.images.poster // [])[0], ($m.images.thumb // [])[0]] | map(select(. != null and . != "")) | .[0]) as $u
+              | if $u == null then null elif ($u | test("^https?://")) then ($u | sub("^http:"; "https:")) else "https://" + $u end;
+            def card($e; $now): if $e.type == "episode" then {
+                key: ("show:" + ($e.show.ids.slug // ($e.show.ids.trakt | tostring))), type: "show", title: $e.show.title, year: $e.show.year,
+                url: ("https://trakt.tv/shows/" + ($e.show.ids.slug // ($e.show.ids.trakt | tostring))), poster: img($e.show),
+                episode: {season: $e.episode.season, number: $e.episode.number, title: $e.episode.title},
+                watchedAt: (if $now then null else $e.watched_at end), nowWatching: $now }
+              elif $e.type == "movie" then {
+                key: ("movie:" + ($e.movie.ids.slug // ($e.movie.ids.trakt | tostring))), type: "movie", title: $e.movie.title, year: $e.movie.year,
+                url: ("https://trakt.tv/movies/" + ($e.movie.ids.slug // ($e.movie.ids.trakt | tostring))), poster: img($e.movie),
+                episode: null, watchedAt: (if $now then null else $e.watched_at end), nowWatching: $now }
+              else empty end;
+            ([ ($w[0] | if type == "object" then card(.; true) else empty end) ] + [ ($h[0] // [])[] | card(.; false) ])
+            | reduce .[] as $c ([]; if (map(.key) | index($c.key)) == null then . + [$c] else . end)
+            | { items: (.[:6] | map(del(.key))) }' > /tmp/trakt.json
+          mkdir -p data && cp /tmp/trakt.json data/trakt.json
+          jq -c '{items: (.items | length)}' data/trakt.json
+
+      - name: Commit if changed
+        if: steps.cfg.outputs.enabled == 'true'
+        run: |
+          git add -N data/trakt.json 2>/dev/null || true
+          if git diff --quiet -- data/trakt.json; then echo "No change."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trakt.json
+          git commit -m "Update Trakt watching"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep $((i * 5)); done
+          exit 1
+
+  books:
+    # Independent: books from Hardcover. The token is never printed; a value that already starts with
+    # "Bearer" is used as is.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check configuration
+        id: cfg
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+        run: |
+          if [ -z "$HARDCOVER_TOKEN" ]; then echo "HARDCOVER_TOKEN secret is not set; skipping."; echo "enabled=false" >> "$GITHUB_OUTPUT"; else echo "enabled=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Check out
+        if: steps.cfg.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+
+      - name: Fetch Hardcover library
+        if: steps.cfg.outputs.enabled == 'true'
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+          HARDCOVER_USER: geekslyy
+        run: |
+          set -euo pipefail
+          case "$HARDCOVER_TOKEN" in Bearer\ *|bearer\ *) AUTH="$HARDCOVER_TOKEN" ;; *) AUTH="Bearer $HARDCOVER_TOKEN" ;; esac
+          # status_id: 2 = currently reading, 3 = read
+          q='query($u:citext!){users(where:{username:{_eq:$u}},limit:1){user_books(where:{status_id:{_in:[2,3]}},order_by:{updated_at:desc},limit:300){status_id rating updated_at book{title slug image{url} contributions(limit:2){author{name}}} user_book_reads(order_by:{finished_at:desc_nulls_last},limit:1){started_at finished_at}}}}'
+          body=$(jq -cn --arg q "$q" --arg u "$HARDCOVER_USER" '{query:$q,variables:{u:$u}}')
+          if ! curl -fsS --retry 2 https://api.hardcover.app/v1/graphql -H "content-type: application/json" -H "authorization: $AUTH" -d "$body" -o /tmp/hc.json 2>/dev/null; then
+            echo "Hardcover request failed; leaving data/books.json unchanged."; exit 0
+          fi
+          if jq -e '.errors' /tmp/hc.json >/dev/null || ! jq -e '.data.users[0]' /tmp/hc.json >/dev/null; then
+            echo "Hardcover returned an error: $(jq -c '.errors[0].message // "no user"' /tmp/hc.json)"; exit 0
+          fi
+          jq -c '
+            def good: (. // "") as $u | if ($u | test("^https://")) then $u else null end;
+            def b: { title: .book.title, author: ([.book.contributions[]?.author.name | select(. != null)] | join(", ") | if . == "" then null else . end),
+                     cover: (.book.image.url | good), url: (if .book.slug then "https://hardcover.app/books/" + .book.slug else null end),
+                     rating: .rating, startedAt: (.user_book_reads[0].started_at // null), finishedAt: (.user_book_reads[0].finished_at // null) };
+            (.data.users[0].user_books // []) as $all
+            | { reading: [ $all[] | select(.status_id == 2) | b ],
+                read: ([ $all[] | select(.status_id == 3) | b ] | sort_by(.finishedAt // "") | reverse
+                  | group_by(.finishedAt // "" | .[0:4]) | map({ year: (.[0].finishedAt // "" | .[0:4] | if . == "" then null else tonumber end), books: (sort_by(.finishedAt // "") | reverse) })
+                  | sort_by(.year // 0) | reverse) }
+            | .total = (.reading | length) + ([.read[].books | length] | add // 0)' /tmp/hc.json > /tmp/books.json
+          mkdir -p data && cp /tmp/books.json data/books.json
+          jq -c '{reading: (.reading | length), total}' data/books.json
+
+      - name: Commit if changed
+        if: steps.cfg.outputs.enabled == 'true'
+        run: |
+          git add -N data/books.json 2>/dev/null || true
+          if git diff --quiet -- data/books.json; then echo "No change."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/books.json
+          git commit -m "Update books"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep $((i * 5)); done
           exit 1
