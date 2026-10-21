@@ -43,7 +43,7 @@ function album(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc'):el(
 /* older data files only have tracks: group them here the same way the workflow does */
 function group(tr){var out=[],by={};tr.forEach(function(t){var k=t.artist.toLowerCase().split(', ')[0].split(' & ')[0].split(' feat')[0].split(' ft.')[0]+'|'+(t.album?'a:'+t.album.toLowerCase():'t:'+t.title.toLowerCase()),g=by[k];
  if(!g){g=by[k]={album:t.album||t.title,artist:t.artist,isTrack:!t.album,art:t.art,artSmall:t.artSmall,url:t.album?'https://www.last.fm/music/'+encodeURIComponent(t.artist).replace(/%20/g,'+')+'/'+encodeURIComponent(t.album).replace(/%20/g,'+'):t.url,titles:{},lastPlayedAt:t.playedAt,nowPlaying:!!t.nowPlaying,nowTrack:t.nowPlaying?t.title:null};out.push(g)}
- g.titles[t.title.toLowerCase()]=1;if(t.artist.length<g.artist.length)g.artist=t.artist;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art});
+ g.titles[t.title.toLowerCase()]=1;if(t.artist.length<g.artist.length)g.artist=t.artist;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art;g.artSmall=g.artSmall||t.artSmall});
  return out.map(function(g){g.songs=Object.keys(g.titles).length;return g})}
 function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist});
  var al=(d&&Array.isArray(d.albums)?d.albums:group(tr)).filter(function(x){return x&&x.album&&x.artist}).slice(0,6);
@@ -98,9 +98,48 @@ function books(d){if(!d||typeof d!=='object')throw 0;var box=document.getElement
   var l=el('ul','bks');y.books.forEach(function(b){if(b&&b.title)l.appendChild(bookRow(b))});dt.appendChild(l);ys.appendChild(dt)});
  w.hidden=!yrs.length;document.getElementById('books-empty').hidden=!!(rd.length||yrs.length);box.hidden=false}
 
-var pm=get('__rp','data/recent.json').then(music).catch(function(){document.getElementById('recent').hidden=true});
-var pa=get('__al','data/anilist.json').then(anilist).catch(function(){['watching','reading'].forEach(function(id){document.getElementById(id).hidden=true})});
-var pt=get('__tk','data/trakt.json').then(trakt).catch(function(){document.getElementById('tv').hidden=true});
+/* ---- Live layer: paint from the workflow JSON first, then swap in live data from the public APIs.
+   Any live failure (network, CORS, rate limit) silently keeps the JSON. Results are cached in
+   sessionStorage for 60 s to respect rate limits. Hardcover stays JSON-only (its token is private). */
+var LV=(window.SITE_CONFIG||{}).live||{},TTL=60000;
+function cached(name,fn){var k='live:v1:'+name;try{var c=JSON.parse(sessionStorage.getItem(k)||'null');if(c&&Date.now()-c.t<TTL)return Promise.resolve(c.d)}catch(e){}
+ return fn().then(function(d){try{sessionStorage.setItem(k,JSON.stringify({t:Date.now(),d:d}))}catch(e){}return d})}
+function fetchJ(url,opt){var ac=window.AbortController?new AbortController():null,o=opt||{};if(ac){o.signal=ac.signal;setTimeout(function(){ac.abort()},8000)}
+ return fetch(url,o).then(function(r){if(r.status===204)return null;if(!r.ok)throw new Error('http '+r.status);return r.json()})}
+function liveLastfm(){if(!LV.lastfmKey)return Promise.reject(0);
+ return cached('lastfm',function(){return fetchJ('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&format=json&limit=100&user='+encodeURIComponent(LV.lastfmUser)+'&api_key='+encodeURIComponent(LV.lastfmKey)).then(function(j){
+  if(!j||j.error||!j.recenttracks)throw 0;var raw=j.recenttracks.track;raw=Array.isArray(raw)?raw:raw?[raw]:[];
+  var tr=raw.map(function(t){var by={};(t.image||[]).forEach(function(i){if(i&&i.size)by[i.size]=okUrl(i['#text'])});
+   return {title:t.name,artist:(t.artist&&(t.artist['#text']||t.artist.name))||'',album:(t.album&&t.album['#text'])||null,art:by.extralarge||by.large||by.medium||null,artSmall:by.large||by.medium||null,url:t.url,
+    nowPlaying:!!(t['@attr']&&t['@attr'].nowplaying==='true'),playedAt:t.date&&t.date.uts?new Date(t.date.uts*1000).toISOString().replace('.000',''):null}}).filter(function(t){return t.title&&t.artist});
+  return {tracks:tr.slice(0,4),albums:group(tr).slice(0,6)}})})}
+var AQ='entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} episodes chapters description(asHtml:false)}}';
+function plain(d){if(!d)return null;var t=document.createElement('textarea');t.innerHTML=String(d).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]*>/g,'');var s=t.value.replace(/\(Source:[^)]*\)/g,'').replace(/\s+/g,' ').trim();
+ if(!s)return null;return s.length>600?s.slice(0,600).replace(/ \S*$/,'')+'...':s}
+function liveAnilist(){if(!LV.anilistUser)return Promise.reject(0);
+ return cached('anilist',function(){return fetchJ('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+  body:JSON.stringify({query:'query($u:String){a:MediaListCollection(userName:$u,type:ANIME,status:CURRENT){lists{'+AQ+'}} m:MediaListCollection(userName:$u,type:MANGA,status:CURRENT){lists{'+AQ+'}}}',variables:{u:LV.anilistUser}})}).then(function(j){
+  if(!j||j.errors||!j.data)throw 0;function items(c,unit){var e=[];((c&&c.lists)||[]).forEach(function(l){(l.entries||[]).forEach(function(x){e.push(x)})});
+   return e.sort(function(a,b){return b.updatedAt-a.updatedAt}).slice(0,4).map(function(x){var m=x.media,ci=m.coverImage||{};return {id:m.id,title:(m.title&&(m.title.english||m.title.romaji))||'',progress:x.progress||0,unit:unit,url:m.siteUrl,
+    total:unit==='Ep'?m.episodes:m.chapters,description:plain(m.description),cover:okUrl(ci.large)||okUrl(ci.medium),coverXL:okUrl(ci.extraLarge),coverSmall:okUrl(ci.medium),updatedAt:x.updatedAt}})}
+  return {watching:items(j.data.a,'Ep'),reading:items(j.data.m,'Ch')}})})}
+function liveTrakt(){if(!LV.traktClientId)return Promise.reject(0);var H={headers:{'Content-Type':'application/json','trakt-api-version':'2','trakt-api-key':LV.traktClientId}},U='https://api.trakt.tv/users/'+encodeURIComponent(LV.traktUser)+'/';
+ return cached('trakt',function(){return Promise.all([fetchJ(U+'watching?extended=images',H).catch(function(){return null}),fetchJ(U+'history?limit=100&extended=images',H)]).then(function(r){
+  function img(m){var i=m&&m.images||{},u=(i.poster||[])[0]||(i.thumb||[])[0];return u?(/^https?:\/\//.test(u)?u.replace(/^http:/,'https:'):'https://'+u):null}
+  function card(e,now){var sl=function(o){return (o.ids&&(o.ids.slug||o.ids.trakt))||''};
+   if(e.type==='episode'&&e.show)return {key:'show:'+sl(e.show),type:'show',title:e.show.title,year:e.show.year,url:'https://trakt.tv/shows/'+sl(e.show),poster:img(e.show),episode:{season:e.episode.season,number:e.episode.number,title:e.episode.title},watchedAt:now?null:e.watched_at,nowWatching:now};
+   if(e.type==='movie'&&e.movie)return {key:'movie:'+sl(e.movie),type:'movie',title:e.movie.title,year:e.movie.year,url:'https://trakt.tv/movies/'+sl(e.movie),poster:img(e.movie),episode:null,watchedAt:now?null:e.watched_at,nowWatching:now};return null}
+  if(!Array.isArray(r[1]))throw 0;var all=[],seen={};[r[0]&&typeof r[0]==='object'?card(r[0],true):null].concat(r[1].map(function(e){return card(e,false)})).forEach(function(c){if(c&&!seen[c.key]){seen[c.key]=1;delete c.key;all.push(c)}});
+  return {items:all.slice(0,6)}})})}
+
+/* one feed: JSON paints first (unless live already landed), live replaces it when different */
+function feed(name,url,render,live,hide){var shown=null,liveIn=false;
+ var pj=get(name,url).then(function(d){if(liveIn)return;render(d);shown=JSON.stringify(d)}).catch(function(){if(!liveIn)hide()});
+ var pl=live().then(function(d){liveIn=true;var j=JSON.stringify(d);if(j!==shown){render(d);shown=j}document.documentElement.dataset['live'+name.replace(/\W/g,'')]='1'}).catch(function(){});
+ return Promise.all([pj,pl])}
+var pm=feed('__rp','data/recent.json',music,liveLastfm,function(){document.getElementById('recent').hidden=true});
+var pa=feed('__al','data/anilist.json',anilist,liveAnilist,function(){['watching','reading'].forEach(function(id){document.getElementById(id).hidden=true})});
+var pt=feed('__tk','data/trakt.json',trakt,liveTrakt,function(){document.getElementById('tv').hidden=true});
 var pb=get('__bk','data/books.json').then(books).catch(function(){document.getElementById('books').hidden=true});
-Promise.all([pm,pa,pt,pb]).then(empty);
+pm.then(empty);pa.then(empty);pt.then(empty);Promise.all([pm,pa,pt,pb]).then(empty);
 })();
