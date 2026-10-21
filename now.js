@@ -35,7 +35,7 @@ function empty(){var any=['recent','tv','watching','reading','books'].some(funct
 function plural(n,w){return n+' '+w+(n===1?'':'s')}
 function album(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc'):el('div','card sc');if(href){a.href=href;a.target='_blank';a.rel='noopener'}
  a.appendChild(cover([[x.artSmall,174],[x.art,300]],'(max-width:699px) calc(50vw - 30px), (min-width:700px) 200px',300,300,'note'));
- var m=el('span','meta');if(x.nowPlaying){m.appendChild(el('span','badge','Now playing'));if(x.nowTrack)m.appendChild(el('span','nt',x.nowTrack))}
+ var m=el('span','meta');if(x.nowPlaying){var bp=el('span','badge');bp.appendChild(eq());bp.appendChild(document.createTextNode('Now playing'));m.appendChild(bp);if(x.nowTrack)m.appendChild(el('span','nt',x.nowTrack))}
  m.appendChild(el('span','ti',x.album));m.appendChild(el('span','ar',x.artist));
  var n=Math.max(1,parseInt(x.songs,10)||1);m.appendChild(el('span','al',x.isTrack?'Single track':plural(n,'song')));
  if(!x.nowPlaying&&x.lastPlayedAt){var tm=el('time','when',ago(x.lastPlayedAt));tm.dateTime=x.lastPlayedAt;m.appendChild(tm)}
@@ -50,12 +50,17 @@ function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(functio
  block('recent',even(al).map(album));line(tr[0]);return al.length}
 
 var uid=0;
+/* shared green progress bar: role=progressbar with min/max/now and a text label */
+function bar(n,total,label){var b=el('span','bar');b.setAttribute('role','progressbar');b.setAttribute('aria-valuemin','0');b.setAttribute('aria-valuemax',String(total));b.setAttribute('aria-valuenow',String(Math.min(n,total)));b.setAttribute('aria-label',label);
+ var f=el('span');f.style.width=Math.min(100,Math.round(n/total*100))+'%';b.appendChild(f);if(n>=total)b.classList.add('done');return b}
+function eq(){var e=el('span','eq');e.setAttribute('aria-hidden','true');for(var i=0;i<4;i++)e.appendChild(el('i'));return e}
 function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Math.max(0,parseInt(m.progress,10)||0),tot=parseInt(m.total,10)||0;
  var cv=cover([[m.coverSmall,100],[m.cover,230],[m.coverXL,460]],'(max-width:699px) calc(50vw - 30px), 120px',230,326,ep?'screen':'book');
  if(href){var ca=el('a','cvl');ca.href=href;ca.target='_blank';ca.rel='noopener';ca.tabIndex=-1;ca.setAttribute('aria-hidden','true');ca.appendChild(cv);c.appendChild(ca)}else c.appendChild(cv);
  var body=el('div','meta'),h=el('h4','ti');if(href){var ta=el('a');ta.href=href;ta.target='_blank';ta.rel='noopener';ta.textContent=m.title;ta.appendChild(sr(' (opens AniList in a new tab)'));h.appendChild(ta)}else h.textContent=m.title;body.appendChild(h);
- var word=ep?'Episode':'Chapter';body.appendChild(el('p','prog',word+' '+n+(tot?' of '+tot:'')));
- if(tot){var bar=el('span','bar');bar.setAttribute('aria-hidden','true');var f=el('span');f.style.width=Math.min(100,Math.round(n/tot*100))+'%';bar.appendChild(f);body.appendChild(bar)}
+ var word=ep?'Episode':'Chapter',aired=!tot&&ep?parseInt(m.aired,10)||0:0,cap=tot||aired;
+ var txt=word+' '+n+(cap&&n<=cap?' of '+cap+(aired?' aired':''):'');body.appendChild(el('p','prog',txt));
+ if(cap&&n<=cap)body.appendChild(bar(n,cap,'Progress: '+txt));
  if(m.description){var p=el('p','desc',m.description);p.id='desc-'+(++uid);body.appendChild(p);
   if(m.description.length>110){var b=el('button','more','Read more');b.type='button';b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls',p.id);
    b.addEventListener('click',function(){var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Read more'});body.appendChild(b)}}
@@ -70,9 +75,12 @@ var go=document.querySelector('#np-line a');if(go)go.addEventListener('click',fu
 
 /* Movies and TV (data/trakt.json): one card per show (latest episode) or movie; posters from Trakt */
 function tv(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc tc'):el('div','card sc tc');if(href){a.href=href;a.target='_blank';a.rel='noopener'}
- a.appendChild(cover([[x.poster,300]],'',300,450,'screen'));var m=el('span','meta');if(x.nowWatching)m.appendChild(el('span','badge','Watching now'));
+ a.appendChild(cover([[x.poster,300]],'',300,450,'screen'));var m=el('span','meta');if(x.nowWatching){var bw=el('span','badge');bw.appendChild(eq());bw.appendChild(document.createTextNode('Watching now'));m.appendChild(bw)}
  m.appendChild(el('span','ti',x.title+(x.year?' ('+x.year+')':'')));
  var e=x.episode;m.appendChild(el('span','al',x.type==='movie'?'Movie':e?'Season '+e.season+', episode '+e.number+(e.title?': '+e.title:''):'TV show'));
+ var w=parseInt(x.watched,10)||0,ai=parseInt(x.aired,10)||0;
+ if(x.type==='movie'){m.appendChild(el('span','al','Watched'));m.appendChild(bar(1,1,'Progress: watched'))}
+ else if(ai){var c=Math.min(w,ai),lt=c+' of '+plural(ai,'episode');m.appendChild(el('span','al',lt));m.appendChild(bar(c,ai,'Progress: '+lt+' watched'))}
  if(!x.nowWatching&&x.watchedAt){var tm=el('time','when',ago(x.watchedAt));tm.dateTime=x.watchedAt;m.appendChild(tm)}
  if(href)m.appendChild(sr(' (opens Trakt in a new tab)'));a.appendChild(m);li.appendChild(a);return li}
 function trakt(d){if(!d||typeof d!=='object')throw 0;block('tv',even((Array.isArray(d.items)?d.items:[]).filter(function(x){return x&&x.title}).slice(0,6)).map(tv))}
@@ -113,7 +121,7 @@ function liveLastfm(){if(!LV.lastfmKey)return Promise.reject(0);
    return {title:t.name,artist:(t.artist&&(t.artist['#text']||t.artist.name))||'',album:(t.album&&t.album['#text'])||null,art:by.extralarge||by.large||by.medium||null,artSmall:by.large||by.medium||null,url:t.url,
     nowPlaying:!!(t['@attr']&&t['@attr'].nowplaying==='true'),playedAt:t.date&&t.date.uts?new Date(t.date.uts*1000).toISOString().replace('.000',''):null}}).filter(function(t){return t.title&&t.artist});
   return {tracks:tr.slice(0,4),albums:group(tr).slice(0,6)}})})}
-var AQ='entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} episodes chapters description(asHtml:false)}}';
+var AQ='entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} episodes chapters status nextAiringEpisode{episode} description(asHtml:false)}}';
 function plain(d){if(!d)return null;var t=document.createElement('textarea');t.innerHTML=String(d).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]*>/g,'');var s=t.value.replace(/\(Source:[^)]*\)/g,'').replace(/\s+/g,' ').trim();
  if(!s)return null;return s.length>600?s.slice(0,600).replace(/ \S*$/,'')+'...':s}
 function liveAnilist(){if(!LV.anilistUser)return Promise.reject(0);
@@ -121,17 +129,19 @@ function liveAnilist(){if(!LV.anilistUser)return Promise.reject(0);
   body:JSON.stringify({query:'query($u:String){a:MediaListCollection(userName:$u,type:ANIME,status:CURRENT){lists{'+AQ+'}} m:MediaListCollection(userName:$u,type:MANGA,status:CURRENT){lists{'+AQ+'}}}',variables:{u:LV.anilistUser}})}).then(function(j){
   if(!j||j.errors||!j.data)throw 0;function items(c,unit){var e=[];((c&&c.lists)||[]).forEach(function(l){(l.entries||[]).forEach(function(x){e.push(x)})});
    return e.sort(function(a,b){return b.updatedAt-a.updatedAt}).slice(0,4).map(function(x){var m=x.media,ci=m.coverImage||{};return {id:m.id,title:(m.title&&(m.title.english||m.title.romaji))||'',progress:x.progress||0,unit:unit,url:m.siteUrl,
-    total:unit==='Ep'?m.episodes:m.chapters,description:plain(m.description),cover:okUrl(ci.large)||okUrl(ci.medium),coverXL:okUrl(ci.extraLarge),coverSmall:okUrl(ci.medium),updatedAt:x.updatedAt}})}
+    total:unit==='Ep'?m.episodes:m.chapters,aired:unit==='Ep'&&m.episodes==null&&m.nextAiringEpisode&&m.nextAiringEpisode.episode?m.nextAiringEpisode.episode-1:null,status:m.status,description:plain(m.description),cover:okUrl(ci.large)||okUrl(ci.medium),coverXL:okUrl(ci.extraLarge),coverSmall:okUrl(ci.medium),updatedAt:x.updatedAt}})}
   return {watching:items(j.data.a,'Ep'),reading:items(j.data.m,'Ch')}})})}
 function liveTrakt(){if(!LV.traktClientId)return Promise.reject(0);var H={headers:{'Content-Type':'application/json','trakt-api-version':'2','trakt-api-key':LV.traktClientId}},U='https://api.trakt.tv/users/'+encodeURIComponent(LV.traktUser)+'/';
  return cached('trakt',function(){var cb='&cb='+Math.floor(Date.now()/TTL);/* Trakt's CDN caches for up to an hour: a per-minute value keeps it fresh */
-  return Promise.all([fetchJ(U+'watching?extended=images'+cb,H).catch(function(){return null}),fetchJ(U+'history?limit=100&extended=images'+cb,H)]).then(function(r){
+  return Promise.all([fetchJ(U+'watching?extended=images'+cb,H).catch(function(){return null}),fetchJ(U+'history?limit=250&extended=images'+cb,H)]).then(function(r){
   function img(m){var i=m&&m.images||{},u=(i.poster||[])[0]||(i.thumb||[])[0];return u?(/^https?:\/\//.test(u)?u.replace(/^http:/,'https:'):'https://'+u):null}
   function card(e,now){var sl=function(o){return (o.ids&&(o.ids.slug||o.ids.trakt))||''};
    if(e.type==='episode'&&e.show)return {key:'show:'+sl(e.show),type:'show',title:e.show.title,year:e.show.year,url:'https://trakt.tv/shows/'+sl(e.show),poster:img(e.show),episode:{season:e.episode.season,number:e.episode.number,title:e.episode.title},watchedAt:now?null:e.watched_at,nowWatching:now};
    if(e.type==='movie'&&e.movie)return {key:'movie:'+sl(e.movie),type:'movie',title:e.movie.title,year:e.movie.year,url:'https://trakt.tv/movies/'+sl(e.movie),poster:img(e.movie),episode:null,watchedAt:now?null:e.watched_at,nowWatching:now};return null}
   if(!Array.isArray(r[1]))throw 0;var all=[],seen={};[r[0]&&typeof r[0]==='object'?card(r[0],true):null].concat(r[1].map(function(e){return card(e,false)})).forEach(function(c){if(c&&!seen[c.key]){seen[c.key]=1;delete c.key;all.push(c)}});
-  return {items:all.slice(0,6)}})})}
+  var seen2={};r[1].forEach(function(e){if(e.type==='episode'&&e.show&&e.episode&&e.episode.season>0){var k='https://trakt.tv/shows/'+((e.show.ids&&(e.show.ids.slug||e.show.ids.trakt))||'');(seen2[k]=seen2[k]||{})[e.episode.season+'x'+e.episode.number]=1}});
+  var items=all.slice(0,6);items.forEach(function(c){c.watched=c.type==='show'?Object.keys(seen2[c.url]||{}).length:null});
+  return Promise.all(items.map(function(c){if(c.type!=='show')return null;return fetchJ('https://api.trakt.tv/shows/'+c.url.split('/shows/')[1]+'?extended=full'+cb,H).then(function(j){c.aired=j&&j.aired_episodes||null}).catch(function(){c.aired=null})})).then(function(){return {items:items}})})})}
 
 /* one feed: JSON paints first (unless live already landed), live replaces it when different */
 function feed(name,url,render,live,hide){var shown=null,liveIn=false;

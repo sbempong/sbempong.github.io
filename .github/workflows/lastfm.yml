@@ -117,7 +117,7 @@ jobs:
           ANILIST_USER: geekslyy
         run: |
           set -euo pipefail
-          q='query($u:String,$t:MediaType){MediaListCollection(userName:$u,type:$t,status:CURRENT){lists{entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} format countryOfOrigin episodes chapters description(asHtml:false)}}}}}'
+          q='query($u:String,$t:MediaType){MediaListCollection(userName:$u,type:$t,status:CURRENT){lists{entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} format countryOfOrigin episodes chapters status nextAiringEpisode{episode} description(asHtml:false)}}}}}'
           for t in ANIME MANGA; do
             body=$(jq -cn --arg q "$q" --arg u "$ANILIST_USER" --arg t "$t" '{query:$q,variables:{u:$u,t:$t}}')
             if ! curl -fsS --retry 2 https://graphql.anilist.co -H 'Content-Type: application/json' -H 'Accept: application/json' -d "$body" -o "/tmp/$t.json"; then
@@ -143,6 +143,8 @@ jobs:
                   unit: $unit,
                   url: .media.siteUrl,
                   total: (if $unit == "Ep" then .media.episodes else .media.chapters end),
+                  aired: (if $unit == "Ep" and .media.episodes == null and .media.nextAiringEpisode.episode != null then (.media.nextAiringEpisode.episode - 1) else null end),
+                  status: .media.status,
                   description: (desc(.media.description)),
                   cover: ((.media.coverImage.large | good) // (.media.coverImage.medium | good)),
                   coverXL: (.media.coverImage.extraLarge | good),
@@ -191,10 +193,11 @@ jobs:
           TRAKT_USER: geekslyy
         run: |
           set -euo pipefail
-          t() { curl -fsS --retry 2 -H "Content-Type: application/json" -H "trakt-api-version: 2" -H "trakt-api-key: ${TRAKT_CLIENT_ID}" "https://api.trakt.tv/users/${TRAKT_USER}/$1" 2>/dev/null; }
+          api() { curl -fsS --retry 2 -H "Content-Type: application/json" -H "trakt-api-version: 2" -H "trakt-api-key: ${TRAKT_CLIENT_ID}" "https://api.trakt.tv/$1" 2>/dev/null; }
+          t() { api "users/${TRAKT_USER}/$1"; }
           # Trakt sits behind a shared CDN cache (s-maxage 3600); a per-run query value gets fresh data.
           cb=$(date +%s)
-          if ! t "history?limit=100&extended=images&cb=${cb}" > /tmp/history.json; then echo "Trakt history request failed; leaving data/trakt.json unchanged."; exit 0; fi
+          if ! t "history?limit=250&extended=images&cb=${cb}" > /tmp/history.json; then echo "Trakt history request failed; leaving data/trakt.json unchanged."; exit 0; fi
           # /watching answers 204 (empty body) when nothing is playing.
           t "watching?extended=images&cb=${cb}" > /tmp/watching.json || echo "" > /tmp/watching.json
           [ -s /tmp/watching.json ] || echo 'null' > /tmp/watching.json
@@ -213,7 +216,16 @@ jobs:
               else empty end;
             ([ ($w[0] | if type == "object" then card(.; true) else empty end) ] + [ ($h[0] // [])[] | card(.; false) ])
             | reduce .[] as $c ([]; if (map(.key) | index($c.key)) == null then . + [$c] else . end)
-            | { items: (.[:6] | map(del(.key))) }' > /tmp/trakt.json
+            | ([ ($h[0] // [])[] | select(.type == "episode" and .episode.season > 0) | {k: ("show:" + (.show.ids.slug // (.show.ids.trakt | tostring))), e: "\(.episode.season)x\(.episode.number)"} ]
+                | group_by(.k) | map({key: .[0].k, value: (map(.e) | unique | length)}) | from_entries) as $seen
+            | { items: (.[:6] | map(.watched = (if .type == "show" then ($seen[.key] // 0) else null end) | del(.key))) }' > /tmp/trakt.json
+          # Aired episode totals (specials excluded) from the public show summary; progress = watched / aired.
+          echo '{}' > /tmp/aired.json
+          for slug in $(jq -r '.items[] | select(.type == "show") | .url | sub("^https://trakt.tv/shows/"; "")' /tmp/trakt.json); do
+            n=$(api "shows/${slug}?extended=full&cb=${cb}" | jq '.aired_episodes // empty' 2>/dev/null || true)
+            [ -n "$n" ] && jq --arg s "$slug" --argjson n "$n" '. + {($s): $n}' /tmp/aired.json > /tmp/a2.json && mv /tmp/a2.json /tmp/aired.json
+          done
+          jq -c --slurpfile a /tmp/aired.json '.items |= map(if .type == "show" then .aired = ($a[0][(.url | sub("^https://trakt.tv/shows/"; ""))] // null) else . end)' /tmp/trakt.json > /tmp/t2.json && mv /tmp/t2.json /tmp/trakt.json
           mkdir -p data && cp /tmp/trakt.json data/trakt.json
           jq -c '{items: (.items | length)}' data/trakt.json
 

@@ -170,7 +170,9 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 .more{align-self:flex-start;margin-top:2px;padding:6px 0;min-height:32px;border:0;background:none;color:var(--accent);font:600 .8125rem/1.2 var(--sans);cursor:pointer;-webkit-tap-highlight-color:transparent}
 .more:focus{outline:none}
 .nw-empty,.nw-src{text-align:center;font-size:.8125rem;color:var(--ink-2)}
-.nw-src{margin:28px 0 0}
+.nw-src{margin:28px 0 0;font-size:.6875rem;line-height:1.4;color:var(--ink-2);white-space:nowrap}
+.nw-src a{color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2px}
+@media(hover:hover){.nw-src a:hover{color:var(--accent)}}
 @media(min-width:700px){
  .songs{grid-template-columns:repeat(var(--c,4),minmax(0,1fr));gap:16px}
  .songs[data-n="2"]{--c:2;max-width:400px;margin:0 auto}
@@ -214,3 +216,17 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 .bk .ar{font-size:.8125rem;color:var(--ink)}
 .bk .al{font-size:.8125rem;color:var(--ink-2)}
 .cards h5.ti{margin:0}
+
+/* Equaliser (Apple Music style): 4 bars in the accent colour, CSS only, transform-only (compositor, 60 fps) */
+.eq{display:inline-flex;align-items:flex-end;gap:2px;width:14px;height:11px;margin-right:6px;vertical-align:-1px;flex:none}
+.eq i{display:block;width:2px;height:100%;border-radius:1px;background:var(--accent);transform-origin:50% 100%;transform:scaleY(.35);animation:eq 1s ease-in-out infinite alternate;will-change:transform}
+.eq i:nth-child(2){animation-duration:.8s;animation-delay:-.4s}
+.eq i:nth-child(3){animation-duration:1.15s;animation-delay:-.7s}
+.eq i:nth-child(4){animation-duration:.9s;animation-delay:-.2s}
+@keyframes eq{0%{transform:scaleY(.25)}50%{transform:scaleY(1)}100%{transform:scaleY(.45)}}
+.badge .eq{height:9px;width:12px;margin-right:5px;vertical-align:0}
+.badge .eq i{background:var(--paper)}
+.badge{display:inline-flex;align-items:center}
+@media(prefers-reduced-motion:reduce){.eq i{animation:none;transform:scaleY(.6)}.eq i:nth-child(2){transform:scaleY(.9)}.eq i:nth-child(3){transform:scaleY(.45)}.eq i:nth-child(4){transform:scaleY(.75)}}
+.bar.done span{background:var(--accent)}
+.sc .bar{width:70%;align-self:center;margin-top:6px}
