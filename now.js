@@ -154,11 +154,16 @@ function feed(name,url,render,live,hide){var shown=null,liveIn=false;
 /* Swipe rows: native horizontal scroll with snap; on laptops (hover + fine pointer) small previous/next
    buttons that disable at the ends. Smooth scrolling only without reduced motion. */
 var still=window.matchMedia('(prefers-reduced-motion: reduce)');
-function rows(){[].forEach.call(document.querySelectorAll('#now .row'),function(r){if(r.dataset.ready){upd(r);return}r.dataset.ready='1';
+function rows(){[].forEach.call(document.querySelectorAll('#now .row'),function(r){defer(r);if(r.dataset.ready){upd(r);return}r.dataset.ready='1';
  var w=r.parentNode,mk=function(cls,label,dir){var b=el('button','rb '+cls);b.type='button';b.setAttribute('aria-label',label);b.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="'+(dir<0?'M15 18l-6-6 6-6':'M9 18l6-6-6-6')+'"/></svg>';
   b.addEventListener('click',function(){r.scrollBy({left:dir*Math.max(160,r.clientWidth*0.8),behavior:still.matches?'auto':'smooth'})});w.appendChild(b);return b};
  var name=(document.getElementById(r.getAttribute('aria-labelledby'))||{}).textContent||'items';r._p=mk('rb-prev','Previous '+name,-1);r._n=mk('rb-next','Next '+name,1);
- r.addEventListener('scroll',function(){upd(r)},{passive:true});if(window.ResizeObserver)new ResizeObserver(function(){upd(r)}).observe(r);upd(r)})}
+ r.addEventListener('scroll',function(){upd(r)},{passive:true});if(window.ResizeObserver)new ResizeObserver(function(){defer(r);upd(r)}).observe(r);upd(r)})}
+/* covers further along a row wait until the row is scrolled near them (native lazy loading still
+   fetches horizontally off-screen images in some browsers); width/height/aspect-ratio keep the box */
+function defer(row){if(!window.IntersectionObserver)return;var io=row._io||(row._io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target;if(i.dataset.srcset){i.sizes=i.dataset.sizes||'';i.srcset=i.dataset.srcset}if(i.dataset.src)i.src=i.dataset.src;delete i.dataset.src;delete i.dataset.srcset;io.unobserve(i)}})},{root:row,rootMargin:'0px 40% 0px 0px'}));
+ [].forEach.call(row.querySelectorAll('img.cv'),function(i){if(i.dataset.done)return;var b=i.getBoundingClientRect(),rb=row.getBoundingClientRect();if(!rb.width)return;i.dataset.done='1';if(b.left<rb.right+rb.width*0.4)return;
+  if(i.srcset){i.dataset.srcset=i.srcset;i.dataset.sizes=i.sizes;i.removeAttribute('srcset')}i.dataset.src=i.src;i.removeAttribute('src');io.observe(i)})}
 function upd(r){if(!r._p)return;var max=r.scrollWidth-r.clientWidth-2;r._p.disabled=r.scrollLeft<=2;r._n.disabled=r.scrollLeft>=max;r.parentNode.classList.toggle('scrolls',max>0)}
 var rz2;addEventListener('resize',function(){clearTimeout(rz2);rz2=setTimeout(rows,150)});
 var pm=feed('__rp','data/recent.json',music,liveLastfm,function(){document.getElementById('recent').hidden=true});
