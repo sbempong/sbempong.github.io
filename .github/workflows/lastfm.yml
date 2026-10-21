@@ -136,7 +136,7 @@ jobs:
               | gsub("\\(Source:[^)]*\\)"; "") | gsub("\\s+"; " ") | ltrimstr(" ") | rtrimstr(" ")
               | if . == "" then null elif length > 600 then .[:600] | sub(" [^ ]*$"; "") + "..." else . end;
             def items($d; $unit): [ $d[0].data.MediaListCollection.lists[]?.entries[]? ]
-              | sort_by(-.updatedAt) | .[:4] | map({
+              | sort_by(-.updatedAt) | .[:20] | map({
                   id: .media.id,
                   title: (.media.title.english // .media.title.romaji // ""),
                   progress: (.progress // 0),

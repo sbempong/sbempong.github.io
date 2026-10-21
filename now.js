@@ -5,6 +5,7 @@
    keeps a fixed reserved height, so nothing moves when the data lands. No audio. */
 (function(){'use strict';
 if(!window.fetch)return;
+var CAP=6;/* every swipe row shows at most 6 entries, most recent first (page weight) */
 var STAR='2a96cbd8b46e442fc41c2b86b821562f';
 function okUrl(u){return typeof u==='string'&&/^https:\/\//.test(u)&&u.indexOf(STAR)<0?u:null}
 function get(name,url){return window[name]||fetch(url,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})}
@@ -26,15 +27,14 @@ function ago(iso){var t=Date.parse(iso);if(!t)return '';var s=Math.round((t-Date
  u=a<60?['second',s]:a<3600?['minute',Math.round(s/60)]:a<86400?['hour',Math.round(s/3600)]:a<2592000?['day',Math.round(s/86400)]:['month',Math.round(s/2592000)];
  if(a<60)return 'just now';return rtf?rtf.format(u[1],u[0]):Math.abs(u[1])+' '+u[0]+(Math.abs(u[1])===1?'':'s')+' ago'}
 /* phone shows 2 per row: an odd list (over 1) drops its last item so no card sits alone */
-function even(a){return a.length>1&&a.length%2?a.slice(0,-1):a}
 function block(id,items){var box=document.getElementById(id);if(!box)return 0;var ul=box.querySelector('ul');ul.textContent='';
- items.forEach(function(li){ul.appendChild(li)});ul.dataset.n=items.length;box.hidden=!items.length;return items.length}
+ items.forEach(function(li){ul.appendChild(li)});ul.dataset.n=items.length;box.hidden=!items.length;setTimeout(rows,0);return items.length}
 function empty(){var any=['recent','tv','anilist','books'].some(function(id){return !document.getElementById(id).hidden});document.getElementById('nw-empty').hidden=any}
 
 /* album card: cover, album, artist, "N songs", last played (or a Now playing badge with the track) */
 function plural(n,w){return n+' '+w+(n===1?'':'s')}
 function album(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc'):el('div','card sc');if(href){a.href=href;a.target='_blank';a.rel='noopener'}
- a.appendChild(cover([[x.artSmall,174],[x.art,300]],'(max-width:699px) calc(50vw - 30px), (min-width:700px) 200px',300,300,'note'));
+ a.appendChild(cover([[x.artSmall,174],[x.art,300]],'(max-width:699px) 40vw, 172px',300,300,'note'));
  var m=el('span','meta');if(x.nowPlaying){var bp=el('span','badge');bp.appendChild(eq());bp.appendChild(document.createTextNode('Now playing'));m.appendChild(bp);if(x.nowTrack)m.appendChild(el('span','nt',x.nowTrack))}
  m.appendChild(el('span','ti',x.album));m.appendChild(el('span','ar',x.artist));
  var n=Math.max(1,parseInt(x.songs,10)||1);m.appendChild(el('span','al',x.isTrack?'Single track':plural(n,'song')));
@@ -46,8 +46,8 @@ function group(tr){var out=[],by={};tr.forEach(function(t){var k=t.artist.toLowe
  g.titles[t.title.toLowerCase()]=1;if(t.artist.length<g.artist.length)g.artist=t.artist;g.lastPlayedAt=g.lastPlayedAt||t.playedAt;g.art=g.art||t.art;g.artSmall=g.artSmall||t.artSmall});
  return out.map(function(g){g.songs=Object.keys(g.titles).length;return g})}
 function music(d){var tr=(d&&Array.isArray(d.tracks)?d.tracks:[]).filter(function(t){return t&&t.title&&t.artist});
- var al=(d&&Array.isArray(d.albums)?d.albums:group(tr)).filter(function(x){return x&&x.album&&x.artist}).slice(0,6);
- block('recent',even(al).map(album));line(tr[0]);return al.length}
+ var al=(d&&Array.isArray(d.albums)?d.albums:group(tr)).filter(function(x){return x&&x.album&&x.artist}).slice(0,CAP);
+ block('recent',al.map(album));line(tr[0]);return al.length}
 
 var uid=0;
 /* shared green progress bar: role=progressbar with min/max/now and a text label */
@@ -55,7 +55,7 @@ function bar(n,total,label){var b=el('span','bar');b.setAttribute('role','progre
  var f=el('span');f.style.width=Math.min(100,Math.round(n/total*100))+'%';b.appendChild(f);if(n>=total)b.classList.add('done');return b}
 function eq(){var e=el('span','eq');e.setAttribute('aria-hidden','true');for(var i=0;i<4;i++)e.appendChild(el('i'));return e}
 function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Math.max(0,parseInt(m.progress,10)||0),tot=parseInt(m.total,10)||0;
- var cv=cover([[m.coverSmall,100],[m.cover,230],[m.coverXL,460]],'(max-width:699px) calc(50vw - 30px), 120px',230,326,ep?'screen':'book');
+ var cv=cover([[m.coverSmall,100],[m.cover,230],[m.coverXL,460]],'(max-width:699px) 40vw, 172px',230,326,ep?'screen':'book');
  if(href){var ca=el('a','cvl');ca.href=href;ca.target='_blank';ca.rel='noopener';ca.tabIndex=-1;ca.setAttribute('aria-hidden','true');ca.appendChild(cv);c.appendChild(ca)}else c.appendChild(cv);
  var body=el('div','meta'),h=el('h4','ti');if(href){var ta=el('a');ta.href=href;ta.target='_blank';ta.rel='noopener';ta.textContent=m.title;ta.appendChild(sr(' (opens AniList in a new tab)'));h.appendChild(ta)}else h.textContent=m.title;body.appendChild(h);
  var word=ep?'Episode':'Chapter',aired=!tot&&ep?parseInt(m.aired,10)||0:0,cap=tot||aired;
@@ -65,13 +65,11 @@ function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Ma
   if(m.description.length>110){var b=el('button','more','Read more');b.type='button';b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls',p.id);
    b.addEventListener('click',function(){var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Read more'});body.appendChild(b)}}
  c.appendChild(body);li.appendChild(c);return li}
-function media(list,ep){return (Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,4).map(function(m){return {m:m,ep:ep}})}
+function media(list,ep){return (Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,20).map(function(m){return {m:m,ep:ep}})}
 /* one section: anime first, then manga and manhwa (newest first within each); even total so no card sits alone */
-/* odd total: drop the least recently updated entry (not simply the last one, which is always manga),
-   so a newly added title is never the one hidden */
-function anilist(d){if(!d||typeof d!=='object')throw 0;var all=media(d.watching,true).concat(media(d.reading,false));
- if(all.length>1&&all.length%2){var k=0;all.forEach(function(x,i){if((x.m.updatedAt||0)<(all[k].m.updatedAt||0))k=i});all.splice(k,1)}
- block('anilist',all.map(function(x){return show(x.m,x.ep)}))}
+/* one row: the CAP most recently updated entries, shown anime first, then manga and manhwa, newest first within each */
+function anilist(d){if(!d||typeof d!=='object')throw 0;var all=media(d.watching,true).concat(media(d.reading,false)),keep=all.slice().sort(function(a,b){return (b.m.updatedAt||0)-(a.m.updatedAt||0)}).slice(0,CAP);
+ block('anilist',all.filter(function(x){return keep.indexOf(x)>=0}).map(function(x){return show(x.m,x.ep)}))}
 
 /* Home line: "Now playing: X by Y" or "Last played: X by Y"; the space is reserved in CSS */
 function line(t){var p=document.getElementById('np-line');if(!p||!t)return;var a=p.querySelector('a');
@@ -88,7 +86,7 @@ function tv(x){var li=el('li'),href=okUrl(x.url),a=href?el('a','card sc tc'):el(
  else if(ai){var c=Math.min(w,ai),lt=c+' of '+plural(ai,'episode');m.appendChild(el('span','al',lt));m.appendChild(bar(c,ai,'Progress: '+lt+' watched'))}
  if(!x.nowWatching&&x.watchedAt){var tm=el('time','when',ago(x.watchedAt));tm.dateTime=x.watchedAt;m.appendChild(tm)}
  if(href)m.appendChild(sr(' (opens Trakt in a new tab)'));a.appendChild(m);li.appendChild(a);return li}
-function trakt(d){if(!d||typeof d!=='object')throw 0;block('tv',even((Array.isArray(d.items)?d.items:[]).filter(function(x){return x&&x.title}).slice(0,6)).map(tv))}
+function trakt(d){if(!d||typeof d!=='object')throw 0;block('tv',(Array.isArray(d.items)?d.items:[]).filter(function(x){return x&&x.title}).slice(0,CAP).map(tv))}
 
 /* Books (data/books.json, Hardcover): reading now as cards, read books grouped by year */
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -105,7 +103,7 @@ function bookRow(b){var li=el('li','bk'),href=okUrl(b.url),cv=cover([[b.cover,30
  if(line.childNodes.length)m.appendChild(line);li.appendChild(m);return li}
 function books(d){if(!d||typeof d!=='object')throw 0;var box=document.getElementById('books');
  var rd=(Array.isArray(d.reading)?d.reading:[]).filter(function(b){return b&&b.title}),yrs=(Array.isArray(d.read)?d.read:[]).filter(function(y){return y&&Array.isArray(y.books)&&y.books.length});
- var r=document.getElementById('books-reading'),ul=r.querySelector('ul');ul.textContent='';even(rd.slice(0,4)).forEach(function(b){ul.appendChild(bookCard(b))});ul.dataset.n=ul.children.length;r.hidden=!rd.length;
+ var r=document.getElementById('books-reading'),ul=r.querySelector('ul');ul.textContent='';rd.slice(0,CAP).forEach(function(b){ul.appendChild(bookCard(b))});ul.dataset.n=ul.children.length;r.hidden=!rd.length;setTimeout(rows,0);
  var w=document.getElementById('books-read'),ys=w.querySelector('.years');ys.textContent='';
  yrs.forEach(function(y,i){var dt=el('details','yr');if(i===0)dt.open=true;var su=el('summary');su.appendChild(el('span','y',y.year?String(y.year):'No finish date'));su.appendChild(el('span','n',' '+plural(y.books.length,'book')));dt.appendChild(su);
   var l=el('ul','bks');y.books.forEach(function(b){if(b&&b.title)l.appendChild(bookRow(b))});dt.appendChild(l);ys.appendChild(dt)});
@@ -125,7 +123,7 @@ function liveLastfm(){if(!LV.lastfmKey)return Promise.reject(0);
   var tr=raw.map(function(t){var by={};(t.image||[]).forEach(function(i){if(i&&i.size)by[i.size]=okUrl(i['#text'])});
    return {title:t.name,artist:(t.artist&&(t.artist['#text']||t.artist.name))||'',album:(t.album&&t.album['#text'])||null,art:by.extralarge||by.large||by.medium||null,artSmall:by.large||by.medium||null,url:t.url,
     nowPlaying:!!(t['@attr']&&t['@attr'].nowplaying==='true'),playedAt:t.date&&t.date.uts?new Date(t.date.uts*1000).toISOString().replace('.000',''):null}}).filter(function(t){return t.title&&t.artist});
-  return {tracks:tr.slice(0,4),albums:group(tr).slice(0,6)}})})}
+  return {tracks:tr.slice(0,4),albums:group(tr).slice(0,10)}})})}
 var AQ='entries{progress updatedAt media{id siteUrl title{english romaji} coverImage{medium large extraLarge} episodes chapters status nextAiringEpisode{episode} description(asHtml:false)}}';
 function plain(d){if(!d)return null;var t=document.createElement('textarea');t.innerHTML=String(d).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]*>/g,'');var s=t.value.replace(/\(Source:[^)]*\)/g,'').replace(/\s+/g,' ').trim();
  if(!s)return null;return s.length>600?s.slice(0,600).replace(/ \S*$/,'')+'...':s}
@@ -133,7 +131,7 @@ function liveAnilist(){if(!LV.anilistUser)return Promise.reject(0);
  return cached('anilist',function(){return fetchJ('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
   body:JSON.stringify({query:'query($u:String){a:MediaListCollection(userName:$u,type:ANIME,status:CURRENT){lists{'+AQ+'}} m:MediaListCollection(userName:$u,type:MANGA,status:CURRENT){lists{'+AQ+'}}}',variables:{u:LV.anilistUser}})}).then(function(j){
   if(!j||j.errors||!j.data)throw 0;function items(c,unit){var e=[];((c&&c.lists)||[]).forEach(function(l){(l.entries||[]).forEach(function(x){e.push(x)})});
-   return e.sort(function(a,b){return b.updatedAt-a.updatedAt}).slice(0,4).map(function(x){var m=x.media,ci=m.coverImage||{};return {id:m.id,title:(m.title&&(m.title.english||m.title.romaji))||'',progress:x.progress||0,unit:unit,url:m.siteUrl,
+   return e.sort(function(a,b){return b.updatedAt-a.updatedAt}).slice(0,20).map(function(x){var m=x.media,ci=m.coverImage||{};return {id:m.id,title:(m.title&&(m.title.english||m.title.romaji))||'',progress:x.progress||0,unit:unit,url:m.siteUrl,
     total:unit==='Ep'?m.episodes:m.chapters,aired:unit==='Ep'&&m.episodes==null&&m.nextAiringEpisode&&m.nextAiringEpisode.episode?m.nextAiringEpisode.episode-1:null,status:m.status,description:plain(m.description),cover:okUrl(ci.large)||okUrl(ci.medium),coverXL:okUrl(ci.extraLarge),coverSmall:okUrl(ci.medium),updatedAt:x.updatedAt}})}
   return {watching:items(j.data.a,'Ep'),reading:items(j.data.m,'Ch')}})})}
 function liveTrakt(){if(!LV.traktClientId)return Promise.reject(0);var H={headers:{'Content-Type':'application/json','trakt-api-version':'2','trakt-api-key':LV.traktClientId}},U='https://api.trakt.tv/users/'+encodeURIComponent(LV.traktUser)+'/';
@@ -145,7 +143,7 @@ function liveTrakt(){if(!LV.traktClientId)return Promise.reject(0);var H={header
    if(e.type==='movie'&&e.movie)return {key:'movie:'+sl(e.movie),type:'movie',title:e.movie.title,year:e.movie.year,url:'https://trakt.tv/movies/'+sl(e.movie),poster:img(e.movie),episode:null,watchedAt:now?null:e.watched_at,nowWatching:now};return null}
   if(!Array.isArray(r[1]))throw 0;var all=[],seen={};[r[0]&&typeof r[0]==='object'?card(r[0],true):null].concat(r[1].map(function(e){return card(e,false)})).forEach(function(c){if(c&&!seen[c.key]){seen[c.key]=1;delete c.key;all.push(c)}});
   var seen2={};r[1].forEach(function(e){if(e.type==='episode'&&e.show&&e.episode&&e.episode.season>0){var k='https://trakt.tv/shows/'+((e.show.ids&&(e.show.ids.slug||e.show.ids.trakt))||'');(seen2[k]=seen2[k]||{})[e.episode.season+'x'+e.episode.number]=1}});
-  var items=all.slice(0,6);items.forEach(function(c){c.watched=c.type==='show'?Object.keys(seen2[c.url]||{}).length:null});
+  var items=all.slice(0,10);items.forEach(function(c){c.watched=c.type==='show'?Object.keys(seen2[c.url]||{}).length:null});
   return Promise.all(items.map(function(c){if(c.type!=='show')return null;return fetchJ('https://api.trakt.tv/shows/'+c.url.split('/shows/')[1]+'?extended=full'+cb,H).then(function(j){c.aired=j&&j.aired_episodes||null}).catch(function(){c.aired=null})})).then(function(){return {items:items}})})})}
 
 /* one feed: JSON paints first (unless live already landed), live replaces it when different */
@@ -153,6 +151,16 @@ function feed(name,url,render,live,hide){var shown=null,liveIn=false;
  var pj=get(name,url).then(function(d){if(liveIn)return;render(d);shown=JSON.stringify(d)}).catch(function(){if(!liveIn)hide()});
  var pl=live().then(function(d){liveIn=true;var j=JSON.stringify(d);if(j!==shown){render(d);shown=j}document.documentElement.dataset['live'+name.replace(/\W/g,'')]='1'}).catch(function(){});
  return Promise.all([pj,pl])}
+/* Swipe rows: native horizontal scroll with snap; on laptops (hover + fine pointer) small previous/next
+   buttons that disable at the ends. Smooth scrolling only without reduced motion. */
+var still=window.matchMedia('(prefers-reduced-motion: reduce)');
+function rows(){[].forEach.call(document.querySelectorAll('#now .row'),function(r){if(r.dataset.ready){upd(r);return}r.dataset.ready='1';
+ var w=r.parentNode,mk=function(cls,label,dir){var b=el('button','rb '+cls);b.type='button';b.setAttribute('aria-label',label);b.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="'+(dir<0?'M15 18l-6-6 6-6':'M9 18l6-6-6-6')+'"/></svg>';
+  b.addEventListener('click',function(){r.scrollBy({left:dir*Math.max(160,r.clientWidth*0.8),behavior:still.matches?'auto':'smooth'})});w.appendChild(b);return b};
+ var name=(document.getElementById(r.getAttribute('aria-labelledby'))||{}).textContent||'items';r._p=mk('rb-prev','Previous '+name,-1);r._n=mk('rb-next','Next '+name,1);
+ r.addEventListener('scroll',function(){upd(r)},{passive:true});if(window.ResizeObserver)new ResizeObserver(function(){upd(r)}).observe(r);upd(r)})}
+function upd(r){if(!r._p)return;var max=r.scrollWidth-r.clientWidth-2;r._p.disabled=r.scrollLeft<=2;r._n.disabled=r.scrollLeft>=max;r.parentNode.classList.toggle('scrolls',max>0)}
+var rz2;addEventListener('resize',function(){clearTimeout(rz2);rz2=setTimeout(rows,150)});
 var pm=feed('__rp','data/recent.json',music,liveLastfm,function(){document.getElementById('recent').hidden=true});
 var pa=feed('__al','data/anilist.json',anilist,liveAnilist,function(){document.getElementById('anilist').hidden=true});
 var pt=feed('__tk','data/trakt.json',trakt,liveTrakt,function(){document.getElementById('tv').hidden=true});

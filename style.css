@@ -146,7 +146,6 @@ html[data-theme=dark] .theme-toggle .moon{display:block}
 .nw+.nw{margin-top:28px}
 .nw-h{margin:0 0 12px;font:600 .75rem/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:center}
 .cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.cards[data-n="1"]{grid-template-columns:minmax(0,min(100%,260px));justify-content:center}
 .card{display:flex;flex-direction:column;gap:8px;height:100%;color:var(--ink);text-decoration:none;border-radius:6px}
 a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px}
 .cv{display:block;width:100%;height:auto;border-radius:4px;background:var(--rule);object-fit:cover}
@@ -174,13 +173,6 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 .nw-src a{color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2px}
 @media(hover:hover){.nw-src a:hover{color:var(--accent)}}
 @media(min-width:700px){
- .songs{grid-template-columns:repeat(var(--c,4),minmax(0,1fr));gap:16px}
- .songs[data-n="2"]{--c:2;max-width:400px;margin:0 auto}
- .songs[data-n="6"]{--c:3;max-width:600px;margin:0 auto}
- .songs[data-n="1"]{--c:1;max-width:200px;margin:0 auto}
- .shows{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
- .shows .mc{flex-direction:row;gap:14px}
- .shows .cvl,.shows .mc>.cv{flex:0 0 120px;width:120px}
 }
 /* Home fits on the first phone screen (390x844): a slightly smaller photo and tighter gaps on phones */
 @media(max-width:699px){.avatar{width:112px;height:112px;margin-bottom:18px}.tag{margin-bottom:24px}}
@@ -230,3 +222,23 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 @media(prefers-reduced-motion:reduce){.eq i{animation:none;transform:scaleY(.6)}.eq i:nth-child(2){transform:scaleY(.9)}.eq i:nth-child(3){transform:scaleY(.45)}.eq i:nth-child(4){transform:scaleY(.75)}}
 .bar.done span{background:var(--accent)}
 .sc .bar{width:70%;align-self:center;margin-top:6px}
+
+/* Swipe rows (Now tab): horizontal scroll-snap strips; the next card peeks in at the edge */
+.row-wrap{position:relative;margin:0 -16px}
+.row{position:relative;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding:0 16px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0 6px}
+.row::-webkit-scrollbar{display:none}
+.row:focus{outline:none}
+.row:focus-visible{outline:3px solid var(--accent-2);outline-offset:-3px;border-radius:6px}
+.row .cards{display:flex;gap:14px;width:max-content;padding:0 16px}
+.row .cards>li{flex:0 0 var(--cw,40vw);width:var(--cw,40vw);scroll-snap-align:start;min-width:0}
+.row .mc{flex-direction:column}
+@media(min-width:700px){.row-wrap{margin:0}.row{scroll-padding:0}.row .cards{padding:0}.row .cards>li{--cw:172px}}
+@media(prefers-reduced-motion:no-preference){.row{scroll-behavior:smooth}}
+.rb{display:none}
+@media(hover:hover) and (pointer:fine) and (min-width:700px){
+ .row-wrap.scrolls .rb{display:flex;position:absolute;top:70px;width:34px;height:34px;align-items:center;justify-content:center;border:1px solid var(--rule);border-radius:50%;background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.15);z-index:1}
+ .rb-prev{left:-18px}.rb-next{right:-18px}
+ .rb:disabled{opacity:0;pointer-events:none}
+ .rb:hover{color:var(--accent)}
+ .rb:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px}
+}
