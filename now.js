@@ -65,9 +65,13 @@ function show(m,ep){var li=el('li'),c=el('div','card mc'),href=okUrl(m.url),n=Ma
   if(m.description.length>110){var b=el('button','more','Read more');b.type='button';b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls',p.id);
    b.addEventListener('click',function(){var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Read more'});body.appendChild(b)}}
  c.appendChild(body);li.appendChild(c);return li}
-function media(list,ep){return ((Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,4)).map(function(m){return show(m,ep)})}
+function media(list,ep){return (Array.isArray(list)?list:[]).filter(function(m){return m&&m.title}).sort(function(a,b){return (b.updatedAt||0)-(a.updatedAt||0)}).slice(0,4).map(function(m){return {m:m,ep:ep}})}
 /* one section: anime first, then manga and manhwa (newest first within each); even total so no card sits alone */
-function anilist(d){if(!d||typeof d!=='object')throw 0;block('anilist',even(media(d.watching,true).concat(media(d.reading,false))))}
+/* odd total: drop the least recently updated entry (not simply the last one, which is always manga),
+   so a newly added title is never the one hidden */
+function anilist(d){if(!d||typeof d!=='object')throw 0;var all=media(d.watching,true).concat(media(d.reading,false));
+ if(all.length>1&&all.length%2){var k=0;all.forEach(function(x,i){if((x.m.updatedAt||0)<(all[k].m.updatedAt||0))k=i});all.splice(k,1)}
+ block('anilist',all.map(function(x){return show(x.m,x.ep)}))}
 
 /* Home line: "Now playing: X by Y" or "Last played: X by Y"; the space is reserved in CSS */
 function line(t){var p=document.getElementById('np-line');if(!p||!t)return;var a=p.querySelector('a');
