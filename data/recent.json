@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Birds",
-      "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/Birds",
+      "title": "AMIRA KITCHEN (feat. Brother Tom Sos & AA Rashid)",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/AMIRA+KITCHEN+(feat.+Brother+Tom+Sos+&+AA+Rashid)",
       "nowPlaying": false,
-      "playedAt": "2026-10-22T12:21:09Z"
+      "playedAt": "2026-10-22T19:22:14Z"
     },
     {
-      "title": "Kaleidoscope",
-      "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/Kaleidoscope",
+      "title": "Heel Cena",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/Heel+Cena",
       "nowPlaying": false,
-      "playedAt": "2026-10-22T09:40:11Z"
+      "playedAt": "2026-10-22T19:17:56Z"
     },
     {
-      "title": "Have Some Love",
-      "artist": "Childish Gambino",
-      "album": "\"Awaken, My Love!\"",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/Have+Some+Love",
+      "title": "BOMME DES GARÇON",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/BOMME+DES+GAR%C3%87ON",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T17:13:47Z"
+      "playedAt": "2026-10-22T19:16:09Z"
     },
     {
-      "title": "Boogieman",
-      "artist": "Childish Gambino",
-      "album": "\"Awaken, My Love!\"",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/Boogieman",
+      "title": "LOVE YOU PT. 2",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/LOVE+YOU+PT.+2",
       "nowPlaying": false,
-      "playedAt": "2026-10-21T17:13:47Z"
+      "playedAt": "2026-10-22T19:14:53Z"
     }
   ],
   "albums": [
+    {
+      "album": "HEELS HAVE EYES 2",
+      "artist": "Westside Gunn",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
+      "plays": 16,
+      "lastPlayedAt": "2026-10-22T19:22:14Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 12
+    },
     {
       "album": "A Head Full of Dreams",
       "artist": "Coldplay",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 9
-    },
-    {
-      "album": "Graduation",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "url": "https://www.last.fm/music/Kanye+West/Graduation",
-      "plays": 8,
-      "lastPlayedAt": "2026-10-20T21:43:25Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 7
     }
   ]
 }
