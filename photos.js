@@ -4,7 +4,12 @@
      preloaded and decode()d, then swapped in. Neighbours are preloaded; a small cache keeps them.
    - Focus returns to the tile; the ring is shown only for keyboard users. */
 (function(){'use strict';
-var tiles=[].slice.call(document.querySelectorAll('.gallery .ph')),dlg=document.getElementById('lightbox');if(!tiles.length||!dlg||!dlg.showModal)return;
+var tiles=[].slice.call(document.querySelectorAll('.gallery .ph')),dlg=document.getElementById('lightbox');
+/* the CSS may widen the first tile to fill the first row; give it a larger sizes hint so it stays sharp */
+(function(){var t=tiles[0],img=t&&t.querySelector('img');if(!img)return;var base=img.getAttribute('sizes'),mq=matchMedia('(max-width:699px)');
+ function fit(){var span=parseInt(getComputedStyle(t.parentNode).gridColumnEnd.replace('span ',''),10)||1;if(getComputedStyle(t.parentNode).gridColumnStart.indexOf('span')===0)span=parseInt(getComputedStyle(t.parentNode).gridColumnStart.replace('span ',''),10)||span;
+  img.sizes=span>1?'(max-width:699px) '+(span===3?100:67)+'vw, '+(span===3?690:460)+'px':base}
+ fit();mq.addEventListener?mq.addEventListener('change',fit):mq.addListener(fit)})();if(!tiles.length||!dlg||!dlg.showModal)return;
 var stage=document.getElementById('lb-stage'),ph=document.getElementById('lb-ph'),main=document.getElementById('lb-img'),cap=document.getElementById('lb-cap');
 var N=tiles.length,cur=0,SIZES='min(100vw, calc(100vh * 4 / 3))';
 function full(i){var d=tiles[i].dataset,b=d.full;return {srcset:d.lb.split(',').map(function(w){return b+'-l'+w+'.webp '+w+'w'}).join(', '),src:b+'-l1200.webp'}}
