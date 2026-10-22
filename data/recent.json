@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Kaleidoscope",
+      "artist": "Coldplay",
+      "album": "A Head Full of Dreams",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Kaleidoscope",
+      "nowPlaying": false,
+      "playedAt": "2026-10-22T09:40:11Z"
+    },
+    {
       "title": "Have Some Love",
       "artist": "Childish Gambino",
       "album": "\"Awaken, My Love!\"",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/Childish+Gambino/_/Me+and+Your+Mama",
       "nowPlaying": false,
       "playedAt": "2026-10-21T17:03:43Z"
-    },
-    {
-      "title": "No Excuses (feat. Ludwig Göransson & Kamasi Washington)",
-      "artist": "Childish Gambino",
-      "album": "Bando Stone and The New World",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/_/No+Excuses+(feat.+Ludwig+G%C3%B6ransson+&+Kamasi+Washington)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-21T13:35:36Z"
     }
   ],
   "albums": [
+    {
+      "album": "A Head Full of Dreams",
+      "artist": "Coldplay",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
+      "url": "https://www.last.fm/music/Coldplay/A+Head+Full+of+Dreams",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-22T09:40:11Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "\"Awaken, My Love!\"",
       "artist": "Childish Gambino",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 7
-    },
-    {
-      "album": "Champagne Wishes - Single",
-      "artist": "Statik Selektah, Ab-Soul, Raekwon & Freddie Gibbs",
-      "isTrack": false,
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Statik+Selektah%2C+Ab-Soul%2C+Raekwon+%26+Freddie+Gibbs/Champagne+Wishes+-+Single",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-20T21:31:59Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     }
   ]
 }
