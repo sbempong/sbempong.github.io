@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Adventure of a Lifetime",
-      "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/Adventure+of+a+Lifetime",
-      "nowPlaying": false,
-      "playedAt": "2026-10-22T22:27:12Z"
-    },
-    {
-      "title": "Everglow",
-      "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/Everglow",
-      "nowPlaying": false,
-      "playedAt": "2026-10-22T22:26:33Z"
-    },
-    {
-      "title": "A Head Full of Dreams",
-      "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/A+Head+Full+of+Dreams",
-      "nowPlaying": false,
-      "playedAt": "2026-10-22T22:17:40Z"
-    },
-    {
-      "title": "AMIRA KITCHEN (feat. Brother Tom Sos & AA Rashid)",
+      "title": "MANDELA",
       "artist": "Westside Gunn",
       "album": "HEELS HAVE EYES 2",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/AMIRA+KITCHEN+(feat.+Brother+Tom+Sos+&+AA+Rashid)",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
       "nowPlaying": false,
-      "playedAt": "2026-10-22T19:22:14Z"
+      "playedAt": "2026-10-23T00:08:45Z"
+    },
+    {
+      "title": "MANDELA",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
+      "nowPlaying": false,
+      "playedAt": "2026-10-23T00:07:01Z"
+    },
+    {
+      "title": "MANDELA",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
+      "nowPlaying": false,
+      "playedAt": "2026-10-23T00:05:17Z"
+    },
+    {
+      "title": "MANDELA",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
+      "nowPlaying": false,
+      "playedAt": "2026-10-23T00:03:34Z"
     }
   ],
   "albums": [
+    {
+      "album": "HEELS HAVE EYES 2",
+      "artist": "Westside Gunn",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
+      "plays": 35,
+      "lastPlayedAt": "2026-10-23T00:08:45Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 12
+    },
     {
       "album": "A Head Full of Dreams",
       "artist": "Coldplay",
@@ -54,19 +67,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "HEELS HAVE EYES 2",
-      "artist": "Westside Gunn",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 16,
-      "lastPlayedAt": "2026-10-22T19:22:14Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 12
     },
     {
       "album": "\"Awaken, My Love!\"",
