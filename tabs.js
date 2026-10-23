@@ -12,6 +12,14 @@ tabs.forEach(function(t,i){t.parentNode.setAttribute('role','presentation');t.se
 function show(i,push){tabs.forEach(function(t,j){var on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;panels[j].hidden=!on});if(push&&history.replaceState)history.replaceState(null,'',tabs[i].hash)}
 function idx(h){if(h==='#contact')return 0;return tabs.findIndex(function(t){return t.hash===h})}
 var start=idx(location.hash);show(start<0?0:start,false);
+/* A reload keeps the tab in the address (#home etc.); the browser would then jump to that panel or restore
+   the old scroll position and hide the photo. Tabs sit at the top, so open at the top unless the visitor
+   has already started scrolling. Other anchors (#contact) keep the normal jump. */
+if(!location.hash||tabs.some(function(t){return t.hash===location.hash})){
+ if('scrollRestoration' in history)history.scrollRestoration='manual';
+ var moved=false,mark=function(){moved=true},top=function(){if(!moved&&scrollY)scrollTo(0,0)};
+ ['touchstart','wheel','keydown'].forEach(function(e){addEventListener(e,mark,{passive:true,once:true})});
+ top();addEventListener('load',top)}
 document.documentElement.classList.add('js');
 addEventListener('hashchange',function(){var j=idx(location.hash);if(j>=0)show(j,false)});
 })();
