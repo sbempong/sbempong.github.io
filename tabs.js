@@ -14,12 +14,14 @@ function idx(h){if(h==='#contact')return 0;return tabs.findIndex(function(t){ret
 var start=idx(location.hash);show(start<0?0:start,false);
 /* A reload keeps the tab in the address (#home etc.); the browser would then jump to that panel or restore
    the old scroll position and hide the photo. Tabs sit at the top, so open at the top unless the visitor
-   has already started scrolling. Other anchors (#contact) keep the normal jump. */
+   has already started scrolling (Safari can jump to the anchor just after load, so keep watching for 1 s).
+   Other anchors (#contact) keep the normal jump. */
 if(!location.hash||tabs.some(function(t){return t.hash===location.hash})){
  if('scrollRestoration' in history)history.scrollRestoration='manual';
  var moved=false,mark=function(){moved=true},top=function(){if(!moved&&scrollY)scrollTo(0,0)};
- ['touchstart','wheel','keydown'].forEach(function(e){addEventListener(e,mark,{passive:true,once:true})});
- top();addEventListener('load',top)}
+ ['touchstart','wheel','keydown','mousedown'].forEach(function(e){addEventListener(e,mark,{passive:true,once:true})});
+ top();addEventListener('scroll',top,{passive:true});
+ addEventListener('load',function(){top();setTimeout(function(){top();removeEventListener('scroll',top)},1000)})}
 document.documentElement.classList.add('js');
 addEventListener('hashchange',function(){var j=idx(location.hash);if(j>=0)show(j,false)});
 })();
