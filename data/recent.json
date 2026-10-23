@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Things Behind Things Behind Things",
+      "artist": "Bon Iver",
+      "album": "SABLE, fABLE",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b6d0c47617a6d68a033087fa0656f70e.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b6d0c47617a6d68a033087fa0656f70e.jpg",
+      "url": "https://www.last.fm/music/Bon+Iver/_/Things+Behind+Things+Behind+Things",
+      "nowPlaying": false,
+      "playedAt": "2026-10-23T23:09:39Z"
+    },
+    {
       "title": "MANDELA",
       "artist": "Westside Gunn",
       "album": "HEELS HAVE EYES 2",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
       "nowPlaying": false,
       "playedAt": "2026-10-23T00:05:17Z"
-    },
-    {
-      "title": "MANDELA",
-      "artist": "Westside Gunn",
-      "album": "HEELS HAVE EYES 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/MANDELA",
-      "nowPlaying": false,
-      "playedAt": "2026-10-23T00:03:34Z"
     }
   ],
   "albums": [
+    {
+      "album": "SABLE, fABLE",
+      "artist": "Bon Iver",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b6d0c47617a6d68a033087fa0656f70e.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b6d0c47617a6d68a033087fa0656f70e.jpg",
+      "url": "https://www.last.fm/music/Bon+Iver/SABLE%2C+fABLE",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-23T23:09:39Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "HEELS HAVE EYES 2",
       "artist": "Westside Gunn",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
-    },
-    {
-      "album": "Alfredo 2",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs+%26+The+Alchemist/Alfredo+2",
-      "plays": 19,
-      "lastPlayedAt": "2026-10-21T01:34:32Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 9
     }
   ]
 }
