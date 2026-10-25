@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "wheredoistart",
-      "artist": "Ken Carson",
-      "album": "Xperiment",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f59563ab11bcc0da68338bf6c962101e.gif",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f59563ab11bcc0da68338bf6c962101e.gif",
-      "url": "https://www.last.fm/music/Ken+Carson/_/wheredoistart",
+      "title": "don't fix it",
+      "artist": "Loyle Carner & Nick Hakim",
+      "album": "hopefully !",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Loyle+Carner+&+Nick+Hakim/_/don%27t+fix+it",
       "nowPlaying": false,
-      "playedAt": "2026-10-24T22:40:37Z"
+      "playedAt": "2026-10-25T12:45:40Z"
     },
     {
-      "title": "wheredoistart",
-      "artist": "Ken Carson",
-      "album": "Xperiment",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f59563ab11bcc0da68338bf6c962101e.gif",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f59563ab11bcc0da68338bf6c962101e.gif",
-      "url": "https://www.last.fm/music/Ken+Carson/_/wheredoistart",
+      "title": "purpose",
+      "artist": "Loyle Carner & Navy Blue",
+      "album": "hopefully !",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Loyle+Carner+&+Navy+Blue/_/purpose",
       "nowPlaying": false,
-      "playedAt": "2026-10-24T22:38:06Z"
+      "playedAt": "2026-10-25T12:41:49Z"
     },
     {
-      "title": "wheredoistart",
-      "artist": "Ken Carson",
-      "album": "Xperiment",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f59563ab11bcc0da68338bf6c962101e.gif",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f59563ab11bcc0da68338bf6c962101e.gif",
-      "url": "https://www.last.fm/music/Ken+Carson/_/wheredoistart",
+      "title": "hopefully",
+      "artist": "Loyle Carner & Benjamin Zephaniah",
+      "album": "hopefully !",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Loyle+Carner+&+Benjamin+Zephaniah/_/hopefully",
       "nowPlaying": false,
-      "playedAt": "2026-10-24T22:35:36Z"
+      "playedAt": "2026-10-25T12:38:44Z"
     },
     {
-      "title": "wheredoistart",
-      "artist": "Ken Carson",
-      "album": "Xperiment",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f59563ab11bcc0da68338bf6c962101e.gif",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f59563ab11bcc0da68338bf6c962101e.gif",
-      "url": "https://www.last.fm/music/Ken+Carson/_/wheredoistart",
+      "title": "strangers",
+      "artist": "Loyle Carner",
+      "album": "hopefully !",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/strangers",
       "nowPlaying": false,
-      "playedAt": "2026-10-24T22:33:05Z"
+      "playedAt": "2026-10-25T12:36:01Z"
     }
   ],
   "albums": [
+    {
+      "album": "hopefully !",
+      "artist": "Loyle Carner",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner+%26+Nick+Hakim/hopefully+%21",
+      "plays": 52,
+      "lastPlayedAt": "2026-10-25T12:45:40Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 11
+    },
     {
       "album": "Xperiment",
       "artist": "Ken Carson",
@@ -75,11 +88,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
       "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 35,
+      "plays": 23,
       "lastPlayedAt": "2026-10-23T00:08:45Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 12
+      "songs": 5
     },
     {
       "album": "A Head Full of Dreams",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 3
-    },
-    {
-      "album": "Bando Stone and The New World",
-      "artist": "Childish Gambino",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/15618ed4b85e2c9ba4d89eee1d488405.jpg",
-      "url": "https://www.last.fm/music/Childish+Gambino/Bando+Stone+and+The+New+World",
-      "plays": 15,
-      "lastPlayedAt": "2026-10-21T13:35:36Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 11
     }
   ]
 }
