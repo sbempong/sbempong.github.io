@@ -1,6 +1,36 @@
 {
   "tracks": [
     {
+      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "nowPlaying": false,
+      "playedAt": "2026-10-26T22:04:31Z"
+    },
+    {
+      "title": "Jesus Walks",
+      "artist": "Kanye West",
+      "album": "The College Dropout",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/_/Jesus+Walks",
+      "nowPlaying": false,
+      "playedAt": "2026-10-26T20:47:05Z"
+    },
+    {
+      "title": "Mr. T",
+      "artist": "Westside Gunn",
+      "album": "FlyGod",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/05efd42ce2634022beaf3375dacbb424.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/05efd42ce2634022beaf3375dacbb424.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/Mr.+T",
+      "nowPlaying": false,
+      "playedAt": "2026-10-26T20:43:49Z"
+    },
+    {
       "title": "AMIRA KITCHEN (feat. Brother Tom Sos & AA Rashid)",
       "artist": "Westside Gunn",
       "album": "HEELS HAVE EYES 2",
@@ -9,39 +39,48 @@
       "url": "https://www.last.fm/music/Westside+Gunn/_/AMIRA+KITCHEN+(feat.+Brother+Tom+Sos+&+AA+Rashid)",
       "nowPlaying": false,
       "playedAt": "2026-10-26T13:44:36Z"
-    },
-    {
-      "title": "Heel Cena",
-      "artist": "Westside Gunn",
-      "album": "HEELS HAVE EYES 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/Heel+Cena",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T13:38:39Z"
-    },
-    {
-      "title": "BOMME DES GARÇON",
-      "artist": "Westside Gunn",
-      "album": "HEELS HAVE EYES 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/BOMME+DES+GAR%C3%87ON",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T13:36:02Z"
-    },
-    {
-      "title": "time to go",
-      "artist": "Loyle Carner",
-      "album": "hopefully !",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/time+to+go",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T13:33:26Z"
     }
   ],
   "albums": [
+    {
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-26T22:04:31Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "The College Dropout",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-26T20:47:05Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "FlyGod",
+      "artist": "Westside Gunn",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/05efd42ce2634022beaf3375dacbb424.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/05efd42ce2634022beaf3375dacbb424.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/FlyGod",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-26T20:43:49Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "HEELS HAVE EYES 2",
       "artist": "Westside Gunn",
@@ -80,45 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "SABLE, fABLE",
-      "artist": "Bon Iver",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b6d0c47617a6d68a033087fa0656f70e.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b6d0c47617a6d68a033087fa0656f70e.jpg",
-      "url": "https://www.last.fm/music/Bon+Iver/SABLE%2C+fABLE",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-23T23:09:39Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "A Head Full of Dreams",
-      "artist": "Coldplay",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/91777f251715e25d7ca9922da16c7c07.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/91777f251715e25d7ca9922da16c7c07.jpg",
-      "url": "https://www.last.fm/music/Coldplay/A+Head+Full+of+Dreams",
-      "plays": 5,
-      "lastPlayedAt": "2026-10-22T22:27:12Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
-    },
-    {
-      "album": "\"Awaken, My Love!\"",
-      "artist": "Childish Gambino",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d4f6f6f537a28b6b15f793515b95452b.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d4f6f6f537a28b6b15f793515b95452b.png",
-      "url": "https://www.last.fm/music/Childish+Gambino/%22Awaken%2C+My+Love%21%22",
-      "plays": 3,
-      "lastPlayedAt": "2026-10-21T17:13:47Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
