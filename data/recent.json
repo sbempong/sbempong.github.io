@@ -1,56 +1,69 @@
 {
   "tracks": [
     {
-      "title": "don't fix it",
-      "artist": "Loyle Carner & Nick Hakim",
-      "album": "hopefully !",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Loyle+Carner+&+Nick+Hakim/_/don%27t+fix+it",
+      "title": "AMIRA KITCHEN (feat. Brother Tom Sos & AA Rashid)",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/AMIRA+KITCHEN+(feat.+Brother+Tom+Sos+&+AA+Rashid)",
       "nowPlaying": false,
-      "playedAt": "2026-10-25T12:45:40Z"
+      "playedAt": "2026-10-26T13:44:36Z"
     },
     {
-      "title": "purpose",
-      "artist": "Loyle Carner & Navy Blue",
-      "album": "hopefully !",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Loyle+Carner+&+Navy+Blue/_/purpose",
+      "title": "Heel Cena",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/Heel+Cena",
       "nowPlaying": false,
-      "playedAt": "2026-10-25T12:41:49Z"
+      "playedAt": "2026-10-26T13:38:39Z"
     },
     {
-      "title": "hopefully",
-      "artist": "Loyle Carner & Benjamin Zephaniah",
-      "album": "hopefully !",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Loyle+Carner+&+Benjamin+Zephaniah/_/hopefully",
+      "title": "BOMME DES GARÇON",
+      "artist": "Westside Gunn",
+      "album": "HEELS HAVE EYES 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/_/BOMME+DES+GAR%C3%87ON",
       "nowPlaying": false,
-      "playedAt": "2026-10-25T12:38:44Z"
+      "playedAt": "2026-10-26T13:36:02Z"
     },
     {
-      "title": "strangers",
+      "title": "time to go",
       "artist": "Loyle Carner",
       "album": "hopefully !",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/strangers",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/time+to+go",
       "nowPlaying": false,
-      "playedAt": "2026-10-25T12:36:01Z"
+      "playedAt": "2026-10-26T13:33:26Z"
     }
   ],
   "albums": [
+    {
+      "album": "HEELS HAVE EYES 2",
+      "artist": "Westside Gunn",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
+      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
+      "plays": 26,
+      "lastPlayedAt": "2026-10-26T13:44:36Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
     {
       "album": "hopefully !",
       "artist": "Loyle Carner",
       "isTrack": false,
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner+%26+Nick+Hakim/hopefully+%21",
-      "plays": 52,
-      "lastPlayedAt": "2026-10-25T12:45:40Z",
+      "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
+      "plays": 58,
+      "lastPlayedAt": "2026-10-26T13:33:26Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 11
@@ -80,19 +93,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "HEELS HAVE EYES 2",
-      "artist": "Westside Gunn",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 23,
-      "lastPlayedAt": "2026-10-23T00:08:45Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     },
     {
       "album": "A Head Full of Dreams",
