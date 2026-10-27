@@ -1,6 +1,36 @@
 {
   "tracks": [
     {
+      "title": "Danger",
+      "artist": "Logic",
+      "album": "Vinyl Days",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/_/Danger",
+      "nowPlaying": false,
+      "playedAt": "2026-10-27T00:32:02Z"
+    },
+    {
+      "title": "Dark Fantasy",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Dark+Fantasy",
+      "nowPlaying": false,
+      "playedAt": "2026-10-27T00:07:59Z"
+    },
+    {
+      "title": "Lost Times (feat. Jozzy)",
+      "artist": "ScHoolboy Q",
+      "album": "Blue Lips",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a74ecb958adfa22bdac106ff588a9158.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a74ecb958adfa22bdac106ff588a9158.jpg",
+      "url": "https://www.last.fm/music/ScHoolboy+Q/_/Lost+Times+(feat.+Jozzy)",
+      "nowPlaying": false,
+      "playedAt": "2026-10-27T00:00:34Z"
+    },
+    {
       "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
@@ -8,40 +38,23 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
       "nowPlaying": false,
-      "playedAt": "2026-10-26T22:04:31Z"
-    },
-    {
-      "title": "Jesus Walks",
-      "artist": "Kanye West",
-      "album": "The College Dropout",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/_/Jesus+Walks",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T20:47:05Z"
-    },
-    {
-      "title": "Mr. T",
-      "artist": "Westside Gunn",
-      "album": "FlyGod",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/05efd42ce2634022beaf3375dacbb424.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/05efd42ce2634022beaf3375dacbb424.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/Mr.+T",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T20:43:49Z"
-    },
-    {
-      "title": "AMIRA KITCHEN (feat. Brother Tom Sos & AA Rashid)",
-      "artist": "Westside Gunn",
-      "album": "HEELS HAVE EYES 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/_/AMIRA+KITCHEN+(feat.+Brother+Tom+Sos+&+AA+Rashid)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-26T13:44:36Z"
+      "playedAt": "2026-10-26T22:21:26Z"
     }
   ],
   "albums": [
+    {
+      "album": "Vinyl Days",
+      "artist": "Logic",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-27T00:32:02Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
       "artist": "Kanye West",
@@ -49,8 +62,21 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
+      "plays": 3,
+      "lastPlayedAt": "2026-10-27T00:07:59Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "Blue Lips",
+      "artist": "ScHoolboy Q",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a74ecb958adfa22bdac106ff588a9158.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a74ecb958adfa22bdac106ff588a9158.jpg",
+      "url": "https://www.last.fm/music/ScHoolboy+Q/Blue+Lips",
       "plays": 1,
-      "lastPlayedAt": "2026-10-26T22:04:31Z",
+      "lastPlayedAt": "2026-10-27T00:00:34Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -88,37 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
       "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 26,
+      "plays": 21,
       "lastPlayedAt": "2026-10-26T13:44:36Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 5
-    },
-    {
-      "album": "hopefully !",
-      "artist": "Loyle Carner",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
-      "plays": 58,
-      "lastPlayedAt": "2026-10-26T13:33:26Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 11
-    },
-    {
-      "album": "Xperiment",
-      "artist": "Ken Carson",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f59563ab11bcc0da68338bf6c962101e.gif",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f59563ab11bcc0da68338bf6c962101e.gif",
-      "url": "https://www.last.fm/music/Ken+Carson/Xperiment",
-      "plays": 7,
-      "lastPlayedAt": "2026-10-24T22:40:37Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
+      "songs": 4
     }
   ]
 }
