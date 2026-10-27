@@ -1,44 +1,44 @@
 {
   "tracks": [
     {
-      "title": "Danger",
+      "title": "LaDonda",
       "artist": "Logic",
       "album": "Vinyl Days",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/_/Danger",
+      "url": "https://www.last.fm/music/Logic/_/LaDonda",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T00:32:02Z"
+      "playedAt": "2026-10-27T17:36:34Z"
     },
     {
-      "title": "Dark Fantasy",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Dark+Fantasy",
+      "title": "BLACKWHITEBOY",
+      "artist": "Logic",
+      "album": "Vinyl Days",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/_/BLACKWHITEBOY",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T00:07:59Z"
+      "playedAt": "2026-10-27T17:32:46Z"
     },
     {
-      "title": "Lost Times (feat. Jozzy)",
-      "artist": "ScHoolboy Q",
-      "album": "Blue Lips",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a74ecb958adfa22bdac106ff588a9158.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a74ecb958adfa22bdac106ff588a9158.jpg",
-      "url": "https://www.last.fm/music/ScHoolboy+Q/_/Lost+Times+(feat.+Jozzy)",
+      "title": "Decades",
+      "artist": "Logic",
+      "album": "Vinyl Days",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/_/Decades",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T00:00:34Z"
+      "playedAt": "2026-10-27T17:29:41Z"
     },
     {
-      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "title": "In My Lifetime (feat. Action Bronson)",
+      "artist": "Logic",
+      "album": "Vinyl Days",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/_/In+My+Lifetime+(feat.+Action+Bronson)",
       "nowPlaying": false,
-      "playedAt": "2026-10-26T22:21:26Z"
+      "playedAt": "2026-10-27T17:27:32Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-27T00:32:02Z",
+      "plays": 45,
+      "lastPlayedAt": "2026-10-27T17:36:34Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 8
     },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
@@ -62,8 +62,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 3,
-      "lastPlayedAt": "2026-10-27T00:07:59Z",
+      "plays": 7,
+      "lastPlayedAt": "2026-10-27T17:05:02Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
@@ -114,11 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
       "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 21,
+      "plays": 3,
       "lastPlayedAt": "2026-10-26T13:44:36Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 4
+      "songs": 3
     }
   ]
 }
