@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "title": "Ultralight Beam",
+      "artist": "Kanye West",
+      "album": "The Life of Pablo",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8c6af1315c66631bad022085c7992b34.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8c6af1315c66631bad022085c7992b34.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/_/Ultralight+Beam",
+      "nowPlaying": false,
+      "playedAt": "2026-10-28T14:01:41Z"
+    },
+    {
+      "title": "Who Will Survive in America",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "url": "https://www.last.fm/music/Kanye+West/_/Who+Will+Survive+in+America",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T10:23:15Z"
+      "playedAt": "2026-10-28T13:57:43Z"
     },
     {
-      "title": "United in Grief",
-      "artist": "Kendrick Lamar",
-      "album": "Mr. Morale & the Big Steppers",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/United+in+Grief",
+      "title": "Lost in the World (feat. Bon Iver)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Lost+in+the+World+(feat.+Bon+Iver)",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T10:13:59Z"
+      "playedAt": "2026-10-28T13:54:46Z"
     },
     {
-      "title": "United in Grief",
-      "artist": "Kendrick Lamar",
-      "album": "Mr. Morale & the Big Steppers",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/United+in+Grief",
+      "title": "Blame Game (feat. John Legend)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Blame+Game+(feat.+John+Legend)",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T10:00:37Z"
-    },
-    {
-      "title": "LUST.",
-      "artist": "Kendrick Lamar",
-      "album": "DAMN. COLLECTORS EDITION.",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/60606c1fd036ad2583818cf2f4283e75.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/60606c1fd036ad2583818cf2f4283e75.jpg",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/LUST.",
-      "nowPlaying": false,
-      "playedAt": "2026-10-28T10:00:24Z"
+      "playedAt": "2026-10-28T13:48:43Z"
     }
   ],
   "albums": [
+    {
+      "album": "The Life of Pablo",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8c6af1315c66631bad022085c7992b34.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8c6af1315c66631bad022085c7992b34.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/The+Life+of+Pablo",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-28T14:01:41Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
       "artist": "Kanye West",
@@ -49,11 +62,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 8,
-      "lastPlayedAt": "2026-10-28T10:23:15Z",
+      "plays": 21,
+      "lastPlayedAt": "2026-10-28T13:57:43Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 2
+      "songs": 13
     },
     {
       "album": "Mr. Morale & the Big Steppers",
@@ -103,19 +116,6 @@
       "url": "https://www.last.fm/music/ScHoolboy+Q/Blue+Lips",
       "plays": 1,
       "lastPlayedAt": "2026-10-27T00:00:34Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "The College Dropout",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-26T20:47:05Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
