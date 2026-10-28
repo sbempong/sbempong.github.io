@@ -62,11 +62,24 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 21,
+      "plays": 22,
       "lastPlayedAt": "2026-10-28T13:57:43Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 13
+    },
+    {
+      "album": "Man on the Moon III: The Chosen",
+      "artist": "Kid Cudi",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-28T11:18:40Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
     },
     {
       "album": "Mr. Morale & the Big Steppers",
@@ -101,24 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 56,
+      "plays": 61,
       "lastPlayedAt": "2026-10-27T23:14:58Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 8
-    },
-    {
-      "album": "Blue Lips",
-      "artist": "ScHoolboy Q",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a74ecb958adfa22bdac106ff588a9158.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a74ecb958adfa22bdac106ff588a9158.jpg",
-      "url": "https://www.last.fm/music/ScHoolboy+Q/Blue+Lips",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-27T00:00:34Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     }
   ]
 }
