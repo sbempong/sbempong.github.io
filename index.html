@@ -21,7 +21,7 @@
 <link rel="icon" href="avatar.png">
 <meta name="color-scheme" content="light dark">
 <script>/* Apply a saved theme before first paint (no flash). */try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="stylesheet" href="style.css?v=20261023b">
+<link rel="stylesheet" href="style.css?v=20261029a">
 <script>/* Start the Last.fm and AniList fetches early (used by now.js). */
 (function(){try{if(!window.fetch)return;var g=function(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})};window.__rp=g('data/recent.json');window.__al=g('data/anilist.json')}catch(e){}})();</script>
 </head>
@@ -68,24 +68,34 @@
   </section>
   <section id="projects" class="panel" aria-labelledby="h-projects">
     <h2 id="h-projects">Projects</h2>
+    <h3 class="pg-h">Agriculture and AI</h3>
     <ul class="projects">
-        <li><h3>cropweather</h3><p>A crop weather model demo that grows a maize field on real Ghana weather, made for an Agricultural Meteorology and Climatology presentation.</p><p class="links"><a href="/cropweather/">Open the live demo</a> <span aria-hidden="true">&middot;</span> <a data-repo="cropweather" href="https://github.com/sbempong/cropweather">Source code</a></p></li>
-        <li><h3>agro-os</h3><p>A Digital Office for Farming Cooperatives.</p><p class="links"><a href="https://agroos.company">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="agro-os" href="https://github.com/sbempong/agro-os">Source code</a></p></li>
-        <li><h3>Nsem-tech-ai</h3><p>A Solution For Speech Impaired People.</p><p class="links"><a data-repo="Nsem-tech-ai" href="https://github.com/sbempong/Nsem-tech-ai">Source code</a></p></li>
-        <li><h3>Food-segmentation-with-pre-trained-model</h3><p>Ghanaian-Based Food Segmentation using GroundingDINO and MobileSAM.</p><p class="links"><a data-repo="Food-segmentation-with-pre-trained-model" href="https://github.com/sbempong/Food-segmentation-with-pre-trained-model">Source code</a></p></li>
-        <li><h3>Obese-Food</h3><p>Obese Food is a mobile app that analyzes food images to provide nutritional insights and rewards healthy eating habits with a gamified Oex points system. Built with Swift and Firebase, it helps users make better dietary choices through Artificial Intelligence (AI) powered food recognition.</p><p class="links"><a data-repo="Obese-Food" href="https://github.com/sbempong/Obese-Food">Source code</a></p></li>
-        <li><h3>AI-credit-score-program</h3><p>Your AI Personalised Finance Program For good Financial Health.</p><p class="links"><a href="https://neuralxash.vercel.app">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="AI-credit-score-program" href="https://github.com/sbempong/AI-credit-score-program">Source code</a></p></li>
-        <li><h3>RSNA-Intracranial-Aneurysm-Detection</h3><p>Detect the presence and location of intracranial aneurysms in multimodal imaging data.</p><p class="links"><a data-repo="RSNA-Intracranial-Aneurysm-Detection" href="https://github.com/sbempong/RSNA-Intracranial-Aneurysm-Detection">Source code</a></p></li>
-        <li><h3>Chess-Engine</h3><p>An In-House Chess Engine designed to help Beginners, Intermediate, and advanced Chess Players with Chess Analysis.</p><p class="links"><a href="https://chess-engine-beryl.vercel.app">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="Chess-Engine" href="https://github.com/sbempong/Chess-Engine">Source code</a></p></li>
-        <li><h3>gse-stock-prediction</h3><p>Ghana Stock Exchange (GSE) Stock Price Prediction Model.</p><p class="links"><a data-repo="gse-stock-prediction" href="https://github.com/sbempong/gse-stock-prediction">Source code</a></p></li>
-        <li><h3>Land-Viability-Checker</h3><p>Obese Land Viability Checker is a Python tool that analyzes soil data and images using machine learning to assess land fertility and suitability for farming in Ghana.</p><p class="links"><a data-repo="Land-Viability-Checker" href="https://github.com/sbempong/Land-Viability-Checker">Source code</a></p></li>
+        <li><h4>cropweather</h4><p>A crop weather model demo that grows a maize field on real Ghana weather, made for an Agricultural Meteorology and Climatology presentation.</p><p class="links"><span class="lang">JavaScript</span> <span aria-hidden="true">&middot;</span> <a href="/cropweather/">Open the live demo</a> <span aria-hidden="true">&middot;</span> <a data-repo="cropweather" href="https://github.com/sbempong/cropweather">Source code</a></p></li>
+        <li><h4>agro-os</h4><p>A Digital Office for Farming Cooperatives.</p><p class="links"><span class="lang">Python</span> <span aria-hidden="true">&middot;</span> <a href="https://agroos.company">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="agro-os" href="https://github.com/sbempong/agro-os">Source code</a></p></li>
+        <li><h4>Land-Viability-Checker</h4><p>Obese Land Viability Checker is a Python tool that analyzes soil data and images using machine learning to assess land fertility and suitability for farming in Ghana.</p><p class="links"><span class="lang">Python</span> <span aria-hidden="true">&middot;</span> <a data-repo="Land-Viability-Checker" href="https://github.com/sbempong/Land-Viability-Checker">Source code</a></p></li>
+    </ul>
+    <h3 class="pg-h">Computer vision and health</h3>
+    <ul class="projects">
+        <li><h4>Food-segmentation-with-pre-trained-model</h4><p>Ghanaian-Based Food Segmentation using GroundingDINO and MobileSAM.</p><p class="links"><span class="lang">Python notebook</span> <span aria-hidden="true">&middot;</span> <a data-repo="Food-segmentation-with-pre-trained-model" href="https://github.com/sbempong/Food-segmentation-with-pre-trained-model">Source code</a></p></li>
+        <li><h4>Obese-Food</h4><p>Obese Food is a mobile app that analyzes food images to provide nutritional insights and rewards healthy eating habits with a gamified Oex points system. Built with Swift and Firebase, it helps users make better dietary choices through Artificial Intelligence (AI) powered food recognition.</p><p class="links"><span class="lang">Swift</span> <span aria-hidden="true">&middot;</span> <a data-repo="Obese-Food" href="https://github.com/sbempong/Obese-Food">Source code</a></p></li>
+        <li><h4>RSNA-Intracranial-Aneurysm-Detection</h4><p>Detect the presence and location of intracranial aneurysms in multimodal imaging data.</p><p class="links"><span class="lang">Python notebook</span> <span aria-hidden="true">&middot;</span> <a data-repo="RSNA-Intracranial-Aneurysm-Detection" href="https://github.com/sbempong/RSNA-Intracranial-Aneurysm-Detection">Source code</a></p></li>
+        <li><h4>Nsem-tech-ai</h4><p>A Solution For Speech Impaired People.</p><p class="links"><span class="lang">Python</span> <span aria-hidden="true">&middot;</span> <a data-repo="Nsem-tech-ai" href="https://github.com/sbempong/Nsem-tech-ai">Source code</a></p></li>
+    </ul>
+    <h3 class="pg-h">Data and finance</h3>
+    <ul class="projects">
+        <li><h4>AI-credit-score-program</h4><p>Your AI Personalised Finance Program For good Financial Health.</p><p class="links"><span class="lang">TypeScript</span> <span aria-hidden="true">&middot;</span> <a href="https://neuralxash.vercel.app">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="AI-credit-score-program" href="https://github.com/sbempong/AI-credit-score-program">Source code</a></p></li>
+        <li><h4>gse-stock-prediction</h4><p>Ghana Stock Exchange (GSE) Stock Price Prediction Model.</p><p class="links"><span class="lang">R</span> <span aria-hidden="true">&middot;</span> <a data-repo="gse-stock-prediction" href="https://github.com/sbempong/gse-stock-prediction">Source code</a></p></li>
+    </ul>
+    <h3 class="pg-h">Chess</h3>
+    <ul class="projects">
+        <li><h4>Chess-Engine</h4><p>An In-House Chess Engine designed to help Beginners, Intermediate, and advanced Chess Players with Chess Analysis.</p><p class="links"><span class="lang">Python</span> <span aria-hidden="true">&middot;</span> <a href="https://chess-engine-beryl.vercel.app">Website</a> <span aria-hidden="true">&middot;</span> <a data-repo="Chess-Engine" href="https://github.com/sbempong/Chess-Engine">Source code</a></p></li>
     </ul>
 
   </section>
   <section id="resume" class="panel" aria-labelledby="h-resume">
     <h2 id="h-resume">Resume</h2>
     <div class="rs-frame rs-embed">
-      <object data="resume/Sylvester_Bempong_Resume.pdf?v=20261023b#navpanes=0&amp;pagemode=none&amp;view=Fit&amp;zoom=page-fit" type="application/pdf" aria-label="Resume of Sylvester Bempong (PDF)">
+      <object data="resume/Sylvester_Bempong_Resume.pdf?v=20261029a#navpanes=0&amp;pagemode=none&amp;view=Fit&amp;zoom=page-fit" type="application/pdf" aria-label="Resume of Sylvester Bempong (PDF)">
         <div class="rs-frame rs-fb"><a class="rs-pv-open" href="resume/Sylvester_Bempong_Resume.pdf" target="_blank" rel="noopener" aria-label="Open resume PDF (opens in a new tab)"><img src="resume/preview-1x.webp" srcset="resume/preview-1x.webp 1x, resume/preview-2x.webp 2x" width="612" height="792" loading="lazy" decoding="async" alt=""></a><a class="rs-dlicon" href="resume/Sylvester_Bempong_Resume.pdf" download="Sylvester_Bempong_Resume.pdf" aria-label="Download resume PDF (104 KB)" title="Download"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg></a></div>
       </object>
     </div>
@@ -141,10 +151,10 @@
     </dialog>
   </section>
 </main>
-<script src="config.js?v=20261023b"></script>
-<script src="tabs.js?v=20261023b"></script>
-<script src="photos.js?v=20261023b"></script>
-<script src="now.js?v=20261023b"></script>
-<script src="theme.js?v=20261023b"></script>
+<script src="config.js?v=20261029a"></script>
+<script src="tabs.js?v=20261029a"></script>
+<script src="photos.js?v=20261029a"></script>
+<script src="now.js?v=20261029a"></script>
+<script src="theme.js?v=20261029a"></script>
 </body>
 </html>
