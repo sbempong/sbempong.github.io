@@ -1,60 +1,47 @@
 {
   "tracks": [
     {
-      "title": "LaDonda",
-      "artist": "Logic",
-      "album": "Vinyl Days",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/_/LaDonda",
+      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T17:36:34Z"
+      "playedAt": "2026-10-28T10:23:15Z"
     },
     {
-      "title": "BLACKWHITEBOY",
-      "artist": "Logic",
-      "album": "Vinyl Days",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/_/BLACKWHITEBOY",
+      "title": "United in Grief",
+      "artist": "Kendrick Lamar",
+      "album": "Mr. Morale & the Big Steppers",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/United+in+Grief",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T17:32:46Z"
+      "playedAt": "2026-10-28T10:13:59Z"
     },
     {
-      "title": "Decades",
-      "artist": "Logic",
-      "album": "Vinyl Days",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/_/Decades",
+      "title": "United in Grief",
+      "artist": "Kendrick Lamar",
+      "album": "Mr. Morale & the Big Steppers",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/United+in+Grief",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T17:29:41Z"
+      "playedAt": "2026-10-28T10:00:37Z"
     },
     {
-      "title": "In My Lifetime (feat. Action Bronson)",
-      "artist": "Logic",
-      "album": "Vinyl Days",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/_/In+My+Lifetime+(feat.+Action+Bronson)",
+      "title": "LUST.",
+      "artist": "Kendrick Lamar",
+      "album": "DAMN. COLLECTORS EDITION.",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/60606c1fd036ad2583818cf2f4283e75.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/60606c1fd036ad2583818cf2f4283e75.jpg",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/LUST.",
       "nowPlaying": false,
-      "playedAt": "2026-10-27T17:27:32Z"
+      "playedAt": "2026-10-28T10:00:24Z"
     }
   ],
   "albums": [
-    {
-      "album": "Vinyl Days",
-      "artist": "Logic",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 48,
-      "lastPlayedAt": "2026-10-27T17:36:34Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 8
-    },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
       "artist": "Kanye West",
@@ -62,11 +49,50 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 7,
-      "lastPlayedAt": "2026-10-27T17:05:02Z",
+      "plays": 8,
+      "lastPlayedAt": "2026-10-28T10:23:15Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
+    },
+    {
+      "album": "Mr. Morale & the Big Steppers",
+      "artist": "Kendrick Lamar",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/Mr.+Morale+%26+the+Big+Steppers",
+      "plays": 2,
+      "lastPlayedAt": "2026-10-28T10:13:59Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "DAMN. COLLECTORS EDITION.",
+      "artist": "Kendrick Lamar",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/60606c1fd036ad2583818cf2f4283e75.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/60606c1fd036ad2583818cf2f4283e75.jpg",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/DAMN.+COLLECTORS+EDITION.",
+      "plays": 5,
+      "lastPlayedAt": "2026-10-28T10:00:24Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
+    {
+      "album": "Vinyl Days",
+      "artist": "Logic",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
+      "plays": 56,
+      "lastPlayedAt": "2026-10-27T23:14:58Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 8
     },
     {
       "album": "Blue Lips",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "FlyGod",
-      "artist": "Westside Gunn",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/05efd42ce2634022beaf3375dacbb424.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/05efd42ce2634022beaf3375dacbb424.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/FlyGod",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-26T20:43:49Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "HEELS HAVE EYES 2",
-      "artist": "Westside Gunn",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/f4e616b691a8dedbf1afa126b935f256.jpg",
-      "url": "https://www.last.fm/music/Westside+Gunn/HEELS+HAVE+EYES+2",
-      "plays": 3,
-      "lastPlayedAt": "2026-10-26T13:44:36Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
