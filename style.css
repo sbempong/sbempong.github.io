@@ -213,6 +213,8 @@ a.card:focus-visible,.card a:focus-visible,.more:focus-visible{outline:3px solid
 .tc .cv{aspect-ratio:2/3}
 .nw-sub{margin:16px 0 10px;font:600 .875rem/1.3 var(--sans);color:var(--ink);text-align:center}
 .nw-note{margin:0;text-align:center;font-size:.875rem;color:var(--ink-2)}
+.nw-text{margin:0 auto;max-width:36rem;text-align:center;text-wrap:balance}
+.nw-when{margin-top:10px;font-size:.75rem}
 .mc .rate,.bk .rate{color:var(--accent-2);font-size:.8125rem}
 .mc .meta .rate{margin-top:2px}
 .years{max-width:560px;margin:0 auto}
