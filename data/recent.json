@@ -1,6 +1,36 @@
 {
   "tracks": [
     {
+      "title": "Lovin' Me (feat. Phoebe Bridgers)",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon III: The Chosen",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/_/Lovin%27+Me+(feat.+Phoebe+Bridgers)",
+      "nowPlaying": false,
+      "playedAt": "2026-10-28T22:02:39Z"
+    },
+    {
+      "title": "Sept. 16",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon III: The Chosen",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/_/Sept.+16",
+      "nowPlaying": false,
+      "playedAt": "2026-10-28T21:50:49Z"
+    },
+    {
+      "title": "Sept. 16",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon III: The Chosen",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/_/Sept.+16",
+      "nowPlaying": false,
+      "playedAt": "2026-10-28T21:46:35Z"
+    },
+    {
       "title": "Ultralight Beam",
       "artist": "Kanye West",
       "album": "The Life of Pablo",
@@ -9,39 +39,22 @@
       "url": "https://www.last.fm/music/Kanye+West/_/Ultralight+Beam",
       "nowPlaying": false,
       "playedAt": "2026-10-28T14:01:41Z"
-    },
-    {
-      "title": "Who Will Survive in America",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Who+Will+Survive+in+America",
-      "nowPlaying": false,
-      "playedAt": "2026-10-28T13:57:43Z"
-    },
-    {
-      "title": "Lost in the World (feat. Bon Iver)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Lost+in+the+World+(feat.+Bon+Iver)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-28T13:54:46Z"
-    },
-    {
-      "title": "Blame Game (feat. John Legend)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Blame+Game+(feat.+John+Legend)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-28T13:48:43Z"
     }
   ],
   "albums": [
+    {
+      "album": "Man on the Moon III: The Chosen",
+      "artist": "Kid Cudi",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
+      "plays": 4,
+      "lastPlayedAt": "2026-10-28T22:02:39Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
     {
       "album": "The Life of Pablo",
       "artist": "Kanye West",
@@ -67,19 +80,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 13
-    },
-    {
-      "album": "Man on the Moon III: The Chosen",
-      "artist": "Kid Cudi",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-28T11:18:40Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     },
     {
       "album": "Mr. Morale & the Big Steppers",
