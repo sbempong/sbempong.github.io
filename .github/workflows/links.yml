@@ -1,0 +1,34 @@
+name: Check links
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Relative links (/cropweather/) resolve against the live site. Some social networks answer
+          # bots with 403/429/999 even when the page exists, so those count as alive.
+          args: --no-progress --base-url https://sbempong.github.io --accept 200..=299,403,429,999 index.html README.md CREDITS.md
+          fail: false
+
+      - name: Open an issue when links are broken
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken links found
+          content-filepath: ./lychee/out.md
+          labels: automated
