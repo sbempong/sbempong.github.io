@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Beautiful Trip",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon III: The Chosen",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/_/Beautiful+Trip",
+      "nowPlaying": false,
+      "playedAt": "2026-10-29T15:05:39Z"
+    },
+    {
       "title": "Lovin' Me (feat. Phoebe Bridgers)",
       "artist": "Kid Cudi",
       "album": "Man on the Moon III: The Chosen",
@@ -29,16 +39,6 @@
       "url": "https://www.last.fm/music/Kid+Cudi/_/Sept.+16",
       "nowPlaying": false,
       "playedAt": "2026-10-28T21:46:35Z"
-    },
-    {
-      "title": "Ultralight Beam",
-      "artist": "Kanye West",
-      "album": "The Life of Pablo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8c6af1315c66631bad022085c7992b34.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8c6af1315c66631bad022085c7992b34.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/_/Ultralight+Beam",
-      "nowPlaying": false,
-      "playedAt": "2026-10-28T14:01:41Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
       "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
-      "plays": 4,
-      "lastPlayedAt": "2026-10-28T22:02:39Z",
+      "plays": 5,
+      "lastPlayedAt": "2026-10-29T15:05:39Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 2
+      "songs": 3
     },
     {
       "album": "The Life of Pablo",
