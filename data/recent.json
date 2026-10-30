@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Staying",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Staying",
+      "nowPlaying": false,
+      "playedAt": "2026-10-30T16:33:33Z"
+    },
+    {
       "title": "Monster (feat. JAŸ-Z, Rick Ross, Nicki Minaj & Bon Iver)",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights+(Interlude)",
       "nowPlaying": false,
       "playedAt": "2026-10-30T00:49:29Z"
-    },
-    {
-      "title": "POWER",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/POWER",
-      "nowPlaying": false,
-      "playedAt": "2026-10-30T00:46:31Z"
     }
   ],
   "albums": [
+    {
+      "album": "Ante Meridiem - EP",
+      "artist": "Ilan Stone",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
+      "plays": 26,
+      "lastPlayedAt": "2026-10-30T16:33:33Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
       "artist": "Kanye West",
@@ -56,17 +69,17 @@
       "songs": 13
     },
     {
-      "album": "Ante Meridiem - EP",
-      "artist": "Ilan Stone",
+      "album": "Vinyl Days",
+      "artist": "Logic",
       "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 25,
-      "lastPlayedAt": "2026-10-30T00:33:14Z",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
+      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
+      "plays": 38,
+      "lastPlayedAt": "2026-10-29T18:21:07Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 5
+      "songs": 8
     },
     {
       "album": "Man on the Moon III: The Chosen",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "DAMN. COLLECTORS EDITION.",
-      "artist": "Kendrick Lamar",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/60606c1fd036ad2583818cf2f4283e75.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/60606c1fd036ad2583818cf2f4283e75.jpg",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/DAMN.+COLLECTORS+EDITION.",
-      "plays": 5,
-      "lastPlayedAt": "2026-10-28T10:00:24Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     }
   ]
 }
