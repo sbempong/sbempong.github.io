@@ -1,44 +1,44 @@
 {
   "tracks": [
     {
-      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "title": "Monster (feat. JAŸ-Z, Rick Ross, Nicki Minaj & Bon Iver)",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
-      "nowPlaying": true,
-      "playedAt": null
+      "url": "https://www.last.fm/music/Kanye+West/_/Monster+(feat.+JA%C5%B8-Z,+Rick+Ross,+Nicki+Minaj+&+Bon+Iver)",
+      "nowPlaying": false,
+      "playedAt": "2026-10-30T00:58:09Z"
     },
     {
-      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "title": "All of the Lights",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T00:41:03Z"
+      "playedAt": "2026-10-30T00:52:29Z"
     },
     {
-      "title": "Dark Fantasy",
+      "title": "All of the Lights (Interlude)",
       "artist": "Kanye West",
       "album": "My Beautiful Dark Twisted Fantasy",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Dark+Fantasy",
+      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights+(Interlude)",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T00:35:39Z"
+      "playedAt": "2026-10-30T00:49:29Z"
     },
     {
-      "title": "Staying",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Staying",
+      "title": "POWER",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/POWER",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T00:33:14Z"
+      "playedAt": "2026-10-30T00:46:31Z"
     }
   ],
   "albums": [
@@ -49,10 +49,10 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 20,
-      "lastPlayedAt": "2026-10-30T00:41:03Z",
-      "nowPlaying": true,
-      "nowTrack": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "plays": 23,
+      "lastPlayedAt": "2026-10-30T00:58:09Z",
+      "nowPlaying": false,
+      "nowTrack": null,
       "songs": 13
     },
     {
@@ -111,8 +111,8 @@
       "album": "DAMN. COLLECTORS EDITION.",
       "artist": "Kendrick Lamar",
       "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/28cc58337a67c16cab22ea7a076978f4.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/28cc58337a67c16cab22ea7a076978f4.jpg",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/60606c1fd036ad2583818cf2f4283e75.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/60606c1fd036ad2583818cf2f4283e75.jpg",
       "url": "https://www.last.fm/music/Kendrick+Lamar/DAMN.+COLLECTORS+EDITION.",
       "plays": 5,
       "lastPlayedAt": "2026-10-28T10:00:24Z",
