@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "Beautiful Trip",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon III: The Chosen",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/_/Beautiful+Trip",
-      "nowPlaying": false,
-      "playedAt": "2026-10-29T15:05:39Z"
+      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "nowPlaying": true,
+      "playedAt": null
     },
     {
-      "title": "Lovin' Me (feat. Phoebe Bridgers)",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon III: The Chosen",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/_/Lovin%27+Me+(feat.+Phoebe+Bridgers)",
+      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T22:02:39Z"
+      "playedAt": "2026-10-30T00:41:03Z"
     },
     {
-      "title": "Sept. 16",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon III: The Chosen",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/_/Sept.+16",
+      "title": "Dark Fantasy",
+      "artist": "Kanye West",
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Dark+Fantasy",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T21:50:49Z"
+      "playedAt": "2026-10-30T00:35:39Z"
     },
     {
-      "title": "Sept. 16",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon III: The Chosen",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/_/Sept.+16",
+      "title": "Staying",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Staying",
       "nowPlaying": false,
-      "playedAt": "2026-10-28T21:46:35Z"
+      "playedAt": "2026-10-30T00:33:14Z"
     }
   ],
   "albums": [
+    {
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+      "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
+      "plays": 20,
+      "lastPlayedAt": "2026-10-30T00:41:03Z",
+      "nowPlaying": true,
+      "nowTrack": "Gorgeous (feat. Kid Cudi & Raekwon)",
+      "songs": 13
+    },
+    {
+      "album": "Ante Meridiem - EP",
+      "artist": "Ilan Stone",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
+      "plays": 25,
+      "lastPlayedAt": "2026-10-30T00:33:14Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
     {
       "album": "Man on the Moon III: The Chosen",
       "artist": "Kid Cudi",
@@ -69,19 +95,6 @@
       "songs": 1
     },
     {
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 22,
-      "lastPlayedAt": "2026-10-28T13:57:43Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 13
-    },
-    {
       "album": "Mr. Morale & the Big Steppers",
       "artist": "Kendrick Lamar",
       "isTrack": false,
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "Vinyl Days",
-      "artist": "Logic",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 61,
-      "lastPlayedAt": "2026-10-27T23:14:58Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 8
     }
   ]
 }
