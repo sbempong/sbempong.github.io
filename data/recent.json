@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "Staying",
+      "title": "NO LIMIT",
+      "artist": "BigXthaPlug & Leon Thomas",
+      "album": "BETTER OVER TIME",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "url": "https://www.last.fm/music/BigXthaPlug+&+Leon+Thomas/_/NO+LIMIT",
+      "nowPlaying": false,
+      "playedAt": "2026-10-30T23:16:47Z"
+    },
+    {
+      "title": "STAND ON BUSINESS",
+      "artist": "BigXthaPlug",
+      "album": "BETTER OVER TIME",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "url": "https://www.last.fm/music/BigXthaPlug/_/STAND+ON+BUSINESS",
+      "nowPlaying": false,
+      "playedAt": "2026-10-30T23:14:20Z"
+    },
+    {
+      "title": "Sad People",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon III: The Chosen",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/_/Sad+People",
+      "nowPlaying": false,
+      "playedAt": "2026-10-30T17:10:01Z"
+    },
+    {
+      "title": "Saturn",
       "artist": "Ilan Stone",
       "album": "Ante Meridiem - EP",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Staying",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Saturn",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T16:33:33Z"
-    },
-    {
-      "title": "Monster (feat. JAŸ-Z, Rick Ross, Nicki Minaj & Bon Iver)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Monster+(feat.+JA%C5%B8-Z,+Rick+Ross,+Nicki+Minaj+&+Bon+Iver)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-30T00:58:09Z"
-    },
-    {
-      "title": "All of the Lights",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights",
-      "nowPlaying": false,
-      "playedAt": "2026-10-30T00:52:29Z"
-    },
-    {
-      "title": "All of the Lights (Interlude)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights+(Interlude)",
-      "nowPlaying": false,
-      "playedAt": "2026-10-30T00:49:29Z"
+      "playedAt": "2026-10-30T16:59:50Z"
     }
   ],
   "albums": [
+    {
+      "album": "BETTER OVER TIME",
+      "artist": "BigXthaPlug",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
+      "url": "https://www.last.fm/music/BigXthaPlug+%26+Leon+Thomas/BETTER+OVER+TIME",
+      "plays": 2,
+      "lastPlayedAt": "2026-10-30T23:16:47Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "Man on the Moon III: The Chosen",
+      "artist": "Kid Cudi",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
+      "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
+      "plays": 6,
+      "lastPlayedAt": "2026-10-30T17:10:01Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 4
+    },
     {
       "album": "Ante Meridiem - EP",
       "artist": "Ilan Stone",
@@ -49,8 +75,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 26,
-      "lastPlayedAt": "2026-10-30T16:33:33Z",
+      "plays": 29,
+      "lastPlayedAt": "2026-10-30T16:59:50Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
@@ -62,7 +88,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
       "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 23,
+      "plays": 21,
       "lastPlayedAt": "2026-10-30T00:58:09Z",
       "nowPlaying": false,
       "nowTrack": null,
@@ -75,24 +101,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
       "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 38,
+      "plays": 34,
       "lastPlayedAt": "2026-10-29T18:21:07Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 8
-    },
-    {
-      "album": "Man on the Moon III: The Chosen",
-      "artist": "Kid Cudi",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/Man+on+the+Moon+III%3A+The+Chosen",
-      "plays": 5,
-      "lastPlayedAt": "2026-10-29T15:05:39Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     },
     {
       "album": "The Life of Pablo",
@@ -103,19 +116,6 @@
       "url": "https://www.last.fm/music/Kanye+West/The+Life+of+Pablo",
       "plays": 1,
       "lastPlayedAt": "2026-10-28T14:01:41Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "Mr. Morale & the Big Steppers",
-      "artist": "Kendrick Lamar",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/98050f67524ffee7af6edd314b767ac4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/98050f67524ffee7af6edd314b767ac4.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/Mr.+Morale+%26+the+Big+Steppers",
-      "plays": 2,
-      "lastPlayedAt": "2026-10-28T10:13:59Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
