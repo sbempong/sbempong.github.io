@@ -1,59 +1,85 @@
 {
   "tracks": [
     {
-      "title": "NO LIMIT",
-      "artist": "BigXthaPlug & Leon Thomas",
-      "album": "BETTER OVER TIME",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "url": "https://www.last.fm/music/BigXthaPlug+&+Leon+Thomas/_/NO+LIMIT",
+      "title": "Airbender",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Airbender",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T23:16:47Z"
+      "playedAt": "2026-10-31T01:47:32Z"
     },
     {
-      "title": "STAND ON BUSINESS",
-      "artist": "BigXthaPlug",
-      "album": "BETTER OVER TIME",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "url": "https://www.last.fm/music/BigXthaPlug/_/STAND+ON+BUSINESS",
+      "title": "58th Floor",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/58th+Floor",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T23:14:20Z"
+      "playedAt": "2026-10-31T01:44:37Z"
     },
     {
-      "title": "Sad People",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon III: The Chosen",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/c29770fff147fe5ff4250a581f3681ea.jpg",
-      "url": "https://www.last.fm/music/Kid+Cudi/_/Sad+People",
+      "title": "a p p l y i n g . p r e s s u r e",
+      "artist": "J. Cole",
+      "album": "The Off-Season",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "url": "https://www.last.fm/music/J.+Cole/_/a+p+p+l+y+i+n+g+.+p+r+e+s+s+u+r+e",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T17:10:01Z"
+      "playedAt": "2026-10-31T01:20:47Z"
     },
     {
-      "title": "Saturn",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Saturn",
+      "title": "m y . l i f e",
+      "artist": "J. Cole, 21 Savage & Morray",
+      "album": "The Off-Season",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "url": "https://www.last.fm/music/J.+Cole,+21+Savage+&+Morray/_/m+y+.+l+i+f+e",
       "nowPlaying": false,
-      "playedAt": "2026-10-30T16:59:50Z"
+      "playedAt": "2026-10-31T01:17:08Z"
     }
   ],
   "albums": [
+    {
+      "album": "Heavy Is The Crown",
+      "artist": "Anderson .Paak & Cordae",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
+      "plays": 2,
+      "lastPlayedAt": "2026-10-31T01:47:32Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "The Off-Season",
+      "artist": "J. Cole",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "url": "https://www.last.fm/music/J.+Cole/The+Off-Season",
+      "plays": 4,
+      "lastPlayedAt": "2026-10-31T01:20:47Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 4
+    },
     {
       "album": "BETTER OVER TIME",
       "artist": "BigXthaPlug",
       "isTrack": false,
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "url": "https://www.last.fm/music/BigXthaPlug+%26+Leon+Thomas/BETTER+OVER+TIME",
-      "plays": 2,
-      "lastPlayedAt": "2026-10-30T23:16:47Z",
+      "url": "https://www.last.fm/music/BigXthaPlug/BETTER+OVER+TIME",
+      "plays": 3,
+      "lastPlayedAt": "2026-10-30T23:21:46Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 2
+      "songs": 3
     },
     {
       "album": "Man on the Moon III: The Chosen",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 13
-    },
-    {
-      "album": "Vinyl Days",
-      "artist": "Logic",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b0436ce9ae3d1abefe70d56547f0c59b.jpg",
-      "url": "https://www.last.fm/music/Logic/Vinyl+Days",
-      "plays": 34,
-      "lastPlayedAt": "2026-10-29T18:21:07Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 8
-    },
-    {
-      "album": "The Life of Pablo",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8c6af1315c66631bad022085c7992b34.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8c6af1315c66631bad022085c7992b34.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/The+Life+of+Pablo",
-      "plays": 1,
-      "lastPlayedAt": "2026-10-28T14:01:41Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     }
   ]
 }
