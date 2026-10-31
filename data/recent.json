@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Come Back to Earth",
+      "artist": "Mac Miller",
+      "album": "Swimming",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/9f0e333c941c1a0147fc5d347d343e6d.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/9f0e333c941c1a0147fc5d347d343e6d.png",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Come+Back+to+Earth",
+      "nowPlaying": false,
+      "playedAt": "2026-10-31T19:34:29Z"
+    },
+    {
       "title": "Airbender",
       "artist": "Anderson .Paak & Cordae",
       "album": "Heavy Is The Crown",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/J.+Cole/_/a+p+p+l+y+i+n+g+.+p+r+e+s+s+u+r+e",
       "nowPlaying": false,
       "playedAt": "2026-10-31T01:20:47Z"
-    },
-    {
-      "title": "m y . l i f e",
-      "artist": "J. Cole, 21 Savage & Morray",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+21+Savage+&+Morray/_/m+y+.+l+i+f+e",
-      "nowPlaying": false,
-      "playedAt": "2026-10-31T01:17:08Z"
     }
   ],
   "albums": [
+    {
+      "album": "Swimming",
+      "artist": "Mac Miller",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/9f0e333c941c1a0147fc5d347d343e6d.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/9f0e333c941c1a0147fc5d347d343e6d.png",
+      "url": "https://www.last.fm/music/Mac+Miller/Swimming",
+      "plays": 1,
+      "lastPlayedAt": "2026-10-31T19:34:29Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Heavy Is The Crown",
       "artist": "Anderson .Paak & Cordae",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 21,
-      "lastPlayedAt": "2026-10-30T00:58:09Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 13
     }
   ]
 }
