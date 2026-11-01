@@ -1,6 +1,26 @@
 {
   "tracks": [
     {
+      "title": "Radioactive",
+      "artist": "Imagine Dragons",
+      "album": "Night Visions (Expanded Edition) [Super Deluxe]",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "url": "https://www.last.fm/music/Imagine+Dragons/_/Radioactive",
+      "nowPlaying": false,
+      "playedAt": "2026-11-01T01:35:30Z"
+    },
+    {
+      "title": "Tiptoe",
+      "artist": "Imagine Dragons",
+      "album": "Night Visions (Expanded Edition) [Super Deluxe]",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "url": "https://www.last.fm/music/Imagine+Dragons/_/Tiptoe",
+      "nowPlaying": false,
+      "playedAt": "2026-11-01T01:35:30Z"
+    },
+    {
       "title": "Come Back to Earth",
       "artist": "Mac Miller",
       "album": "Swimming",
@@ -19,29 +39,22 @@
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Airbender",
       "nowPlaying": false,
       "playedAt": "2026-10-31T01:47:32Z"
-    },
-    {
-      "title": "58th Floor",
-      "artist": "Anderson .Paak & Cordae",
-      "album": "Heavy Is The Crown",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/58th+Floor",
-      "nowPlaying": false,
-      "playedAt": "2026-10-31T01:44:37Z"
-    },
-    {
-      "title": "a p p l y i n g . p r e s s u r e",
-      "artist": "J. Cole",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/_/a+p+p+l+y+i+n+g+.+p+r+e+s+s+u+r+e",
-      "nowPlaying": false,
-      "playedAt": "2026-10-31T01:20:47Z"
     }
   ],
   "albums": [
+    {
+      "album": "Night Visions (Expanded Edition) [Super Deluxe]",
+      "artist": "Imagine Dragons",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
+      "url": "https://www.last.fm/music/Imagine+Dragons/Night+Visions+%28Expanded+Edition%29+%5BSuper+Deluxe%5D",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-01T01:35:30Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
     {
       "album": "Swimming",
       "artist": "Mac Miller",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 4
-    },
-    {
-      "album": "Ante Meridiem - EP",
-      "artist": "Ilan Stone",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 29,
-      "lastPlayedAt": "2026-10-30T16:59:50Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     }
   ]
 }
