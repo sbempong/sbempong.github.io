@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Objects in the Mirror",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
+      "title": "Iza Ngomso - \"Come Tomorrow\"",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "album": "The Drop That Contained the Sea",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
       "nowPlaying": false,
-      "playedAt": "2026-11-02T22:43:46Z"
+      "playedAt": "2026-11-03T12:25:48Z"
     },
     {
-      "title": "Objects in the Mirror",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
+      "title": "Iza Ngomso - \"Come Tomorrow\"",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "album": "The Drop That Contained the Sea",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
       "nowPlaying": false,
-      "playedAt": "2026-11-02T22:40:15Z"
+      "playedAt": "2026-11-03T12:21:44Z"
     },
     {
-      "title": "Objects in the Mirror",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
+      "title": "Iza Ngomso - \"Come Tomorrow\"",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "album": "The Drop That Contained the Sea",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
       "nowPlaying": false,
-      "playedAt": "2026-11-02T22:36:17Z"
+      "playedAt": "2026-11-03T12:17:39Z"
     },
     {
-      "title": "Self Care",
-      "artist": "Mac Miller",
-      "album": "Swimming",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/9f0e333c941c1a0147fc5d347d343e6d.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/9f0e333c941c1a0147fc5d347d343e6d.png",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Self+Care",
+      "title": "Iza Ngomso - \"Come Tomorrow\"",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "album": "The Drop That Contained the Sea",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
       "nowPlaying": false,
-      "playedAt": "2026-11-02T22:30:23Z"
+      "playedAt": "2026-11-03T12:13:35Z"
     }
   ],
   "albums": [
+    {
+      "album": "The Drop That Contained the Sea",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1f26ed9022e5063eb4306187997001ac.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1f26ed9022e5063eb4306187997001ac.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin%2C+Soweto+Gospel+Choir%2C+Angel+City+Chorale%2C+Royal+Philharmonic+Orchestra+%26+Sue+Fink/The+Drop+That+Contained+the+Sea",
+      "plays": 16,
+      "lastPlayedAt": "2026-11-03T12:25:48Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Watching Movies With the Sound Off",
       "artist": "Mac Miller",
@@ -49,11 +62,24 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
-      "plays": 3,
-      "lastPlayedAt": "2026-11-02T22:43:46Z",
+      "plays": 13,
+      "lastPlayedAt": "2026-11-03T11:22:49Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
+    },
+    {
+      "album": "The Drop That Contained the Sea: Waloyo Yamoni - EP",
+      "artist": "Christopher Tin, Victor Makhathini, Soweto Gospel Choir, Angel City Chorale & Royal Philharmonic Orchestra",
+      "isTrack": false,
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin%2C+Victor+Makhathini%2C+Refiloe+Msebenzi%2C+Nominjin%2C+Roopa+Mahadevan%2C+Soweto+Gospel+Choir%2C+Angel+City+Chorale%2C+Dulce+Pontes%2C+Shoji+Kameda+%26+Royal+Philharmonic+Orchestra/The+Drop+That+Contained+the+Sea%3A+Waloyo+Yamoni+-+EP",
+      "plays": 4,
+      "lastPlayedAt": "2026-11-03T03:33:54Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 4
     },
     {
       "album": "Swimming",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
-    },
-    {
-      "album": "Heavy Is The Crown",
-      "artist": "Anderson .Paak & Cordae",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
-      "plays": 2,
-      "lastPlayedAt": "2026-10-31T01:47:32Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
-    },
-    {
-      "album": "BETTER OVER TIME",
-      "artist": "BigXthaPlug",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/3b159d537a2a93dd94a2e77a6c5632db.jpg",
-      "url": "https://www.last.fm/music/BigXthaPlug/BETTER+OVER+TIME",
-      "plays": 3,
-      "lastPlayedAt": "2026-10-30T23:21:46Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
