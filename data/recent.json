@@ -1,56 +1,69 @@
 {
   "tracks": [
     {
-      "title": "Objects in the Mirror",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
+      "title": "Hol' Up",
+      "artist": "Kendrick Lamar",
+      "album": "Section.80",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Hol%27+Up",
       "nowPlaying": false,
-      "playedAt": "2026-11-03T16:19:24Z"
+      "playedAt": "2026-11-04T13:16:40Z"
     },
     {
-      "title": "Iza Ngomso - \"Come Tomorrow\"",
-      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
-      "album": "The Drop That Contained the Sea",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
+      "title": "Fuck Your Ethnicity",
+      "artist": "Kendrick Lamar",
+      "album": "Section.80",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Fuck+Your+Ethnicity",
       "nowPlaying": false,
-      "playedAt": "2026-11-03T12:25:48Z"
+      "playedAt": "2026-11-04T13:16:40Z"
     },
     {
-      "title": "Iza Ngomso - \"Come Tomorrow\"",
-      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
-      "album": "The Drop That Contained the Sea",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
+      "title": "Black Boy Fly",
+      "artist": "Kendrick Lamar",
+      "album": "good kid, m.A.A.d city (Deluxe)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Black+Boy+Fly",
       "nowPlaying": false,
-      "playedAt": "2026-11-03T12:21:44Z"
+      "playedAt": "2026-11-04T13:09:38Z"
     },
     {
-      "title": "Iza Ngomso - \"Come Tomorrow\"",
-      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
-      "album": "The Drop That Contained the Sea",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Christopher+Tin,+Soweto+Gospel+Choir,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra+&+Sue+Fink/_/Iza+Ngomso+-+%22Come+Tomorrow%22",
+      "title": "Black Boy Fly",
+      "artist": "Kendrick Lamar",
+      "album": "good kid, m.A.A.d city (Deluxe)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Black+Boy+Fly",
       "nowPlaying": false,
-      "playedAt": "2026-11-03T12:17:39Z"
+      "playedAt": "2026-11-04T13:04:55Z"
     }
   ],
   "albums": [
     {
-      "album": "Watching Movies With the Sound Off",
-      "artist": "Mac Miller",
+      "album": "Section.80",
+      "artist": "Kendrick Lamar",
       "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
-      "plays": 14,
-      "lastPlayedAt": "2026-11-03T16:19:24Z",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/Section.80",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-04T13:16:40Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "good kid, m.A.A.d city (Deluxe)",
+      "artist": "Kendrick Lamar",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/good+kid%2C+m.A.A.d+city+%28Deluxe%29",
+      "plays": 8,
+      "lastPlayedAt": "2026-11-04T13:09:38Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -62,8 +75,21 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1f26ed9022e5063eb4306187997001ac.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1f26ed9022e5063eb4306187997001ac.jpg",
       "url": "https://www.last.fm/music/Christopher+Tin%2C+Soweto+Gospel+Choir%2C+Angel+City+Chorale%2C+Royal+Philharmonic+Orchestra+%26+Sue+Fink/The+Drop+That+Contained+the+Sea",
-      "plays": 16,
-      "lastPlayedAt": "2026-11-03T12:25:48Z",
+      "plays": 17,
+      "lastPlayedAt": "2026-11-03T21:13:19Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "Watching Movies With the Sound Off",
+      "artist": "Mac Miller",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
+      "plays": 15,
+      "lastPlayedAt": "2026-11-03T21:06:26Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "The Off-Season",
-      "artist": "J. Cole",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6bad84d18f0ae89bdfd425d4a92878d3.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6bad84d18f0ae89bdfd425d4a92878d3.jpg",
-      "url": "https://www.last.fm/music/J.+Cole+%26+Bas/The+Off-Season",
-      "plays": 30,
-      "lastPlayedAt": "2026-11-02T22:19:45Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 9
-    },
-    {
-      "album": "Night Visions (Expanded Edition) [Super Deluxe]",
-      "artist": "Imagine Dragons",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8d52f6cd2cd7bcf6d32a2cd31c991801.jpg",
-      "url": "https://www.last.fm/music/Imagine+Dragons/Night+Visions+%28Expanded+Edition%29+%5BSuper+Deluxe%5D",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-01T01:35:30Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
     }
   ]
 }
