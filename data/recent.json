@@ -1,47 +1,86 @@
 {
   "tracks": [
     {
-      "title": "Sogno di Volare (The Dream of Flight)",
-      "artist": "Christopher Tin",
-      "album": "Sid Meier's Civilization VI (Original Game Soundtrack)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/83f1938af41cf6e9479841105063f6a0.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/83f1938af41cf6e9479841105063f6a0.jpg",
-      "url": "https://www.last.fm/music/Christopher+Tin/_/Sogno+di+Volare+(The+Dream+of+Flight)",
-      "nowPlaying": false,
-      "playedAt": "2026-11-05T11:01:50Z"
+      "title": "Tsas Narand Uyarna - \"The Heart of Snow\"",
+      "artist": "Christopher Tin, Nominjin, Angel City Chorale, Royal Philharmonic Orchestra, Shoji Kameda & Sue Fink",
+      "album": "The Drop That Contained the Sea",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Christopher+Tin,+Nominjin,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra,+Shoji+Kameda+&+Sue+Fink/_/Tsas+Narand+Uyarna+-+%22The+Heart+of+Snow%22",
+      "nowPlaying": true,
+      "playedAt": null
     },
     {
-      "title": "Baba Yetu (feat. Soweto Gospel Choir)",
-      "artist": "Christopher Tin",
-      "album": "Calling All Dawns",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
-      "url": "https://www.last.fm/music/Christopher+Tin/_/Baba+Yetu+(feat.+Soweto+Gospel+Choir)",
+      "title": "Inside Outside",
+      "artist": "Mac Miller",
+      "album": "Faces",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Inside+Outside",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T22:14:27Z"
+      "playedAt": "2026-11-05T21:01:38Z"
     },
     {
-      "title": "Lux Aeterna",
-      "artist": "Christopher Tin",
-      "album": "Calling All Dawns",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
-      "url": "https://www.last.fm/music/Christopher+Tin/_/Lux+Aeterna",
+      "title": "Red Dot Music (feat. Action Bronson)",
+      "artist": "Mac Miller",
+      "album": "Watching Movies With the Sound Off",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Red+Dot+Music+(feat.+Action+Bronson)",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T22:10:28Z"
+      "playedAt": "2026-11-05T13:18:19Z"
     },
     {
-      "title": "A New Course (Opening Movie Music)",
-      "artist": "Christopher Tin",
-      "album": "Sid Meier's Civilization VI (Original Game Soundtrack)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/83f1938af41cf6e9479841105063f6a0.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/83f1938af41cf6e9479841105063f6a0.jpg",
-      "url": "https://www.last.fm/music/Christopher+Tin/_/A+New+Course+(Opening+Movie+Music)",
+      "title": "Objects in the Mirror",
+      "artist": "Mac Miller",
+      "album": "Watching Movies With the Sound Off",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T22:07:41Z"
+      "playedAt": "2026-11-05T13:12:11Z"
     }
   ],
   "albums": [
+    {
+      "album": "The Drop That Contained the Sea",
+      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1f26ed9022e5063eb4306187997001ac.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1f26ed9022e5063eb4306187997001ac.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin%2C+Nominjin%2C+Angel+City+Chorale%2C+Royal+Philharmonic+Orchestra%2C+Shoji+Kameda+%26+Sue+Fink/The+Drop+That+Contained+the+Sea",
+      "plays": 18,
+      "lastPlayedAt": "2026-11-03T21:13:19Z",
+      "nowPlaying": true,
+      "nowTrack": "Tsas Narand Uyarna - \"The Heart of Snow\"",
+      "songs": 2
+    },
+    {
+      "album": "Faces",
+      "artist": "Mac Miller",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/Faces",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-05T21:01:38Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "Watching Movies With the Sound Off",
+      "artist": "Mac Miller",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
+      "plays": 18,
+      "lastPlayedAt": "2026-11-05T13:18:19Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 3
+    },
     {
       "album": "Sid Meier's Civilization VI (Original Game Soundtrack)",
       "artist": "Christopher Tin",
@@ -77,45 +116,6 @@
       "url": "https://www.last.fm/music/Christopher+Tin/Sid+Meier%27s+Civilization+VII+%28Original+Game+Soundtrack%29",
       "plays": 1,
       "lastPlayedAt": "2026-11-04T22:02:51Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "The Off-Season",
-      "artist": "J. Cole",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
-      "plays": 33,
-      "lastPlayedAt": "2026-11-04T15:01:24Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 9
-    },
-    {
-      "album": "Section.80",
-      "artist": "Kendrick Lamar",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/Section.80",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-04T13:16:40Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
-    },
-    {
-      "album": "good kid, m.A.A.d city (Deluxe)",
-      "artist": "Kendrick Lamar",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/good+kid%2C+m.A.A.d+city+%28Deluxe%29",
-      "plays": 8,
-      "lastPlayedAt": "2026-11-04T13:09:38Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
