@@ -1,47 +1,99 @@
 {
   "tracks": [
     {
-      "title": "Hol' Up",
-      "artist": "Kendrick Lamar",
-      "album": "Section.80",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Hol%27+Up",
+      "title": "Baba Yetu (feat. Soweto Gospel Choir)",
+      "artist": "Christopher Tin",
+      "album": "Calling All Dawns",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
+      "url": "https://www.last.fm/music/Christopher+Tin/_/Baba+Yetu+(feat.+Soweto+Gospel+Choir)",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T13:16:40Z"
+      "playedAt": "2026-11-04T22:14:27Z"
     },
     {
-      "title": "Fuck Your Ethnicity",
-      "artist": "Kendrick Lamar",
-      "album": "Section.80",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4d140d8d8dde411e96d2c6168f4f083f.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Fuck+Your+Ethnicity",
+      "title": "Lux Aeterna",
+      "artist": "Christopher Tin",
+      "album": "Calling All Dawns",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
+      "url": "https://www.last.fm/music/Christopher+Tin/_/Lux+Aeterna",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T13:16:40Z"
+      "playedAt": "2026-11-04T22:10:28Z"
     },
     {
-      "title": "Black Boy Fly",
-      "artist": "Kendrick Lamar",
-      "album": "good kid, m.A.A.d city (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Black+Boy+Fly",
+      "title": "A New Course (Opening Movie Music)",
+      "artist": "Christopher Tin",
+      "album": "Sid Meier's Civilization VI (Original Game Soundtrack)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/83f1938af41cf6e9479841105063f6a0.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/83f1938af41cf6e9479841105063f6a0.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin/_/A+New+Course+(Opening+Movie+Music)",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T13:09:38Z"
+      "playedAt": "2026-11-04T22:07:41Z"
     },
     {
-      "title": "Black Boy Fly",
-      "artist": "Kendrick Lamar",
-      "album": "good kid, m.A.A.d city (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e0de576a486344cbfe3fa52a1d14bf47.jpg",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/_/Black+Boy+Fly",
+      "title": "Live Gloriously (Main Theme)",
+      "artist": "Christopher Tin",
+      "album": "Sid Meier's Civilization VII (Original Game Soundtrack)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin/_/Live+Gloriously+(Main+Theme)",
       "nowPlaying": false,
-      "playedAt": "2026-11-04T13:04:55Z"
+      "playedAt": "2026-11-04T22:02:51Z"
     }
   ],
   "albums": [
+    {
+      "album": "Calling All Dawns",
+      "artist": "Christopher Tin",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
+      "url": "https://www.last.fm/music/Christopher+Tin/Calling+All+Dawns",
+      "plays": 3,
+      "lastPlayedAt": "2026-11-04T22:14:27Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 3
+    },
+    {
+      "album": "Sid Meier's Civilization VI (Original Game Soundtrack)",
+      "artist": "Christopher Tin",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/83f1938af41cf6e9479841105063f6a0.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/83f1938af41cf6e9479841105063f6a0.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin/Sid+Meier%27s+Civilization+VI+%28Original+Game+Soundtrack%29",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-04T22:07:41Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "Sid Meier's Civilization VII (Original Game Soundtrack)",
+      "artist": "Christopher Tin",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
+      "url": "https://www.last.fm/music/Christopher+Tin/Sid+Meier%27s+Civilization+VII+%28Original+Game+Soundtrack%29",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-04T22:02:51Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "The Off-Season",
+      "artist": "J. Cole",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
+      "plays": 33,
+      "lastPlayedAt": "2026-11-04T15:01:24Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 9
+    },
     {
       "album": "Section.80",
       "artist": "Kendrick Lamar",
@@ -67,58 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "The Drop That Contained the Sea",
-      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1f26ed9022e5063eb4306187997001ac.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1f26ed9022e5063eb4306187997001ac.jpg",
-      "url": "https://www.last.fm/music/Christopher+Tin%2C+Soweto+Gospel+Choir%2C+Angel+City+Chorale%2C+Royal+Philharmonic+Orchestra+%26+Sue+Fink/The+Drop+That+Contained+the+Sea",
-      "plays": 17,
-      "lastPlayedAt": "2026-11-03T21:13:19Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "Watching Movies With the Sound Off",
-      "artist": "Mac Miller",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
-      "plays": 15,
-      "lastPlayedAt": "2026-11-03T21:06:26Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "The Drop That Contained the Sea: Waloyo Yamoni - EP",
-      "artist": "Christopher Tin, Victor Makhathini, Soweto Gospel Choir, Angel City Chorale & Royal Philharmonic Orchestra",
-      "isTrack": false,
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Christopher+Tin%2C+Victor+Makhathini%2C+Refiloe+Msebenzi%2C+Nominjin%2C+Roopa+Mahadevan%2C+Soweto+Gospel+Choir%2C+Angel+City+Chorale%2C+Dulce+Pontes%2C+Shoji+Kameda+%26+Royal+Philharmonic+Orchestra/The+Drop+That+Contained+the+Sea%3A+Waloyo+Yamoni+-+EP",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-03T03:33:54Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
-    },
-    {
-      "album": "Swimming",
-      "artist": "Mac Miller",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/9f0e333c941c1a0147fc5d347d343e6d.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/9f0e333c941c1a0147fc5d347d343e6d.png",
-      "url": "https://www.last.fm/music/Mac+Miller/Swimming",
-      "plays": 11,
-      "lastPlayedAt": "2026-11-02T22:30:23Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     }
   ]
 }
