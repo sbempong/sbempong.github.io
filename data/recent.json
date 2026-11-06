@@ -1,16 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Tsas Narand Uyarna - \"The Heart of Snow\"",
-      "artist": "Christopher Tin, Nominjin, Angel City Chorale, Royal Philharmonic Orchestra, Shoji Kameda & Sue Fink",
-      "album": "The Drop That Contained the Sea",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Christopher+Tin,+Nominjin,+Angel+City+Chorale,+Royal+Philharmonic+Orchestra,+Shoji+Kameda+&+Sue+Fink/_/Tsas+Narand+Uyarna+-+%22The+Heart+of+Snow%22",
-      "nowPlaying": true,
-      "playedAt": null
-    },
-    {
       "title": "Inside Outside",
       "artist": "Mac Miller",
       "album": "Faces",
@@ -18,43 +8,40 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/_/Inside+Outside",
       "nowPlaying": false,
-      "playedAt": "2026-11-05T21:01:38Z"
+      "playedAt": "2026-11-06T00:08:48Z"
     },
     {
-      "title": "Red Dot Music (feat. Action Bronson)",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Red+Dot+Music+(feat.+Action+Bronson)",
+      "title": "Champion",
+      "artist": "Kanye West",
+      "album": "Graduation",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Champion",
       "nowPlaying": false,
-      "playedAt": "2026-11-05T13:18:19Z"
+      "playedAt": "2026-11-06T00:05:13Z"
     },
     {
-      "title": "Objects in the Mirror",
-      "artist": "Mac Miller",
-      "album": "Watching Movies With the Sound Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Objects+in+the+Mirror",
+      "title": "Good Morning",
+      "artist": "Kanye West",
+      "album": "Graduation",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning",
       "nowPlaying": false,
-      "playedAt": "2026-11-05T13:12:11Z"
+      "playedAt": "2026-11-06T00:02:25Z"
+    },
+    {
+      "title": "Blue World",
+      "artist": "Mac Miller",
+      "album": "Circles (Deluxe)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/af9b6e2de73dd83bf484663c05b18876.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/af9b6e2de73dd83bf484663c05b18876.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Blue+World",
+      "nowPlaying": false,
+      "playedAt": "2026-11-05T21:12:15Z"
     }
   ],
   "albums": [
-    {
-      "album": "The Drop That Contained the Sea",
-      "artist": "Christopher Tin, Soweto Gospel Choir, Angel City Chorale, Royal Philharmonic Orchestra & Sue Fink",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1f26ed9022e5063eb4306187997001ac.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1f26ed9022e5063eb4306187997001ac.jpg",
-      "url": "https://www.last.fm/music/Christopher+Tin%2C+Nominjin%2C+Angel+City+Chorale%2C+Royal+Philharmonic+Orchestra%2C+Shoji+Kameda+%26+Sue+Fink/The+Drop+That+Contained+the+Sea",
-      "plays": 18,
-      "lastPlayedAt": "2026-11-03T21:13:19Z",
-      "nowPlaying": true,
-      "nowTrack": "Tsas Narand Uyarna - \"The Heart of Snow\"",
-      "songs": 2
-    },
     {
       "album": "Faces",
       "artist": "Mac Miller",
@@ -62,11 +49,37 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Faces",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-05T21:01:38Z",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-06T00:08:48Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
+    },
+    {
+      "album": "Graduation",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+      "url": "https://www.last.fm/music/Kanye+West/Graduation",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-06T00:05:13Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "Circles (Deluxe)",
+      "artist": "Mac Miller",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/af9b6e2de73dd83bf484663c05b18876.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/af9b6e2de73dd83bf484663c05b18876.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/Circles+%28Deluxe%29",
+      "plays": 3,
+      "lastPlayedAt": "2026-11-05T21:12:15Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 3
     },
     {
       "album": "Watching Movies With the Sound Off",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 3
-    },
-    {
-      "album": "Sid Meier's Civilization VII (Original Game Soundtrack)",
-      "artist": "Christopher Tin",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff5ce5f3eadd7e186a9563b9fbc1dbd0.jpg",
-      "url": "https://www.last.fm/music/Christopher+Tin/Sid+Meier%27s+Civilization+VII+%28Original+Game+Soundtrack%29",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-04T22:02:51Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     }
   ]
 }
