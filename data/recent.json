@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Inside Outside",
+      "title": "Tuscan Leather",
+      "artist": "Drake",
+      "album": "Nothing Was the Same (Deluxe)",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4baa4183b3b34717769ca2f306f1f82d.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4baa4183b3b34717769ca2f306f1f82d.png",
+      "url": "https://www.last.fm/music/Drake/_/Tuscan+Leather",
+      "nowPlaying": false,
+      "playedAt": "2026-11-06T09:41:31Z"
+    },
+    {
+      "title": "Angel Dust",
       "artist": "Mac Miller",
       "album": "Faces",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Inside+Outside",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Angel+Dust",
       "nowPlaying": false,
-      "playedAt": "2026-11-06T00:08:48Z"
+      "playedAt": "2026-11-06T06:42:56Z"
     },
     {
-      "title": "Champion",
-      "artist": "Kanye West",
-      "album": "Graduation",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Champion",
-      "nowPlaying": false,
-      "playedAt": "2026-11-06T00:05:13Z"
-    },
-    {
-      "title": "Good Morning",
-      "artist": "Kanye West",
-      "album": "Graduation",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning",
-      "nowPlaying": false,
-      "playedAt": "2026-11-06T00:02:25Z"
-    },
-    {
-      "title": "Blue World",
+      "title": "Friends (feat. ScHoolboy Q)",
       "artist": "Mac Miller",
-      "album": "Circles (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/af9b6e2de73dd83bf484663c05b18876.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/af9b6e2de73dd83bf484663c05b18876.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/_/Blue+World",
+      "album": "Faces",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Friends+(feat.+ScHoolboy+Q)",
       "nowPlaying": false,
-      "playedAt": "2026-11-05T21:12:15Z"
+      "playedAt": "2026-11-06T06:39:14Z"
+    },
+    {
+      "title": "Here We Go",
+      "artist": "Mac Miller",
+      "album": "Faces",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
+      "url": "https://www.last.fm/music/Mac+Miller/_/Here+We+Go",
+      "nowPlaying": false,
+      "playedAt": "2026-11-06T06:32:35Z"
     }
   ],
   "albums": [
+    {
+      "album": "Nothing Was the Same (Deluxe)",
+      "artist": "Drake",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4baa4183b3b34717769ca2f306f1f82d.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4baa4183b3b34717769ca2f306f1f82d.png",
+      "url": "https://www.last.fm/music/Drake/Nothing+Was+the+Same+%28Deluxe%29",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-06T09:41:31Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Faces",
       "artist": "Mac Miller",
@@ -49,11 +62,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Faces",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-06T00:08:48Z",
+      "plays": 53,
+      "lastPlayedAt": "2026-11-06T06:42:56Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 25
     },
     {
       "album": "Graduation",
@@ -88,7 +101,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
-      "plays": 18,
+      "plays": 6,
       "lastPlayedAt": "2026-11-05T13:18:19Z",
       "nowPlaying": false,
       "nowTrack": null,
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
-    },
-    {
-      "album": "Calling All Dawns",
-      "artist": "Christopher Tin",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a66c5419098447588f94241d293ded77.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a66c5419098447588f94241d293ded77.png",
-      "url": "https://www.last.fm/music/Christopher+Tin/Calling+All+Dawns",
-      "plays": 3,
-      "lastPlayedAt": "2026-11-04T22:14:27Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
