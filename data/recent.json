@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "All of the Lights",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights",
+      "title": "Hi Grade",
+      "artist": "monaky",
+      "album": "Candor",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/_/Hi+Grade",
       "nowPlaying": false,
-      "playedAt": "2026-11-06T12:03:28Z"
+      "playedAt": "2026-11-07T11:58:46Z"
     },
     {
-      "title": "All of the Lights (Interlude)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights+(Interlude)",
+      "title": "Insoluble (feat. Rhedi)",
+      "artist": "monaky",
+      "album": "Candor",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/_/Insoluble+(feat.+Rhedi)",
       "nowPlaying": false,
-      "playedAt": "2026-11-06T11:58:38Z"
+      "playedAt": "2026-11-07T11:56:13Z"
     },
     {
-      "title": "POWER",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/POWER",
+      "title": "Beholder",
+      "artist": "monaky",
+      "album": "Candor",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/_/Beholder",
       "nowPlaying": false,
-      "playedAt": "2026-11-06T11:57:36Z"
+      "playedAt": "2026-11-07T11:53:18Z"
     },
     {
-      "title": "Gorgeous (feat. Kid Cudi & Raekwon)",
-      "artist": "Kanye West",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/_/Gorgeous+(feat.+Kid+Cudi+&+Raekwon)",
+      "title": "Cerebral (feat. Dessy Carter)",
+      "artist": "monaky",
+      "album": "Candor",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/_/Cerebral+(feat.+Dessy+Carter)",
       "nowPlaying": false,
-      "playedAt": "2026-11-06T11:52:44Z"
+      "playedAt": "2026-11-07T11:50:14Z"
     }
   ],
   "albums": [
+    {
+      "album": "Candor",
+      "artist": "monaky",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/Candor",
+      "plays": 36,
+      "lastPlayedAt": "2026-11-07T11:58:46Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 11
+    },
+    {
+      "album": "hopefully !",
+      "artist": "Loyle Carner",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-06T22:47:22Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
       "artist": "Kanye West",
@@ -62,11 +88,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Faces",
-      "plays": 60,
+      "plays": 51,
       "lastPlayedAt": "2026-11-06T10:57:01Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 25
+      "songs": 23
     },
     {
       "album": "Nothing Was the Same (Deluxe)",
@@ -80,45 +106,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "Graduation",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
-      "url": "https://www.last.fm/music/Kanye+West/Graduation",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-06T00:05:13Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
-    },
-    {
-      "album": "Circles (Deluxe)",
-      "artist": "Mac Miller",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/af9b6e2de73dd83bf484663c05b18876.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/af9b6e2de73dd83bf484663c05b18876.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/Circles+%28Deluxe%29",
-      "plays": 3,
-      "lastPlayedAt": "2026-11-05T21:12:15Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
-    },
-    {
-      "album": "Watching Movies With the Sound Off",
-      "artist": "Mac Miller",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a7745482dc85c6fff3184e2ba358bd8.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/Watching+Movies+With+the+Sound+Off",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-05T13:18:19Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
