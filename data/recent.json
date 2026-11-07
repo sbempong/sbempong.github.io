@@ -1,59 +1,59 @@
 {
   "tracks": [
     {
-      "title": "Hi Grade",
-      "artist": "monaky",
-      "album": "Candor",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/_/Hi+Grade",
+      "title": "Distorted Light Beam",
+      "artist": "Bastille",
+      "album": "Give Me The Future + Dreams Of The Past",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e5e602fc16e1c70ceb48dca16396571c.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e5e602fc16e1c70ceb48dca16396571c.png",
+      "url": "https://www.last.fm/music/Bastille/_/Distorted+Light+Beam",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T11:58:46Z"
+      "playedAt": "2026-11-07T17:19:56Z"
     },
     {
-      "title": "Insoluble (feat. Rhedi)",
-      "artist": "monaky",
-      "album": "Candor",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/_/Insoluble+(feat.+Rhedi)",
+      "title": "feel at home",
+      "artist": "Loyle Carner",
+      "album": "hopefully !",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/feel+at+home",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T11:56:13Z"
+      "playedAt": "2026-11-07T17:18:57Z"
     },
     {
-      "title": "Beholder",
-      "artist": "monaky",
-      "album": "Candor",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/_/Beholder",
+      "title": "all i need",
+      "artist": "Loyle Carner",
+      "album": "hopefully !",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/all+i+need",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T11:53:18Z"
+      "playedAt": "2026-11-07T14:23:43Z"
     },
     {
-      "title": "Cerebral (feat. Dessy Carter)",
-      "artist": "monaky",
-      "album": "Candor",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/_/Cerebral+(feat.+Dessy+Carter)",
+      "title": "all i need",
+      "artist": "Loyle Carner",
+      "album": "hopefully !",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/all+i+need",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T11:50:14Z"
+      "playedAt": "2026-11-07T14:20:05Z"
     }
   ],
   "albums": [
     {
-      "album": "Candor",
-      "artist": "monaky",
+      "album": "Give Me The Future + Dreams Of The Past",
+      "artist": "Bastille",
       "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/Candor",
-      "plays": 36,
-      "lastPlayedAt": "2026-11-07T11:58:46Z",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e5e602fc16e1c70ceb48dca16396571c.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e5e602fc16e1c70ceb48dca16396571c.png",
+      "url": "https://www.last.fm/music/Bastille/Give+Me+The+Future+%2B+Dreams+Of+The+Past",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-07T17:19:56Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 11
+      "songs": 1
     },
     {
       "album": "hopefully !",
@@ -62,11 +62,24 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
       "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-06T22:47:22Z",
+      "plays": 4,
+      "lastPlayedAt": "2026-11-07T17:18:57Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 2
+    },
+    {
+      "album": "Candor",
+      "artist": "monaky",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
+      "url": "https://www.last.fm/music/monaky/Candor",
+      "plays": 37,
+      "lastPlayedAt": "2026-11-07T14:16:29Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 11
     },
     {
       "album": "My Beautiful Dark Twisted Fantasy",
@@ -88,11 +101,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
       "url": "https://www.last.fm/music/Mac+Miller/Faces",
-      "plays": 51,
+      "plays": 46,
       "lastPlayedAt": "2026-11-06T10:57:01Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 23
+      "songs": 21
     },
     {
       "album": "Nothing Was the Same (Deluxe)",
