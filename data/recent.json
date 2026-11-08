@@ -1,6 +1,26 @@
 {
   "tracks": [
     {
+      "title": "gsw vs sac",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/gsw+vs+sac",
+      "nowPlaying": false,
+      "playedAt": "2026-11-08T12:13:28Z"
+    },
+    {
+      "title": "l e t . g o . m y . h a n d",
+      "artist": "J. Cole, Bas & 6LACK",
+      "album": "The Off-Season",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
+      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
+      "nowPlaying": false,
+      "playedAt": "2026-11-07T22:31:56Z"
+    },
+    {
       "title": "l e t . g o . m y . h a n d",
       "artist": "J. Cole, Bas & 6LACK",
       "album": "The Off-Season",
@@ -19,29 +39,22 @@
       "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
       "nowPlaying": false,
       "playedAt": "2026-11-07T22:24:02Z"
-    },
-    {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
-      "nowPlaying": false,
-      "playedAt": "2026-11-07T22:19:31Z"
-    },
-    {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
-      "nowPlaying": false,
-      "playedAt": "2026-11-07T22:15:00Z"
     }
   ],
   "albums": [
+    {
+      "album": "Live Laugh Love",
+      "artist": "Earl Sweatshirt",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-08T12:13:28Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "The Off-Season",
       "artist": "J. Cole",
@@ -49,8 +62,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
       "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
-      "plays": 5,
-      "lastPlayedAt": "2026-11-07T22:28:33Z",
+      "plays": 6,
+      "lastPlayedAt": "2026-11-07T22:31:56Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 4
-    },
-    {
-      "album": "Faces",
-      "artist": "Mac Miller",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/65f1fa63b54a76ad97d2a78b29d777c4.jpg",
-      "url": "https://www.last.fm/music/Mac+Miller/Faces",
-      "plays": 30,
-      "lastPlayedAt": "2026-11-06T10:57:01Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 12
     }
   ]
 }
