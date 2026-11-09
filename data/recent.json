@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Graduation Day",
-      "artist": "Kanye West",
-      "album": "The College Dropout",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/_/Graduation+Day",
-      "nowPlaying": true,
-      "playedAt": null
+      "title": "exhaust",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "nowPlaying": false,
+      "playedAt": "2026-11-09T13:05:21Z"
     },
     {
-      "title": "Saturn",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Saturn",
+      "title": "exhaust",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
       "nowPlaying": false,
-      "playedAt": "2026-11-08T23:46:01Z"
+      "playedAt": "2026-11-09T13:02:47Z"
     },
     {
-      "title": "Melanin Man",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
+      "title": "exhaust",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
       "nowPlaying": false,
-      "playedAt": "2026-11-08T23:42:57Z"
+      "playedAt": "2026-11-09T13:00:13Z"
     },
     {
-      "title": "Melanin Man",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
+      "title": "exhaust",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
       "nowPlaying": false,
-      "playedAt": "2026-11-08T23:40:43Z"
+      "playedAt": "2026-11-09T12:57:39Z"
     }
   ],
   "albums": [
+    {
+      "album": "Live Laugh Love",
+      "artist": "Earl Sweatshirt",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
+      "plays": 11,
+      "lastPlayedAt": "2026-11-09T13:05:21Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
     {
       "album": "The College Dropout",
       "artist": "Kanye West",
@@ -49,10 +62,23 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
       "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
+      "plays": 13,
+      "lastPlayedAt": "2026-11-09T10:10:09Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 13
+    },
+    {
+      "album": "The College Dropout",
+      "artist": "Twista, Kanye West & Jamie Foxx",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/066c7aacc0ad6b6940914d12db819ed8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/066c7aacc0ad6b6940914d12db819ed8.jpg",
+      "url": "https://www.last.fm/music/Twista%2C+Kanye+West+%26+Jamie+Foxx/The+College+Dropout",
       "plays": 1,
-      "lastPlayedAt": null,
-      "nowPlaying": true,
-      "nowTrack": "Graduation Day",
+      "lastPlayedAt": "2026-11-09T09:55:14Z",
+      "nowPlaying": false,
+      "nowTrack": null,
       "songs": 1
     },
     {
@@ -67,19 +93,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "Live Laugh Love",
-      "artist": "Earl Sweatshirt",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-08T12:13:28Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     },
     {
       "album": "The Off-Season",
@@ -101,24 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e5e602fc16e1c70ceb48dca16396571c.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e5e602fc16e1c70ceb48dca16396571c.png",
       "url": "https://www.last.fm/music/Bastille/Give+Me+The+Future+%2B+Dreams+Of+The+Past",
-      "plays": 12,
+      "plays": 4,
       "lastPlayedAt": "2026-11-07T17:53:54Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 12
-    },
-    {
-      "album": "hopefully !",
-      "artist": "Loyle Carner",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
-      "plays": 3,
-      "lastPlayedAt": "2026-11-07T17:18:57Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
+      "songs": 4
     }
   ]
 }
