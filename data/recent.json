@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "gsw vs sac",
-      "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/gsw+vs+sac",
+      "title": "Saturn",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Saturn",
       "nowPlaying": false,
-      "playedAt": "2026-11-08T12:13:28Z"
+      "playedAt": "2026-11-08T23:46:01Z"
     },
     {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
+      "title": "Melanin Man",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T22:31:56Z"
+      "playedAt": "2026-11-08T23:42:57Z"
     },
     {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
+      "title": "Melanin Man",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T22:28:33Z"
+      "playedAt": "2026-11-08T23:40:43Z"
     },
     {
-      "title": "l e t . g o . m y . h a n d",
-      "artist": "J. Cole, Bas & 6LACK",
-      "album": "The Off-Season",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole,+Bas+&+6LACK/_/l+e+t+.+g+o+.+m+y+.+h+a+n+d",
+      "title": "Melanin Man",
+      "artist": "Ilan Stone",
+      "album": "Ante Meridiem - EP",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
       "nowPlaying": false,
-      "playedAt": "2026-11-07T22:24:02Z"
+      "playedAt": "2026-11-08T23:39:28Z"
     }
   ],
   "albums": [
+    {
+      "album": "Ante Meridiem - EP",
+      "artist": "Ilan Stone",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
+      "plays": 65,
+      "lastPlayedAt": "2026-11-08T23:46:01Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
     {
       "album": "Live Laugh Love",
       "artist": "Earl Sweatshirt",
@@ -88,7 +101,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
       "url": "https://www.last.fm/music/Loyle+Carner/hopefully+%21",
-      "plays": 4,
+      "plays": 3,
       "lastPlayedAt": "2026-11-07T17:18:57Z",
       "nowPlaying": false,
       "nowTrack": null,
@@ -101,24 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
       "url": "https://www.last.fm/music/monaky/Candor",
-      "plays": 37,
+      "plays": 13,
       "lastPlayedAt": "2026-11-07T14:16:29Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 11
-    },
-    {
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
-      "url": "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-06T12:03:28Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
     }
   ]
 }
