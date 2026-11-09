@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Graduation Day",
+      "artist": "Kanye West",
+      "album": "The College Dropout",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/_/Graduation+Day",
+      "nowPlaying": true,
+      "playedAt": null
+    },
+    {
       "title": "Saturn",
       "artist": "Ilan Stone",
       "album": "Ante Meridiem - EP",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
       "nowPlaying": false,
       "playedAt": "2026-11-08T23:40:43Z"
-    },
-    {
-      "title": "Melanin Man",
-      "artist": "Ilan Stone",
-      "album": "Ante Meridiem - EP",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/_/Melanin+Man",
-      "nowPlaying": false,
-      "playedAt": "2026-11-08T23:39:28Z"
     }
   ],
   "albums": [
+    {
+      "album": "The College Dropout",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
+      "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
+      "plays": 1,
+      "lastPlayedAt": null,
+      "nowPlaying": true,
+      "nowTrack": "Graduation Day",
+      "songs": 1
+    },
     {
       "album": "Ante Meridiem - EP",
       "artist": "Ilan Stone",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
-    },
-    {
-      "album": "Candor",
-      "artist": "monaky",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2b012483e027fb83d70bc55089ace7ac.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/2b012483e027fb83d70bc55089ace7ac.png",
-      "url": "https://www.last.fm/music/monaky/Candor",
-      "plays": 13,
-      "lastPlayedAt": "2026-11-07T14:16:29Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 11
     }
   ]
 }
