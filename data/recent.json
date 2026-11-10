@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "exhaust",
-      "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T13:05:21Z"
+      "playedAt": "2026-11-09T23:07:19Z"
     },
     {
-      "title": "exhaust",
-      "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T13:02:47Z"
+      "playedAt": "2026-11-09T22:48:35Z"
     },
     {
-      "title": "exhaust",
+      "title": "Lye",
       "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "album": "Sick!",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/Lye",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T13:00:13Z"
+      "playedAt": "2026-11-09T22:28:25Z"
     },
     {
-      "title": "exhaust",
+      "title": "Old Friend",
       "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "album": "Sick!",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/Old+Friend",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T12:57:39Z"
+      "playedAt": "2026-11-09T22:11:24Z"
     }
   ],
   "albums": [
+    {
+      "album": "Heavy Is The Crown",
+      "artist": "Anderson .Paak & Cordae",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-09T23:07:19Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "Sick!",
+      "artist": "Earl Sweatshirt",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/Sick%21",
+      "plays": 4,
+      "lastPlayedAt": "2026-11-09T22:28:25Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 4
+    },
     {
       "album": "Live Laugh Love",
       "artist": "Earl Sweatshirt",
@@ -49,11 +75,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
       "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
-      "plays": 11,
-      "lastPlayedAt": "2026-11-09T13:05:21Z",
+      "plays": 16,
+      "lastPlayedAt": "2026-11-09T15:12:31Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 5
+      "songs": 8
     },
     {
       "album": "The College Dropout",
@@ -88,37 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 65,
+      "plays": 64,
       "lastPlayedAt": "2026-11-08T23:46:01Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
-    },
-    {
-      "album": "The Off-Season",
-      "artist": "J. Cole",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/5d3c2db3f3d2858932ef0a77b9d15dcb.jpg",
-      "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
-      "plays": 6,
-      "lastPlayedAt": "2026-11-07T22:31:56Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
-    },
-    {
-      "album": "Give Me The Future + Dreams Of The Past",
-      "artist": "Bastille",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e5e602fc16e1c70ceb48dca16396571c.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e5e602fc16e1c70ceb48dca16396571c.png",
-      "url": "https://www.last.fm/music/Bastille/Give+Me+The+Future+%2B+Dreams+Of+The+Past",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-07T17:53:54Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
     }
   ]
 }
