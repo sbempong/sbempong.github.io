@@ -8,7 +8,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T23:07:19Z"
+      "playedAt": "2026-11-10T18:41:54Z"
     },
     {
       "title": "Helpless",
@@ -18,27 +18,27 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T22:48:35Z"
+      "playedAt": "2026-11-10T18:38:11Z"
     },
     {
-      "title": "Lye",
-      "artist": "Earl Sweatshirt",
-      "album": "Sick!",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/Lye",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T22:28:25Z"
+      "playedAt": "2026-11-10T18:34:28Z"
     },
     {
-      "title": "Old Friend",
-      "artist": "Earl Sweatshirt",
-      "album": "Sick!",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/Old+Friend",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-09T22:11:24Z"
+      "playedAt": "2026-11-10T18:30:45Z"
     }
   ],
   "albums": [
@@ -49,8 +49,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-09T23:07:19Z",
+      "plays": 6,
+      "lastPlayedAt": "2026-11-10T18:41:54Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -114,7 +114,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 64,
+      "plays": 60,
       "lastPlayedAt": "2026-11-08T23:46:01Z",
       "nowPlaying": false,
       "nowTrack": null,
