@@ -1,47 +1,112 @@
 {
   "tracks": [
     {
-      "title": "Helpless",
-      "artist": "Anderson .Paak & Cordae",
-      "album": "Heavy Is The Crown",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
+      "title": "Level Up (Twice As Tall) [feat. Youssou N'Dour]",
+      "artist": "Burna Boy",
+      "album": "Twice As Tall",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "url": "https://www.last.fm/music/Burna+Boy/_/Level+Up+(Twice+As+Tall)+%5Bfeat.+Youssou+N%27Dour%5D",
       "nowPlaying": false,
-      "playedAt": "2026-11-11T07:47:50Z"
+      "playedAt": "2026-11-11T12:32:48Z"
     },
     {
-      "title": "Helpless",
-      "artist": "Anderson .Paak & Cordae",
-      "album": "Heavy Is The Crown",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
+      "title": "Only You",
+      "artist": "J. Cole & Burna Boy",
+      "album": "The Fall-Off",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1477cd0b6914eb99b45b363d42983a35.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1477cd0b6914eb99b45b363d42983a35.png",
+      "url": "https://www.last.fm/music/J.+Cole+&+Burna+Boy/_/Only+You",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T21:27:34Z"
+      "playedAt": "2026-11-11T12:27:50Z"
     },
     {
-      "title": "Helpless",
-      "artist": "Anderson .Paak & Cordae",
-      "album": "Heavy Is The Crown",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
+      "title": "Life Sentence",
+      "artist": "J. Cole",
+      "album": "The Fall-Off",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/db70d3647925a0feb1987d213374f959.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/db70d3647925a0feb1987d213374f959.jpg",
+      "url": "https://www.last.fm/music/J.+Cole/_/Life+Sentence",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T21:23:51Z"
+      "playedAt": "2026-11-11T12:23:19Z"
     },
     {
-      "title": "Helpless",
-      "artist": "Anderson .Paak & Cordae",
-      "album": "Heavy Is The Crown",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
+      "title": "Old Dog",
+      "artist": "J. Cole & Petey Pablo",
+      "album": "The Fall-Off",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61f1091de224f104305e8078b619f49e.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61f1091de224f104305e8078b619f49e.png",
+      "url": "https://www.last.fm/music/J.+Cole+&+Petey+Pablo/_/Old+Dog",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T21:20:08Z"
+      "playedAt": "2026-11-11T12:19:32Z"
     }
   ],
   "albums": [
+    {
+      "album": "Twice As Tall",
+      "artist": "Burna Boy",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "url": "https://www.last.fm/music/Burna+Boy/Twice+As+Tall",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-11T12:32:48Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "The Fall-Off",
+      "artist": "J. Cole",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1477cd0b6914eb99b45b363d42983a35.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1477cd0b6914eb99b45b363d42983a35.png",
+      "url": "https://www.last.fm/music/J.+Cole+%26+Burna+Boy/The+Fall-Off",
+      "plays": 6,
+      "lastPlayedAt": "2026-11-11T12:27:50Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 6
+    },
+    {
+      "album": "The Off-Season",
+      "artist": "J. Cole",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/aa8fcb2be62ec4469c12b09030d74dd8.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/aa8fcb2be62ec4469c12b09030d74dd8.jpg",
+      "url": "https://www.last.fm/music/J.+Cole%2C+21+Savage+%26+Morray/The+Off-Season",
+      "plays": 8,
+      "lastPlayedAt": "2026-11-11T12:02:01Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 8
+    },
+    {
+      "album": "Ante Meridiem - EP",
+      "artist": "Ilan Stone",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
+      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
+      "plays": 40,
+      "lastPlayedAt": "2026-11-11T11:34:04Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
+    {
+      "album": "Vth 2",
+      "artist": "Omar Sterling",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/e75d64ef1a92ca0fd4f4f41614aca4a7.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/e75d64ef1a92ca0fd4f4f41614aca4a7.jpg",
+      "url": "https://www.last.fm/music/Omar+Sterling/Vth+2",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-11T11:10:28Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Heavy Is The Crown",
       "artist": "Anderson .Paak & Cordae",
@@ -54,71 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "Sick!",
-      "artist": "Earl Sweatshirt",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c1adfd209ec41ba9b9e3ff1c93da3fa.png",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/Sick%21",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-09T22:28:25Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
-    },
-    {
-      "album": "Live Laugh Love",
-      "artist": "Earl Sweatshirt",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
-      "plays": 16,
-      "lastPlayedAt": "2026-11-09T15:12:31Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 8
-    },
-    {
-      "album": "The College Dropout",
-      "artist": "Kanye West",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61d5e94c9aa712b29e283325bc5ae87f.jpg",
-      "url": "https://www.last.fm/music/Kanye+West/The+College+Dropout",
-      "plays": 13,
-      "lastPlayedAt": "2026-11-09T10:10:09Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 13
-    },
-    {
-      "album": "The College Dropout",
-      "artist": "Twista, Kanye West & Jamie Foxx",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/066c7aacc0ad6b6940914d12db819ed8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/066c7aacc0ad6b6940914d12db819ed8.jpg",
-      "url": "https://www.last.fm/music/Twista%2C+Kanye+West+%26+Jamie+Foxx/The+College+Dropout",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-09T09:55:14Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "Ante Meridiem - EP",
-      "artist": "Ilan Stone",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
-      "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 56,
-      "lastPlayedAt": "2026-11-08T23:46:01Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     }
   ]
 }
