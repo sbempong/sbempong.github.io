@@ -8,7 +8,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T18:41:54Z"
+      "playedAt": "2026-11-11T07:47:50Z"
     },
     {
       "title": "Helpless",
@@ -18,7 +18,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T18:38:11Z"
+      "playedAt": "2026-11-10T21:27:34Z"
     },
     {
       "title": "Helpless",
@@ -28,7 +28,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T18:34:28Z"
+      "playedAt": "2026-11-10T21:23:51Z"
     },
     {
       "title": "Helpless",
@@ -38,7 +38,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-10T18:30:45Z"
+      "playedAt": "2026-11-10T21:20:08Z"
     }
   ],
   "albums": [
@@ -49,8 +49,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
-      "plays": 6,
-      "lastPlayedAt": "2026-11-10T18:41:54Z",
+      "plays": 10,
+      "lastPlayedAt": "2026-11-11T07:47:50Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -114,7 +114,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 60,
+      "plays": 56,
       "lastPlayedAt": "2026-11-08T23:46:01Z",
       "nowPlaying": false,
       "nowTrack": null,
