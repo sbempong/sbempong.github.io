@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Level Up (Twice As Tall) [feat. Youssou N'Dour]",
-      "artist": "Burna Boy",
-      "album": "Twice As Tall",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
-      "url": "https://www.last.fm/music/Burna+Boy/_/Level+Up+(Twice+As+Tall)+%5Bfeat.+Youssou+N%27Dour%5D",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-11T23:14:31Z"
+      "playedAt": "2026-11-12T14:33:02Z"
     },
     {
-      "title": "Level Up (Twice As Tall) [feat. Youssou N'Dour]",
-      "artist": "Burna Boy",
-      "album": "Twice As Tall",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
-      "url": "https://www.last.fm/music/Burna+Boy/_/Level+Up+(Twice+As+Tall)+%5Bfeat.+Youssou+N%27Dour%5D",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-11T12:32:48Z"
+      "playedAt": "2026-11-12T14:29:19Z"
     },
     {
-      "title": "Only You",
-      "artist": "J. Cole & Burna Boy",
-      "album": "The Fall-Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/1477cd0b6914eb99b45b363d42983a35.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/1477cd0b6914eb99b45b363d42983a35.png",
-      "url": "https://www.last.fm/music/J.+Cole+&+Burna+Boy/_/Only+You",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-11T12:27:50Z"
+      "playedAt": "2026-11-12T14:25:36Z"
     },
     {
-      "title": "Life Sentence",
-      "artist": "J. Cole",
-      "album": "The Fall-Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/db70d3647925a0feb1987d213374f959.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/db70d3647925a0feb1987d213374f959.jpg",
-      "url": "https://www.last.fm/music/J.+Cole/_/Life+Sentence",
+      "title": "Helpless",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+&+Cordae/_/Helpless",
       "nowPlaying": false,
-      "playedAt": "2026-11-11T12:23:19Z"
+      "playedAt": "2026-11-12T14:21:53Z"
     }
   ],
   "albums": [
+    {
+      "album": "Heavy Is The Crown",
+      "artist": "Anderson .Paak & Cordae",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
+      "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
+      "plays": 21,
+      "lastPlayedAt": "2026-11-12T14:33:02Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 3
+    },
     {
       "album": "Twice As Tall",
       "artist": "Burna Boy",
@@ -49,8 +62,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
       "url": "https://www.last.fm/music/Burna+Boy/Twice+As+Tall",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-11T23:14:31Z",
+      "plays": 3,
+      "lastPlayedAt": "2026-11-11T23:21:55Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -88,7 +101,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 36,
+      "plays": 27,
       "lastPlayedAt": "2026-11-11T11:34:04Z",
       "nowPlaying": false,
       "nowTrack": null,
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "Heavy Is The Crown",
-      "artist": "Anderson .Paak & Cordae",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
-      "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
-      "plays": 13,
-      "lastPlayedAt": "2026-11-11T10:53:01Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 3
     }
   ]
 }
