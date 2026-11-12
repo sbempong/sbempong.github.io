@@ -8,6 +8,16 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
       "url": "https://www.last.fm/music/Burna+Boy/_/Level+Up+(Twice+As+Tall)+%5Bfeat.+Youssou+N%27Dour%5D",
       "nowPlaying": false,
+      "playedAt": "2026-11-11T23:14:31Z"
+    },
+    {
+      "title": "Level Up (Twice As Tall) [feat. Youssou N'Dour]",
+      "artist": "Burna Boy",
+      "album": "Twice As Tall",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
+      "url": "https://www.last.fm/music/Burna+Boy/_/Level+Up+(Twice+As+Tall)+%5Bfeat.+Youssou+N%27Dour%5D",
+      "nowPlaying": false,
       "playedAt": "2026-11-11T12:32:48Z"
     },
     {
@@ -29,16 +39,6 @@
       "url": "https://www.last.fm/music/J.+Cole/_/Life+Sentence",
       "nowPlaying": false,
       "playedAt": "2026-11-11T12:23:19Z"
-    },
-    {
-      "title": "Old Dog",
-      "artist": "J. Cole & Petey Pablo",
-      "album": "The Fall-Off",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/61f1091de224f104305e8078b619f49e.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/61f1091de224f104305e8078b619f49e.png",
-      "url": "https://www.last.fm/music/J.+Cole+&+Petey+Pablo/_/Old+Dog",
-      "nowPlaying": false,
-      "playedAt": "2026-11-11T12:19:32Z"
     }
   ],
   "albums": [
@@ -49,8 +49,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/20ed34320b6b3b491d8a8c34c5310c59.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/20ed34320b6b3b491d8a8c34c5310c59.png",
       "url": "https://www.last.fm/music/Burna+Boy/Twice+As+Tall",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-11T12:32:48Z",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-11T23:14:31Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -88,7 +88,7 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3e9635ddec22e9ee9ee145aa2ee21f.jpg",
       "url": "https://www.last.fm/music/Ilan+Stone/Ante+Meridiem+-+EP",
-      "plays": 40,
+      "plays": 36,
       "lastPlayedAt": "2026-11-11T11:34:04Z",
       "nowPlaying": false,
       "nowTrack": null,
@@ -114,11 +114,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6e53df9e168a1429321fb9bc32532927.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/6e53df9e168a1429321fb9bc32532927.png",
       "url": "https://www.last.fm/music/Anderson+.Paak+%26+Cordae/Heavy+Is+The+Crown",
-      "plays": 10,
-      "lastPlayedAt": "2026-11-11T07:47:50Z",
+      "plays": 13,
+      "lastPlayedAt": "2026-11-11T10:53:01Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 3
     }
   ]
 }
