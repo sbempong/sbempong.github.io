@@ -1,6 +1,16 @@
 {
   "tracks": [
     {
+      "title": "Strawberry Swing",
+      "artist": "Coldplay",
+      "album": "Viva la Vida or Death and All His Friends",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Strawberry+Swing",
+      "nowPlaying": false,
+      "playedAt": "2026-11-15T12:36:00Z"
+    },
+    {
       "title": "Life Is Beautiful",
       "artist": "Larry June, 2 Chainz & The Alchemist",
       "album": "Life Is Beautiful (Deluxe)",
@@ -29,19 +39,22 @@
       "url": "https://www.last.fm/music/Larry+June,+2+Chainz+&+The+Alchemist/_/LLC",
       "nowPlaying": false,
       "playedAt": "2026-11-14T02:20:52Z"
-    },
-    {
-      "title": "Bad Choices",
-      "artist": "Larry June, 2 Chainz & The Alchemist",
-      "album": "Life Is Beautiful (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "url": "https://www.last.fm/music/Larry+June,+2+Chainz+&+The+Alchemist/_/Bad+Choices",
-      "nowPlaying": false,
-      "playedAt": "2026-11-14T02:20:50Z"
     }
   ],
   "albums": [
+    {
+      "album": "Viva la Vida or Death and All His Friends",
+      "artist": "Coldplay",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/Viva+la+Vida+or+Death+and+All+His+Friends",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-15T12:36:00Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Life Is Beautiful (Deluxe)",
       "artist": "Larry June, 2 Chainz & The Alchemist",
@@ -103,19 +116,6 @@
       "url": "https://www.last.fm/music/Drake/Certified+Lover+Boy",
       "plays": 3,
       "lastPlayedAt": "2026-11-13T13:16:58Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
-    },
-    {
-      "album": "ICEMAN",
-      "artist": "Drake",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d262f4c26af1eff4f8a13da62eb5d8b9.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d262f4c26af1eff4f8a13da62eb5d8b9.jpg",
-      "url": "https://www.last.fm/music/Drake/ICEMAN",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-13T12:52:59Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
