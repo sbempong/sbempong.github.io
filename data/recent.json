@@ -1,6 +1,26 @@
 {
   "tracks": [
     {
+      "title": "awade",
+      "artist": "Fola",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/_/awade",
+      "nowPlaying": false,
+      "playedAt": "2026-11-17T12:36:49Z"
+    },
+    {
+      "title": "how many?",
+      "artist": "Fola",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/_/how+many%3F",
+      "nowPlaying": false,
+      "playedAt": "2026-11-17T12:36:49Z"
+    },
+    {
       "title": "miss u ii (nriri)",
       "artist": "Fola",
       "album": "9",
@@ -19,26 +39,6 @@
       "url": "https://www.last.fm/music/Fola/_/stubborn",
       "nowPlaying": false,
       "playedAt": "2026-11-16T22:17:16Z"
-    },
-    {
-      "title": "2am in toronto",
-      "artist": "Fola & Davido",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola+&+Davido/_/2am+in+toronto",
-      "nowPlaying": false,
-      "playedAt": "2026-11-16T22:14:22Z"
-    },
-    {
-      "title": "how many?",
-      "artist": "Fola",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/how+many%3F",
-      "nowPlaying": false,
-      "playedAt": "2026-11-16T22:11:18Z"
     }
   ],
   "albums": [
@@ -49,8 +49,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
       "url": "https://www.last.fm/music/Fola/9",
-      "plays": 5,
-      "lastPlayedAt": "2026-11-16T22:19:47Z",
+      "plays": 7,
+      "lastPlayedAt": "2026-11-17T12:36:49Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 5
