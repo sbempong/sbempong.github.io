@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "Strawberry Swing",
-      "artist": "Coldplay",
-      "album": "Viva la Vida or Death and All His Friends",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
-      "url": "https://www.last.fm/music/Coldplay/_/Strawberry+Swing",
+      "title": "miss u ii (nriri)",
+      "artist": "Fola",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/_/miss+u+ii+(nriri)",
       "nowPlaying": false,
-      "playedAt": "2026-11-15T12:36:00Z"
+      "playedAt": "2026-11-16T22:19:47Z"
     },
     {
-      "title": "Life Is Beautiful",
-      "artist": "Larry June, 2 Chainz & The Alchemist",
-      "album": "Life Is Beautiful (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "url": "https://www.last.fm/music/Larry+June,+2+Chainz+&+The+Alchemist/_/Life+Is+Beautiful",
+      "title": "stubborn",
+      "artist": "Fola",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/_/stubborn",
       "nowPlaying": false,
-      "playedAt": "2026-11-14T02:27:03Z"
+      "playedAt": "2026-11-16T22:17:16Z"
     },
     {
-      "title": "Bad Choices",
-      "artist": "Larry June, 2 Chainz & The Alchemist",
-      "album": "Life Is Beautiful (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "url": "https://www.last.fm/music/Larry+June,+2+Chainz+&+The+Alchemist/_/Bad+Choices",
+      "title": "2am in toronto",
+      "artist": "Fola & Davido",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola+&+Davido/_/2am+in+toronto",
       "nowPlaying": false,
-      "playedAt": "2026-11-14T02:23:57Z"
+      "playedAt": "2026-11-16T22:14:22Z"
     },
     {
-      "title": "LLC",
-      "artist": "Larry June, 2 Chainz & The Alchemist",
-      "album": "Life Is Beautiful (Deluxe)",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/41ba443aa8b6d4ece2dfea678a258af4.png",
-      "url": "https://www.last.fm/music/Larry+June,+2+Chainz+&+The+Alchemist/_/LLC",
+      "title": "how many?",
+      "artist": "Fola",
+      "album": "9",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/_/how+many%3F",
       "nowPlaying": false,
-      "playedAt": "2026-11-14T02:20:52Z"
+      "playedAt": "2026-11-16T22:11:18Z"
     }
   ],
   "albums": [
+    {
+      "album": "9",
+      "artist": "Fola",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
+      "url": "https://www.last.fm/music/Fola/9",
+      "plays": 5,
+      "lastPlayedAt": "2026-11-16T22:19:47Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
+    {
+      "album": "To Pimp a Butterfly",
+      "artist": "Kendrick Lamar",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/86b35c4eb3c479da49c915d8771bbd1a.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/86b35c4eb3c479da49c915d8771bbd1a.png",
+      "url": "https://www.last.fm/music/Kendrick+Lamar/To+Pimp+a+Butterfly",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-16T19:16:03Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Viva la Vida or Death and All His Friends",
       "artist": "Coldplay",
@@ -49,11 +75,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
       "url": "https://www.last.fm/music/Coldplay/Viva+la+Vida+or+Death+and+All+His+Friends",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-15T12:36:00Z",
+      "plays": 5,
+      "lastPlayedAt": "2026-11-16T13:00:36Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 1
+      "songs": 5
     },
     {
       "album": "Life Is Beautiful (Deluxe)",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 7
-    },
-    {
-      "album": "CAME OF AGE: DELUXE EDITION",
-      "artist": "O'Kenneth",
-      "isTrack": false,
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/O%27Kenneth/CAME+OF+AGE%3A+DELUXE+EDITION",
-      "plays": 12,
-      "lastPlayedAt": "2026-11-13T23:33:17Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 12
-    },
-    {
-      "album": "Certified Lover Boy",
-      "artist": "Drake",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/d2e5f9374b3caa052e36e0f223c6cd68.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/d2e5f9374b3caa052e36e0f223c6cd68.jpg",
-      "url": "https://www.last.fm/music/Drake/Certified+Lover+Boy",
-      "plays": 3,
-      "lastPlayedAt": "2026-11-13T13:16:58Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
     }
   ]
 }
