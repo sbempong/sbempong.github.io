@@ -1,24 +1,24 @@
 {
   "tracks": [
     {
-      "title": "awade",
+      "title": "waf",
       "artist": "Fola",
       "album": "9",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/awade",
+      "url": "https://www.last.fm/music/Fola/_/waf",
       "nowPlaying": false,
-      "playedAt": "2026-11-17T12:36:49Z"
+      "playedAt": "2026-11-17T22:03:37Z"
     },
     {
-      "title": "how many?",
+      "title": "in order",
       "artist": "Fola",
       "album": "9",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/how+many%3F",
+      "url": "https://www.last.fm/music/Fola/_/in+order",
       "nowPlaying": false,
-      "playedAt": "2026-11-17T12:36:49Z"
+      "playedAt": "2026-11-17T12:50:48Z"
     },
     {
       "title": "miss u ii (nriri)",
@@ -28,7 +28,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
       "url": "https://www.last.fm/music/Fola/_/miss+u+ii+(nriri)",
       "nowPlaying": false,
-      "playedAt": "2026-11-16T22:19:47Z"
+      "playedAt": "2026-11-17T12:48:03Z"
     },
     {
       "title": "stubborn",
@@ -38,7 +38,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
       "url": "https://www.last.fm/music/Fola/_/stubborn",
       "nowPlaying": false,
-      "playedAt": "2026-11-16T22:17:16Z"
+      "playedAt": "2026-11-17T12:45:32Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
       "url": "https://www.last.fm/music/Fola/9",
-      "plays": 7,
-      "lastPlayedAt": "2026-11-17T12:36:49Z",
+      "plays": 12,
+      "lastPlayedAt": "2026-11-17T22:03:37Z",
       "nowPlaying": false,
       "nowTrack": null,
-      "songs": 5
+      "songs": 7
     },
     {
       "album": "To Pimp a Butterfly",
