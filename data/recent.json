@@ -1,59 +1,85 @@
 {
   "tracks": [
     {
-      "title": "waf",
-      "artist": "Fola",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/waf",
-      "nowPlaying": false,
-      "playedAt": "2026-11-17T22:03:37Z"
+      "title": "HGU",
+      "artist": "Loyle Carner",
+      "album": "hugo",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/HGU",
+      "nowPlaying": true,
+      "playedAt": null
     },
     {
-      "title": "in order",
-      "artist": "Fola",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/in+order",
+      "title": "Polyfilla",
+      "artist": "Loyle Carner",
+      "album": "hugo",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/Polyfilla",
       "nowPlaying": false,
-      "playedAt": "2026-11-17T12:50:48Z"
+      "playedAt": "2026-11-20T11:04:32Z"
     },
     {
-      "title": "miss u ii (nriri)",
-      "artist": "Fola",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/miss+u+ii+(nriri)",
+      "title": "A Lasting Place",
+      "artist": "Loyle Carner",
+      "album": "hugo",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/A+Lasting+Place",
       "nowPlaying": false,
-      "playedAt": "2026-11-17T12:48:03Z"
+      "playedAt": "2026-11-20T11:00:45Z"
     },
     {
-      "title": "stubborn",
-      "artist": "Fola",
-      "album": "9",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/_/stubborn",
+      "title": "Plastic",
+      "artist": "Loyle Carner",
+      "album": "hugo",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/Plastic",
       "nowPlaying": false,
-      "playedAt": "2026-11-17T12:45:32Z"
+      "playedAt": "2026-11-20T10:56:49Z"
     }
   ],
   "albums": [
+    {
+      "album": "hugo",
+      "artist": "Loyle Carner",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
+      "url": "https://www.last.fm/music/Loyle+Carner/hugo",
+      "plays": 7,
+      "lastPlayedAt": "2026-11-20T11:04:32Z",
+      "nowPlaying": true,
+      "nowTrack": "HGU",
+      "songs": 7
+    },
     {
       "album": "9",
       "artist": "Fola",
       "isTrack": false,
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola/9",
-      "plays": 12,
-      "lastPlayedAt": "2026-11-17T22:03:37Z",
+      "url": "https://www.last.fm/music/Fola+%26+Davido/9",
+      "plays": 15,
+      "lastPlayedAt": "2026-11-20T10:44:32Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 7
+    },
+    {
+      "album": "Documentaries - Single",
+      "artist": "The Long Faces",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b9041f31335794bcc6460b024c76b9c9.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b9041f31335794bcc6460b024c76b9c9.jpg",
+      "url": "https://www.last.fm/music/The+Long+Faces/Documentaries+-+Single",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-20T10:36:54Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
     },
     {
       "album": "To Pimp a Butterfly",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 13
-    },
-    {
-      "album": "Spiral Staircases",
-      "artist": "Larry June, Curren$y & The Alchemist",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/08d2f05f2db78064fc2e4d75c7bf73a8.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/08d2f05f2db78064fc2e4d75c7bf73a8.jpg",
-      "url": "https://www.last.fm/music/Larry+June%2C+Curren%24y+%26+The+Alchemist/Spiral+Staircases",
-      "plays": 5,
-      "lastPlayedAt": "2026-11-14T00:39:54Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
-    },
-    {
-      "album": "Who Coppin",
-      "artist": "Larry June",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/81f617c7bc94b84fa1919879e8df2627.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/81f617c7bc94b84fa1919879e8df2627.jpg",
-      "url": "https://www.last.fm/music/Larry+June/Who+Coppin",
-      "plays": 7,
-      "lastPlayedAt": "2026-11-14T00:21:38Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 7
     }
   ]
 }
