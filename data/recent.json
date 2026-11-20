@@ -1,44 +1,44 @@
 {
   "tracks": [
     {
-      "title": "HGU",
+      "title": "Speed Of Plight",
       "artist": "Loyle Carner",
       "album": "hugo",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/HGU",
-      "nowPlaying": true,
-      "playedAt": null
+      "url": "https://www.last.fm/music/Loyle+Carner/_/Speed+Of+Plight",
+      "nowPlaying": false,
+      "playedAt": "2026-11-20T12:09:23Z"
     },
     {
-      "title": "Polyfilla",
-      "artist": "Loyle Carner",
+      "title": "Blood On My Nikes",
+      "artist": "Loyle Carner, Wesley Joseph & Athian Akec",
       "album": "hugo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/Polyfilla",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Loyle+Carner,+Wesley+Joseph+&+Athian+Akec/_/Blood+On+My+Nikes",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T11:04:32Z"
+      "playedAt": "2026-11-20T12:01:36Z"
     },
     {
-      "title": "A Lasting Place",
-      "artist": "Loyle Carner",
+      "title": "Homerton",
+      "artist": "Loyle Carner, JNR Williams & Olivia Dean",
       "album": "hugo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/A+Lasting+Place",
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Loyle+Carner,+JNR+Williams+&+Olivia+Dean/_/Homerton",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T11:00:45Z"
+      "playedAt": "2026-11-20T11:58:23Z"
     },
     {
-      "title": "Plastic",
+      "title": "Speed Of Plight",
       "artist": "Loyle Carner",
       "album": "hugo",
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/Plastic",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/Speed+Of+Plight",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T10:56:49Z"
+      "playedAt": "2026-11-20T11:55:27Z"
     }
   ],
   "albums": [
@@ -49,11 +49,11 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
       "url": "https://www.last.fm/music/Loyle+Carner/hugo",
-      "plays": 7,
-      "lastPlayedAt": "2026-11-20T11:04:32Z",
-      "nowPlaying": true,
-      "nowTrack": "HGU",
-      "songs": 7
+      "plays": 24,
+      "lastPlayedAt": "2026-11-20T12:09:23Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 10
     },
     {
       "album": "9",
