@@ -1,47 +1,60 @@
 {
   "tracks": [
     {
-      "title": "Charlie Brown",
-      "artist": "Coldplay",
-      "album": "Mylo Xyloto",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a37439cfcd1149dc87a6758239119cde.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/a37439cfcd1149dc87a6758239119cde.png",
-      "url": "https://www.last.fm/music/Coldplay/_/Charlie+Brown",
+      "title": "Dawn On The Side",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/Dawn+On+The+Side",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T12:30:40Z"
+      "playedAt": "2026-11-21T16:44:26Z"
     },
     {
-      "title": "Speed Of Plight",
-      "artist": "Loyle Carner",
-      "album": "hugo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/Speed+Of+Plight",
+      "title": "Color Of Autumn",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/Color+Of+Autumn",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T12:09:23Z"
+      "playedAt": "2026-11-21T16:40:57Z"
     },
     {
-      "title": "Blood On My Nikes",
-      "artist": "Loyle Carner, Wesley Joseph & Athian Akec",
-      "album": "hugo",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Loyle+Carner,+Wesley+Joseph+&+Athian+Akec/_/Blood+On+My+Nikes",
+      "title": "City Lights (feat. Pase Rock & Substantial)",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/City+Lights+(feat.+Pase+Rock+&+Substantial)",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T12:01:36Z"
+      "playedAt": "2026-11-21T16:38:27Z"
     },
     {
-      "title": "Homerton",
-      "artist": "Loyle Carner, JNR Williams & Olivia Dean",
-      "album": "hugo",
-      "art": null,
-      "artSmall": null,
-      "url": "https://www.last.fm/music/Loyle+Carner,+JNR+Williams+&+Olivia+Dean/_/Homerton",
+      "title": "Spiral",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/Spiral",
       "nowPlaying": false,
-      "playedAt": "2026-11-20T11:58:23Z"
+      "playedAt": "2026-11-21T16:35:00Z"
     }
   ],
   "albums": [
+    {
+      "album": "Spiritual State",
+      "artist": "Nujabes",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/Spiritual+State",
+      "plays": 75,
+      "lastPlayedAt": "2026-11-21T16:44:26Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 14
+    },
     {
       "album": "Mylo Xyloto",
       "artist": "Coldplay",
@@ -67,58 +80,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 10
-    },
-    {
-      "album": "9",
-      "artist": "Fola",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/619c129e064c281db25d0eb3bcee6eaa.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/619c129e064c281db25d0eb3bcee6eaa.png",
-      "url": "https://www.last.fm/music/Fola+%26+Davido/9",
-      "plays": 15,
-      "lastPlayedAt": "2026-11-20T10:44:32Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 7
-    },
-    {
-      "album": "Documentaries - Single",
-      "artist": "The Long Faces",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b9041f31335794bcc6460b024c76b9c9.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/b9041f31335794bcc6460b024c76b9c9.jpg",
-      "url": "https://www.last.fm/music/The+Long+Faces/Documentaries+-+Single",
-      "plays": 2,
-      "lastPlayedAt": "2026-11-20T10:36:54Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "To Pimp a Butterfly",
-      "artist": "Kendrick Lamar",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/86b35c4eb3c479da49c915d8771bbd1a.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/86b35c4eb3c479da49c915d8771bbd1a.png",
-      "url": "https://www.last.fm/music/Kendrick+Lamar/To+Pimp+a+Butterfly",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-16T19:16:03Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
-    },
-    {
-      "album": "Viva la Vida or Death and All His Friends",
-      "artist": "Coldplay",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
-      "url": "https://www.last.fm/music/Coldplay/Viva+la+Vida+or+Death+and+All+His+Friends",
-      "plays": 5,
-      "lastPlayedAt": "2026-11-16T13:00:36Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 5
     }
   ]
 }
