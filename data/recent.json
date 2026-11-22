@@ -1,26 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Dawn On The Side",
-      "artist": "Nujabes",
-      "album": "Spiritual State",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
-      "url": "https://www.last.fm/music/Nujabes/_/Dawn+On+The+Side",
-      "nowPlaying": false,
-      "playedAt": "2026-11-21T16:44:26Z"
-    },
-    {
-      "title": "Color Of Autumn",
-      "artist": "Nujabes",
-      "album": "Spiritual State",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
-      "url": "https://www.last.fm/music/Nujabes/_/Color+Of+Autumn",
-      "nowPlaying": false,
-      "playedAt": "2026-11-21T16:40:57Z"
-    },
-    {
       "title": "City Lights (feat. Pase Rock & Substantial)",
       "artist": "Nujabes",
       "album": "Spiritual State",
@@ -28,7 +8,7 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
       "url": "https://www.last.fm/music/Nujabes/_/City+Lights+(feat.+Pase+Rock+&+Substantial)",
       "nowPlaying": false,
-      "playedAt": "2026-11-21T16:38:27Z"
+      "playedAt": "2026-11-22T13:24:53Z"
     },
     {
       "title": "Spiral",
@@ -38,7 +18,27 @@
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
       "url": "https://www.last.fm/music/Nujabes/_/Spiral",
       "nowPlaying": false,
-      "playedAt": "2026-11-21T16:35:00Z"
+      "playedAt": "2026-11-22T13:21:25Z"
+    },
+    {
+      "title": "Gone Are The Days (feat. Uyama Hiroto)",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/Gone+Are+The+Days+(feat.+Uyama+Hiroto)",
+      "nowPlaying": false,
+      "playedAt": "2026-11-22T13:16:33Z"
+    },
+    {
+      "title": "Sky is Tumbling (feat. Cise Star)",
+      "artist": "Nujabes",
+      "album": "Spiritual State",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
+      "url": "https://www.last.fm/music/Nujabes/_/Sky+is+Tumbling+(feat.+Cise+Star)",
+      "nowPlaying": false,
+      "playedAt": "2026-11-22T13:11:02Z"
     }
   ],
   "albums": [
@@ -49,11 +49,37 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7a7c35189b83874e303a8ec6813c64d6.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7a7c35189b83874e303a8ec6813c64d6.jpg",
       "url": "https://www.last.fm/music/Nujabes/Spiritual+State",
-      "plays": 75,
-      "lastPlayedAt": "2026-11-21T16:44:26Z",
+      "plays": 96,
+      "lastPlayedAt": "2026-11-22T13:24:53Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 14
+    },
+    {
+      "album": "Let Love",
+      "artist": "Common",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/aa54679b4b5f8eee2ff0c0662263a134.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/aa54679b4b5f8eee2ff0c0662263a134.jpg",
+      "url": "https://www.last.fm/music/Common/Let+Love",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-22T11:41:38Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
+    {
+      "album": "Makwande",
+      "artist": "Supta & Zee_nhle",
+      "isTrack": false,
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Supta+%26+Zee_nhle/Makwande",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-22T11:25:08Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
     },
     {
       "album": "Mylo Xyloto",
@@ -67,19 +93,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "hugo",
-      "artist": "Loyle Carner",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/hugo",
-      "plays": 24,
-      "lastPlayedAt": "2026-11-20T12:09:23Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 10
     }
   ]
 }
