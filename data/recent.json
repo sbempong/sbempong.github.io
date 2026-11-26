@@ -1,6 +1,26 @@
 {
   "tracks": [
     {
+      "title": "Angel",
+      "artist": "Loyle Carner & Tom Misch",
+      "album": "Not Waving, But Drowning",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/36674e830ae0fcffede8467a71901d3e.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/36674e830ae0fcffede8467a71901d3e.jpg",
+      "url": "https://www.last.fm/music/Loyle+Carner+&+Tom+Misch/_/Angel",
+      "nowPlaying": false,
+      "playedAt": "2026-11-25T22:17:39Z"
+    },
+    {
+      "title": "Dear Jean",
+      "artist": "Loyle Carner",
+      "album": "Not Waving, But Drowning",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/36674e830ae0fcffede8467a71901d3e.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/36674e830ae0fcffede8467a71901d3e.jpg",
+      "url": "https://www.last.fm/music/Loyle+Carner/_/Dear+Jean",
+      "nowPlaying": false,
+      "playedAt": "2026-11-25T22:12:56Z"
+    },
+    {
       "title": "about time",
       "artist": "Loyle Carner",
       "album": "hopefully !",
@@ -19,29 +39,22 @@
       "url": "https://www.last.fm/music/Loyle+Carner/_/all+i+need",
       "nowPlaying": false,
       "playedAt": "2026-11-25T19:51:33Z"
-    },
-    {
-      "title": "A Lasting Place",
-      "artist": "Loyle Carner",
-      "album": "hugo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/A+Lasting+Place",
-      "nowPlaying": false,
-      "playedAt": "2026-11-25T17:07:44Z"
-    },
-    {
-      "title": "HGU",
-      "artist": "Loyle Carner",
-      "album": "hugo",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/HGU",
-      "nowPlaying": false,
-      "playedAt": "2026-11-25T13:11:00Z"
     }
   ],
   "albums": [
+    {
+      "album": "Not Waving, But Drowning",
+      "artist": "Loyle Carner",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/36674e830ae0fcffede8467a71901d3e.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/36674e830ae0fcffede8467a71901d3e.jpg",
+      "url": "https://www.last.fm/music/Loyle+Carner+%26+Tom+Misch/Not+Waving%2C+But+Drowning",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-25T22:17:39Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 2
+    },
     {
       "album": "hopefully !",
       "artist": "Loyle Carner",
@@ -106,19 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
-    },
-    {
-      "album": "The Off-Season",
-      "artist": "J. Cole & Bas",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7676d04e20908eba9263909141c726e5.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/7676d04e20908eba9263909141c726e5.jpg",
-      "url": "https://www.last.fm/music/J.+Cole%2C+Bas+%26+6LACK/The+Off-Season",
-      "plays": 35,
-      "lastPlayedAt": "2026-11-23T12:30:47Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 2
     }
   ]
 }
