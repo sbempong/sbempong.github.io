@@ -1,6 +1,26 @@
 {
   "tracks": [
     {
+      "title": "exhaust",
+      "artist": "Earl Sweatshirt",
+      "album": "Live Laugh Love",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "nowPlaying": false,
+      "playedAt": "2026-11-26T20:50:41Z"
+    },
+    {
+      "title": "Ensalada",
+      "artist": "Freddie Gibbs, The Alchemist & Anderson .Paak",
+      "album": "Alfredo 2",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs,+The+Alchemist+&+Anderson+.Paak/_/Ensalada",
+      "nowPlaying": false,
+      "playedAt": "2026-11-26T13:17:24Z"
+    },
+    {
       "title": "Angel",
       "artist": "Loyle Carner & Tom Misch",
       "album": "Not Waving, But Drowning",
@@ -19,29 +39,35 @@
       "url": "https://www.last.fm/music/Loyle+Carner/_/Dear+Jean",
       "nowPlaying": false,
       "playedAt": "2026-11-25T22:12:56Z"
-    },
-    {
-      "title": "about time",
-      "artist": "Loyle Carner",
-      "album": "hopefully !",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/about+time",
-      "nowPlaying": false,
-      "playedAt": "2026-11-25T22:10:45Z"
-    },
-    {
-      "title": "all i need",
-      "artist": "Loyle Carner",
-      "album": "hopefully !",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/4e2096d27822aa519fc8ddef3d273fbc.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/all+i+need",
-      "nowPlaying": false,
-      "playedAt": "2026-11-25T19:51:33Z"
     }
   ],
   "albums": [
+    {
+      "album": "Live Laugh Love",
+      "artist": "Earl Sweatshirt",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
+      "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-26T20:50:41Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
+    {
+      "album": "Alfredo 2",
+      "artist": "Freddie Gibbs & The Alchemist",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
+      "url": "https://www.last.fm/music/Freddie+Gibbs%2C+The+Alchemist+%26+Anderson+.Paak/Alfredo+2",
+      "plays": 8,
+      "lastPlayedAt": "2026-11-26T13:17:24Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 4
+    },
     {
       "album": "Not Waving, But Drowning",
       "artist": "Loyle Carner",
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 4
-    },
-    {
-      "album": "Alfredo 2",
-      "artist": "Freddie Gibbs & The Alchemist",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs%2C+The+Alchemist+%26+Anderson+.Paak/Alfredo+2",
-      "plays": 7,
-      "lastPlayedAt": "2026-11-24T16:50:29Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
-    },
-    {
-      "album": "Kei Nishikori Meets Nujabes",
-      "artist": "Shing02",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ae944ea426fd809041a5b9949216b4ac.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ae944ea426fd809041a5b9949216b4ac.jpg",
-      "url": "https://www.last.fm/music/Shing02/Kei+Nishikori+Meets+Nujabes",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-24T10:52:57Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 1
     }
   ]
 }
