@@ -1,47 +1,73 @@
 {
   "tracks": [
     {
-      "title": "exhaust",
-      "artist": "Earl Sweatshirt",
-      "album": "Live Laugh Love",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
-      "url": "https://www.last.fm/music/Earl+Sweatshirt/_/exhaust",
+      "title": "Strawberry Swing",
+      "artist": "Coldplay",
+      "album": "Viva la Vida or Death and All His Friends",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Strawberry+Swing",
       "nowPlaying": false,
-      "playedAt": "2026-11-26T20:50:41Z"
+      "playedAt": "2026-11-27T15:46:59Z"
     },
     {
-      "title": "Ensalada",
-      "artist": "Freddie Gibbs, The Alchemist & Anderson .Paak",
-      "album": "Alfredo 2",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f3949ad73f6689998479d114beea7bb.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f3949ad73f6689998479d114beea7bb.jpg",
-      "url": "https://www.last.fm/music/Freddie+Gibbs,+The+Alchemist+&+Anderson+.Paak/_/Ensalada",
+      "title": "Strawberry Swing",
+      "artist": "Coldplay",
+      "album": "Viva la Vida or Death and All His Friends",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Strawberry+Swing",
       "nowPlaying": false,
-      "playedAt": "2026-11-26T13:17:24Z"
+      "playedAt": "2026-11-27T15:42:45Z"
     },
     {
-      "title": "Angel",
-      "artist": "Loyle Carner & Tom Misch",
-      "album": "Not Waving, But Drowning",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/36674e830ae0fcffede8467a71901d3e.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/36674e830ae0fcffede8467a71901d3e.jpg",
-      "url": "https://www.last.fm/music/Loyle+Carner+&+Tom+Misch/_/Angel",
+      "title": "Lost!",
+      "artist": "Coldplay",
+      "album": "Viva la Vida or Death and All His Friends",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Lost!",
       "nowPlaying": false,
-      "playedAt": "2026-11-25T22:17:39Z"
+      "playedAt": "2026-11-27T15:42:37Z"
     },
     {
-      "title": "Dear Jean",
-      "artist": "Loyle Carner",
-      "album": "Not Waving, But Drowning",
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/36674e830ae0fcffede8467a71901d3e.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/36674e830ae0fcffede8467a71901d3e.jpg",
-      "url": "https://www.last.fm/music/Loyle+Carner/_/Dear+Jean",
+      "title": "Cemeteries of London",
+      "artist": "Coldplay",
+      "album": "Viva la Vida or Death and All His Friends",
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/_/Cemeteries+of+London",
       "nowPlaying": false,
-      "playedAt": "2026-11-25T22:12:56Z"
+      "playedAt": "2026-11-27T15:34:49Z"
     }
   ],
   "albums": [
+    {
+      "album": "Viva la Vida or Death and All His Friends",
+      "artist": "Coldplay",
+      "isTrack": false,
+      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/df7ea51b2826b60175d4c332e0f7b8ca.jpg",
+      "url": "https://www.last.fm/music/Coldplay/Viva+la+Vida+or+Death+and+All+His+Friends",
+      "plays": 9,
+      "lastPlayedAt": "2026-11-27T15:46:59Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 5
+    },
+    {
+      "album": "OUT OF MY MIND - Single",
+      "artist": "Kanye West",
+      "isTrack": false,
+      "art": null,
+      "artSmall": null,
+      "url": "https://www.last.fm/music/Kanye+West/OUT+OF+MY+MIND+-+Single",
+      "plays": 1,
+      "lastPlayedAt": "2026-11-27T11:12:56Z",
+      "nowPlaying": false,
+      "nowTrack": null,
+      "songs": 1
+    },
     {
       "album": "Live Laugh Love",
       "artist": "Earl Sweatshirt",
@@ -49,8 +75,8 @@
       "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/da98825b8cf4881de432852ab9e11b36.jpg",
       "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/da98825b8cf4881de432852ab9e11b36.jpg",
       "url": "https://www.last.fm/music/Earl+Sweatshirt/Live+Laugh+Love",
-      "plays": 1,
-      "lastPlayedAt": "2026-11-26T20:50:41Z",
+      "plays": 2,
+      "lastPlayedAt": "2026-11-26T20:59:47Z",
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 1
@@ -93,32 +119,6 @@
       "nowPlaying": false,
       "nowTrack": null,
       "songs": 2
-    },
-    {
-      "album": "hugo",
-      "artist": "Loyle Carner",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ac3ea941589d17becd002c295e1434a8.png",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/ac3ea941589d17becd002c295e1434a8.png",
-      "url": "https://www.last.fm/music/Loyle+Carner/hugo",
-      "plays": 12,
-      "lastPlayedAt": "2026-11-25T17:07:44Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 6
-    },
-    {
-      "album": "Kei Nishikori Meets Nujabes",
-      "artist": "Nujabes",
-      "isTrack": false,
-      "art": "https://lastfm-img.freetls.fastly.net/i/u/300x300/88a2561984e7cbf8863123de6706e74d.jpg",
-      "artSmall": "https://lastfm-img.freetls.fastly.net/i/u/174s/88a2561984e7cbf8863123de6706e74d.jpg",
-      "url": "https://www.last.fm/music/Nujabes/Kei+Nishikori+Meets+Nujabes",
-      "plays": 4,
-      "lastPlayedAt": "2026-11-25T11:01:35Z",
-      "nowPlaying": false,
-      "nowTrack": null,
-      "songs": 4
     }
   ]
 }
